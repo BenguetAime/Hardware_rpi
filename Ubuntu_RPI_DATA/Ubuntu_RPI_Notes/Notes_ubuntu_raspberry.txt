@@ -1,0 +1,50 @@
+############### CREDENTIALS : MON RPI-UBUNTU
+-
+Nom de l'ordi: princeB
+Nom utilisateur:ubuntu
+MDP:*Aimemael2017
+##
+VNC SERVER INSTALLATION:
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04
+##
+SSH installé simplement depuis chatgpt:
+ssh nomUtilisateur@nomDeLordi
+
+### AVEC La micro sd 1, contenant raspbian j'avais configuré 'ssh' depuis 'raspbi imager'
+###########################
+
+
+
+
+############### OS
+-
+Ubuntu 22.04 LTS Desktob (ubuntu 22.04 LTS Server ne donne pas l'interface graphique?)
+-
+LIEN TELECHARGEMENT: https://roboticsbackend.com/install-ros2-on-raspberry-pi/#Install_ROS2_on_Ubuntu_on_Raspberry_Pi_4
+
+-
+De plus, comme nous allons installer ROS2 Humble, assurez-vous d'avoir la version 22.04 pour Ubuntu, puisque chaque version de ROS2 n'est compatible qu'avec une seule version d'Ubuntu.
+
+-
+https://docs.ros.org/en/humble/Installation.html
+
+###############      SSH
+ssh ubuntu@ipaddress
+-
+ssh ubuntu@10.192.4.38
+
+
+###############      VNC
+Name: NomDeLordi(princeB)
+Vnc server: 10.192.4.38
+
+
+###############
+Great, ROS2 Humble is now installed on your Raspberry Pi 4 with Ubuntu Server 22.04!
+
+Now, in order to actually use ROS2, you’ll need to setup your environment every time you open a new session (terminal). To source your ROS2 installation in your environment, run source /opt/ros/humble/setup.bash.
+
+And because it won’t be that practical to do this for every new session you open, add this line to your bashrc.
+
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+So, from now on, every time you open a terminal, your bashrc will be executed and your environment will be ready for ROS2.

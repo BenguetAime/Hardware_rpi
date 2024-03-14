@@ -1,0 +1,34 @@
+##### ROS DEFINITION
+Open Source : ROS est une plateforme open-source, ce qui signifie que son code source est accessible à tous et peut être utilisé, modifié et partagé librement.
+
+Modularité : ROS est basé sur une architecture modulaire qui permet aux développeurs de créer des composants logiciels autonomes, appelés "nœuds", et de les combiner pour créer des systèmes robotiques complexes. Chaque nœud peut accomplir une tâche spécifique, comme la navigation, la perception, le contrôle des moteurs, etc.
+
+Communication : L'une des caractéristiques clés de ROS est son système de communication inter-nœuds. Les nœuds peuvent échanger des données en utilisant un modèle de publication/abonnement (publish/subscribe) ou un modèle de service/client (service/client), ce qui facilite la communication entre les composants du robot.
+
+Bibliothèques et Outils : ROS est livré avec un certain nombre de bibliothèques et d'outils qui simplifient le développement de logiciels robotiques. Cela inclut des bibliothèques de traitement d'images, des bibliothèques de cartographie, des outils de simulation, des environnements de développement intégrés (IDE), et bien plus encore.
+
+
+
+
+
+########### COMPILATEUR/INTERPRETEUR
+La principale différence entre un interpréteur et un compilateur réside dans la manière dont ils traitent le code source et exécutent les programmes.
+
+Interpréteur :
+
+L'interpréteur lit le code source ligne par ligne, le traduit en langage machine ou en bytecode à la volée et exécute immédiatement chaque ligne.
+Les erreurs de syntaxe sont généralement détectées lors de l'analyse du code source, ce qui signifie que l'exécution peut être interrompue dès qu'une erreur est détectée.
+L'interpréteur permet un développement interactif, où vous pouvez expérimenter avec des instructions individuelles dans une console interactive.
+Les langages interprétés, comme Python et JavaScript, utilisent généralement des interpréteurs.
+Compilateur :
+
+Le compilateur lit le code source dans son intégralité, le traduit en langage machine ou en bytecode, puis génère un fichier exécutable (ou une représentation intermédiaire).
+Les erreurs de syntaxe sont généralement détectées lors de la phase de compilation, mais l'exécution du code n'a lieu qu'après la compilation.
+Le processus de compilation peut générer un fichier exécutable indépendant du code source, ce qui signifie que le programme peut être exécuté sans avoir besoin du code source original.
+Les langages compilés, comme C++, Java (avec la machine virtuelle Java), et Rust, utilisent des compilateurs.
+En résumé, un interpréteur exécute le code source directement, ligne par ligne, tandis qu'un compilateur traduit tout le code source en langage machine ou en bytecode avant l'exécution. Les avantages de l'interprétation incluent un développement interactif et la possibilité de détecter les erreurs plus tôt, tandis que la compilation offre généralement des performances optimisées et la possibilité de distribuer des exécutables indépendants. Certains langages, comme Java, combinent les deux approches en utilisant un compilateur pour générer un bytecode qui est ensuite interprété par une machine virtuelle.
+
+
+
+
+
