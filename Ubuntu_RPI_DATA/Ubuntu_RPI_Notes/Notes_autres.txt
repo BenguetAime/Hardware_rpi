@@ -28,6 +28,8 @@ Le processus de compilation peut générer un fichier exécutable indépendant d
 Les langages compilés, comme C++, Java (avec la machine virtuelle Java), et Rust, utilisent des compilateurs.
 En résumé, un interpréteur exécute le code source directement, ligne par ligne, tandis qu'un compilateur traduit tout le code source en langage machine ou en bytecode avant l'exécution. Les avantages de l'interprétation incluent un développement interactif et la possibilité de détecter les erreurs plus tôt, tandis que la compilation offre généralement des performances optimisées et la possibilité de distribuer des exécutables indépendants. Certains langages, comme Java, combinent les deux approches en utilisant un compilateur pour générer un bytecode qui est ensuite interprété par une machine virtuelle.
 
+##### Notes
+
 
 
 
