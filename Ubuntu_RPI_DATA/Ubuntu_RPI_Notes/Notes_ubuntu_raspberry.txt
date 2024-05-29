@@ -15,18 +15,37 @@ ssh nomUtilisateur@nomDeLordi
 
 
 
+########################## GitHub :
+>> git clone https://github.com/BenguetAime/Hardware_rpi
+>> git add .
+>> git pull origin main : récupérer les modifs faite sur GitHub
+>>git pull --no-rebase origin main : j'y ai eu recours après avoir modifié un fichier sur github
+
+>> git push origin main : envoyer vers github
+
+
 
 ############### OS
 -
-Ubuntu 22.04 LTS Desktob (ubuntu 22.04 LTS Server ne donne pas l'interface graphique?)
+Ubuntu 22.04 LTS Desktop (ubuntu 22.04 LTS Server ne donne pas l'interface graphique?)
 -
 LIEN TELECHARGEMENT: https://roboticsbackend.com/install-ros2-on-raspberry-pi/#Install_ROS2_on_Ubuntu_on_Raspberry_Pi_4
+
 
 -
 De plus, comme nous allons installer ROS2 Humble, assurez-vous d'avoir la version 22.04 pour Ubuntu, puisque chaque version de ROS2 n'est compatible qu'avec une seule version d'Ubuntu.
 
 -
 https://docs.ros.org/en/humble/Installation.html
+
+
+############################ OS - carte microsd 128GB
+-->> https://www.raspberrypi.com/software/ : rpi imger
+-->>https://releases.ubuntu.com/22.04/?_gl=1*yye7hm*_gcl_au*NDExMTczNzY2LjE3MTY5MTk2OTA.&_ga=2.23343167.449980557.1716919908-302634684.1716919908
+
+
+
+
 
 ###############      SSH
 ssh ubuntu@ipaddress
@@ -47,4 +66,109 @@ Now, in order to actually use ROS2, you’ll need to setup your environment ever
 And because it won’t be that practical to do this for every new session you open, add this line to your bashrc.
 
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-So, from now on, every time you open a terminal, your bashrc will be executed and your environment will be ready for ROS2.
+So, from now on, every time you open a terminal, your bashrc will be executed and your environment will be ready for
+ROS2.
+
+
+###########################################
+
+
+
+###########################################
+
+_ Arduino :
+>> Prendre la version (Arduino 1.8 truc du genre) marqué LINUX ARM 64 bits
+
+
+
+#############" DEMARRER UN CODE ROS :
+>> En ouvrant le pc, commencer par "colcon build --symlink-install" puis "source install/setup.bash
+
+###########################################  SIMULATIONS
+____rviz2 :
+>> télécharger sur le site :
+https://docs.ros.org/en/humble/Tutorials/Intermediate/RViz/RViz-User-Guide/RViz-User-Guide.html
+
+____ ignition gazebo : computer/usr/share/ignition ;; ROS : computer/opt/ros/humble
+>> ign gazebo : lancer gazebo
+>> ign topic -l : liste des topic
+>> SI "ros2" n'est pas reconnu, tester: 
+>>source /opt/ros/humble/setup.bash car ros se trouve dans le repertoire indiqué (accessible UBUNTU depuis "dossier/other location/opt/ros/humble ")
+
+>> https://docs.ros.org/en/humble/Tutorials/Advanced/Simulators/Gazebo/Gazebo.html
+>> https://www.udemy.com/course/ros2-robotics-developer-course-using-ros2-in-python/learn/lecture/24533376#overview
+>>
+__sudo apt install ros-$ROS_DISTRO-ros-ign 
+__ign gazebo -v 4 -r --render-engine ogre visualize_lidar.sdf
+__ign gazebo nomDuFichier.sdf (en général si on est dans le dossier de type "world", inclus dans notre package)
+__ign topic -l
+__sudo apt install ros-$ROS_DISTRO-ros-ign-bridge : nous permet de faire un pont entre les messages ros2 et gazebo.
+___ros2 run ros_gz_bridge parameter_bridge
+- Pour éviter de ...
+>> >> export IGN-GAZEBO-RESOURCE-PATH=home/ray/etc chemin où se trouve les fichiers qu'on souhaite ouvrir n'importe où!?? PUIS aller dans "le fichire "world.sdf" ET dans la balise <uri> appelant le doosier "models", garder uniquement le nom du dossier contenant le modèle qu'on import
+
+____ignition doesn't have a build-in monitore : so we use gazebo classic
+-
+https://classic.gazebosim.org/tutorials?tut=install_ubuntu&cat=install
+-
+
+>> gazebo : pour demarrer gazebo classic
+
+>>fILE/eDIT/mODEL EDITOR pour créer/modifier un modèle
+>>file exit modèle editor pour retourner en simulation
+>> SUR GAZBO CLASSIC : pour tester les joints, tirer sur le coté droit (rétrécir l'environnement de simulation) puis toucher le modèle 3D
+
+____ MODELES ET MONDE :
+>> Dans le package,
+- Créer un dossier "Models" et un dossier "Worlds". 
+- Dans "Models" créer un dossier "Ground_plane" (y ajouter un modèle de type groun_plane nommé "my_ground_plane.sdf" ET le fichier model.config qui "pointe" vers my_ground_plane.sdf). On peut ajouter plusieurs AUTRES DOSSIER dans le dossier "Models", lesquels autres fichiers représentant différents modèles (1 fichier de modèle = 1 fichiers model_i.sdf et 1 fichier modelConfigName_i.config).
+- Dans le dossier "Worlds" on créer un fichier "my_World.sdf" dans lequel on inclus via des balise "<uri>" le dossier "Models" dans lequel il y a nos différents modèles; ET c'est CE FICHIER "my_World.sdf" qui sera lancé;
+
+
+_________ !!!!! VOIR AUSSI SIMULATION "ignition" dans la doc
+>> __ign gazebo --render-engine ogre nomDeFichier.sdf  : si problème d'affichage
+>> To be able to communicate our simulation with ROS 2 you need to use a package called ros_ign_bridge :
+source /opt/ros/foxy/setup.bash
+ros2 run ros_ign_bridge parameter_bridge /model/vehicle_blue/cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist
+>> ros2 topic list
+>>ros2 topic echo /laser_scan
+>>ros2 topic pub etc... pour publier 
+
+>>ros2 launch my_pkg nomDeFichier.launch.py
+>> ign topic --info --topic /camera : affiche le type de données sur ce topic de ign gazebo, en cours?
+
+
+_______ !!!!! DEPUIS IGNITION GAZEBO, ON PEUT "piloter" notre robot comme suit :
+1/ en utilisant ros_ign_bridge et les commandes qui vont avec Afin de publier depuis ROS2 des commandes pour le modèles se trouvant dans gazebo
+2/ en utisant "rqt" et en publiant sur un topic donnée la commande : OUVRIE QRT/ PLUGIN/ TOPIC/ Message Publisher - Puis "CLIQUER" sur le "+" en haut à droite "ADD A NEW PUBLISHER" et fixer des valeurs à publier.
+
+SINON le modèle reste figé!!
+
+>> SE SOUVENIR DES EXEMPLES DE REMPARRING DE TOPIC : exemple vidéos sur "PROJECT: ROS2 SMULATION ROBOT - minutes: 14.50"
+
+
+
+_______!!!! attention aux plugins et TAG
+- SENSOR TAG pour la caméra 
+- JOINT POSITION CONTROLLER.sdf (voir fin du fichier surtout; le dernier plugin ) plugin, dans ignition gazebo computer/usr/igntion…
+
+
+
+############################# USING URDF
+>>https://www.udemy.com/course/ros2-robotics-developer-course-using-ros2-in-python/learn/lecture/26054056#overview
+
+
+
+
+
+###########################  ENVIRONNEMENT MARINS
+>> https://gazebosim.org/api/gazebo/6.1/underwater_vehicles.html
+
+>> https://gazebosim.org/api/sim/8/underwater_vehicles.html
+
+>> https://classic.gazebosim.org/tutorials?tut=hydrodynamics&cat=physics
+
+>> https://gazebosim.org/projects/maritime
+
+>> boat floating : code source a la fin...
+https://discuss.ardupilot.org/t/ship-landing-ignition-simulation/80663/25?page=2
