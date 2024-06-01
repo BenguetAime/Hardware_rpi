@@ -177,3 +177,13 @@ _______!!!! attention aux plugins et TAG
 https://discuss.ardupilot.org/t/ship-landing-ignition-simulation/80663/25?page=2
 
 ##
+
+
+
+################################## 01/06/2024
+----- URDF-ROS2-GAZEBO : dans un pkg contenu le dossier DOSSIER créer des dossier URDF,LAUNCH,RVIZ (saved from a gazeo? rviz?)
+
+------ URDF : 
+https://docs.ros.org/en/foxy/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html
+>> ros2 launch urdf_tutorial display.launch.py model:=urdf/01-myfirst.urdf
+
