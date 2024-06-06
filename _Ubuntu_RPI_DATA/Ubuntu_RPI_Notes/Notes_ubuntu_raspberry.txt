@@ -156,6 +156,11 @@ _______!!!! attention aux plugins et TAG
 
 ############################# USING URDF
 >>https://www.udemy.com/course/ros2-robotics-developer-course-using-ros2-in-python/learn/lecture/26054056#overview
+>>ros2/humble/...URDF
+>>https://aleksandarhaber.com
+
+
+
 
 
 
@@ -176,14 +181,61 @@ _______!!!! attention aux plugins et TAG
 >> boat floating : code source a la fin...
 https://discuss.ardupilot.org/t/ship-landing-ignition-simulation/80663/25?page=2
 
-###
+>> https://github.com/srmainwaring/asv_wave_sim?tab=readme-ov-file !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+>> rov2: https://github.com/clydemcqueen/bluerov2_ignition/blob/main/models/bluerov2/model.sdf
 
 
 
-################################## 01/06/2024
+
+
+################################## 01/06/2024   - URDF 		ROS2 	GAZEBO
 ----- URDF-ROS2-GAZEBO : dans un pkg contenu le dossier DOSSIER créer des dossier URDF,LAUNCH,RVIZ (saved from a gazeo? rviz?)
 
------- URDF : 
-https://docs.ros.org/en/foxy/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html
-!!!!!!!!! >> ros2 launch urdf_tutorial display.launch.py model:=urdf/01-myfirst.urdf
+------- URDF : 
+- >> https://docs.ros.org/en/foxy/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html
 
+- !!!!!!!!! >> ros2 launch urdf_tutorial display.launch.py model:=urdf/01-myfirst.urdf
+### 1er.lien important(notamment le fichier display.launch.py et s'y inspirer aussi pour créer le fichier gazebo.launch.py (rajouter uniquement spaw_entity=… et dans return launch.LaunchDescription rajouter ce qui concerne gazebo); voir aussi le complément à mettre dans package.xml) - !!!! CE QUIL MET DANS LE "package.xml" pour lancer son fichier launch etc :
+
+!!!!!!!!!!!!   !!!!!!!!!!!!!!! https://aleksandarhaber.com/how-to-create-urdf-and-launch-files-in-ros2-and-display-them-in-rviz/
+
+
+------- URDF : DANS LEs FICHIERs LAUNCH on a besoin de joint state publisher etc, il faut les installer :
+__
+sudo apt update
+sudo apt install ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-rviz2
+
+-------- URDF :
+>> ros2 humble doc : TUTO/INTERMEDIATE/LAUNCH -- voir ce qui est dit, notamment l'ajout de << <exec_depend… roslaunch etc >>
+
+##2me lien.important(fichier gazebo.launch: on a une idée; )-------- GAZEBO.launch file : prendre le fichier de config du net "urdf:
+ROS2 robot URDF + Xacro creation, visualize in RVIZ2 and Gazebo + Teleoperation | Beginner Tutorial
+!!!!!!!!!!!!!!! !!!!!!!!!!!!! >> https://www.youtube.com/watch?v=Vbh3--etiwg&t=1782s (EN DESCRIPTION)
+
+
+-------- TF2 : installer tf2
+>> ros2 run tf2_tools view_frames : visualiser les repères (un fichier est créé dans le WS)
+
+
+-------- GAZEBO : 
+>> ajouter des lignes dans "package.xml" (depend … gazebo_ros  ET AUSSI ros_ign_gazebo; rclcpp; rclpy)
+>> ajouter des lignes dans cmakelist : find_package(les mêmes que ceux rajoutés dans package.xml)
+>> dans le fichier .urdf : enlever encoding "utf-8" qui est sur la 1re ligne.
+
+
+------------------- SPAWN URDF INTO GAZEBO ROS2 - THE CONSTRUCT :
+!!!!!!!
+>> https://www.google.com/search?q=Cannot+Spawn+URDF+into+gazebo+using+ros2+edit%0D%0A&sca_esv=bb932b014846ff27&sxsrf=ADLYWIJ3pFYUjmbdQ66xzaiKUnALo7CLSw%3A1717358563276&ei=489cZtPEEKqYkdUPmb-I8As&ved=0ahUKEwiTwvaY272GAxUqTKQEHZkfAr4Q4dUDCBA&uact=5&oq=Cannot+Spawn+URDF+into+gazebo+using+ros2+edit%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiLkNhbm5vdCBTcGF3biBVUkRGIGludG8gZ2F6ZWJvIHVzaW5nIHJvczIgZWRpdAoyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAuGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQFIpmxQxmdYxmdwAngBkAEAmAEAoAEAqgEAuAEDyAEA-AEB-AECmAICoAIbqAIUwgIKEAAYsAMY1gQYR5gDFIgGAZAGAroGBggBEAEYC5IHATKgBwA&sclient=gws-wiz-serp#fpstate=ive&vld=cid:06b66cc4,vid:mDS_M95MQGA,st:3071
+
+
+--- ERRRRRRREUR
+>>https://answers.gazebosim.org//question/26073/cannot-spawn-urdf-into-gazebo-using-ros2/
+
+
+
+
+
+################################  07/06/2024
+
+>>
