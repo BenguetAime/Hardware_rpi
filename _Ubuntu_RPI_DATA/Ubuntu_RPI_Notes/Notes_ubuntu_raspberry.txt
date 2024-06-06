@@ -237,5 +237,8 @@ ROS2 robot URDF + Xacro creation, visualize in RVIZ2 and Gazebo + Teleoperation 
 
 
 ################################  07/06/2024
-
->>
+*** SI IL Y A UN PB "plusieurs server running ou un truc du genre" :
+>> ps aux | grep gzserer (voir le 1r uméro à 5 chiffres ("PID") et faire : 
+>> kill -9 "numéro pid à 5chiffres"
+ou
+>> kill all
