@@ -34,16 +34,16 @@ En résumé, un interpréteur exécute le code source directement, ligne par lig
 
 ################################## Notes
 
->> THE CONSTRUCT: SPAWN URDF TO GAZEBO:
+>>>>>>>>>>>>>>>> THE CONSTRUCT: SPAWN URDF TO GAZEBO:
  https://www.youtube.com/watch?v=mDS_M95MQGA&t=3074s
 
->>>>>>>>>>>>><< launch
+>>>>>>>>>>>>> launch the construct : régler le soucis du chemin gazebo
 
 description_package_name="my_pkg_path"
 install_dir = get_package_prefix(description_package_name)
 
 #
-gazebo_models_path = os.path.join(my_pkg_path,'models')
+gazebo_models_path = os.path.join(my_pkg_path,'meshes')
 # os.environ["GAZEBO_MODEL_PATH"] = gazebo_models_path
 
 if "GAZEBO_MODEL_PATH" in os.environ :
@@ -60,19 +60,5 @@ else :
     os.environ["GAZEBO_PLUGIN_PATH"]=install_dir + '/lib'
 
 
->>>>>>>>>>>>>>>>>>>>>>>>>>> model.config :
-<?xml version="1.0" ?>
-<model>
-  <name>MyRobot</name>
-  <version>1.0</version>
-  <sdf version="1.6">model.sdf</sdf>
-  <description>
-    MyRobot description here.
-  </description>
-  <author>
-    <name>Your Name</name>
-    <email>your.email@example.com</email>
-  </author>
-</model>
 
 

@@ -246,5 +246,13 @@ ou
 __________ URDF IN GAZEBO :
 >> https://classic.gazebosim.org/tutorials/?tut=ros_urdf
 
+>> https://github.com/gazebosim/gazebo-classic/blob/master/media/materials/scripts/gazebo.material
+
 >> TURTLE BOT - URDF - LAUNCH :
 https://github.com/ROBOTIS-GIT/turtlebot3_simulations/blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/turtlebot3_gazebo/urdf/turtlebot3_burger.urdf
+
+___________ conversion urdf/sdf
+>> gz sdf -p path/vers/monFichiet_urdf > path/vers/le nouveau/monFichier.sdf
+>> RAJOUTER LA BALISE <? xml version='1.0'> au début
+
+___________urdf/xacro ; urdf/sdf
