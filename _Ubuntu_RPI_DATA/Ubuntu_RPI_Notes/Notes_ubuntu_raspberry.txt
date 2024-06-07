@@ -242,3 +242,9 @@ ROS2 robot URDF + Xacro creation, visualize in RVIZ2 and Gazebo + Teleoperation 
 >> kill -9 "numéro pid à 5chiffres"
 ou
 >> kill all
+
+__________ URDF IN GAZEBO :
+>> https://classic.gazebosim.org/tutorials/?tut=ros_urdf
+
+>> TURTLE BOT - URDF - LAUNCH :
+https://github.com/ROBOTIS-GIT/turtlebot3_simulations/blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/turtlebot3_gazebo/urdf/turtlebot3_burger.urdf
