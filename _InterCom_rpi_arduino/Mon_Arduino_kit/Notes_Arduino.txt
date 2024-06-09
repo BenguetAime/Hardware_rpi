@@ -1,0 +1,47 @@
+###########################################	AVANT TOUT!!!
+
+
+
+###########################################	INTRODUCTION
+-
+8 bits;    La mémoire Flash est utilisée pour stocker le programme exécutable. ;  
+La SRAM est utilisée pour stocker des données temporaires pendant l'exécution du programme.
+-
+
+Oui, l'Arduino Mega utilise le microcontrôleur ATmega2560. L'ATmega2560 est un microcontrôleur de la famille AVR fabriqué par Atmel (maintenant partie de Microchip Technology). Il s'agit d'un microcontrôleur 8 bits doté d'une architecture RISC (Reduced Instruction Set Computing) et il est largement utilisé dans les cartes Arduino Mega.
+
+
+----SPI
+d. Fonctionnement du SPI (Serial Peripheral Interface) :
+Le SPI est un protocole de communication série synchrone qui permet à un microcontrôleur de communiquer avec plusieurs périphériques (esclaves) sur un bus partagé. Il utilise généralement quatre lignes : MOSI (Master Out Slave In), MISO (Master In Slave Out), SCK (Serial Clock), et SS/CS (Slave Select/Chip Select). Le maître contrôle la communication en générant l'horloge et en activant/désactivant les lignes SS/CS pour sélectionner le périphérique avec lequel il souhaite communiquer.
+
+
+
+####################################### 	PWM
+
+Roughly every 1/500 of a second, the PWM output will produce a pulse. The length
+of this pulse is controlled by the 'analogWrite' function. So 'analogWrite(0)' will not
+produce any pulse at all and 'analogWrite(255)' will produce a pulse that lasts all the
+way until the next pulse is due, so that the output is actually on all the time.
+If we specify a value in the analogWrite that is somewhere in between 0 and 255,
+then we will produce a pulse. If the output pulse is only high for 5% of the time, then
+whatever we are driving will only receive 5% of full power.
+
+###################################### CODE/FONCTIONS
+
+--- pinMode...
+pinMode(BLUE, OUTPUT);
+digitalWrite(RED, HIGH);
+delay(delayTime);
+analogWrite(GREEN, greenValue);//PWM, greenValue (0<=greenValue<=255)
+
+
+--- SWITCH BUTTON
+pinMode(buttonBpin, INPUT_PULLUP);
+Quand rien n'est connecté à la pin: elle est "pulled up" to HIGH. Passe à LOW quand le bouton est appuyé!
+
+---
+if (digitalRead(buttonApin) == LOW)
+
+--- PRINTF:
+Dans Arduino, la fonction printf n'est pas utilisée comme dans les langages de programmation comme le C ou le C++. Pour afficher du texte dans l'environnement Arduino, vous devez utiliser la fonction Serial.print ou Serial.println (si vous voulez ajouter un retour à la ligne).
