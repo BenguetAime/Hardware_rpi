@@ -1,4 +1,6 @@
 ###########################################	AVANT TOUT!!!
+>> SOUS RASPBIAN C est l'Arduino version 32bits qu'il a fallu téléchargé !(Arduino 1.8.16) 
+>> Telecharger Fritzing ??
 
 
 
