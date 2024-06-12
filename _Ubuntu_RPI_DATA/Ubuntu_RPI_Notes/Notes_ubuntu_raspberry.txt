@@ -24,10 +24,10 @@ ssh nomUtilisateur@nomDeLordi
 >> git push origin main : envoyer vers github
 
 
-
+Ubuntu 22.04 LTS Desktop 
 ############### OS
 -
-Ubuntu 22.04 LTS Desktop (ubuntu 22.04 LTS Server ne donne pas l'interface graphique?)
+(ubuntu 22.04 LTS Server ne donne pas l'interface graphique?)
 -
 LIEN TELECHARGEMENT: https://roboticsbackend.com/install-ros2-on-raspberry-pi/#Install_ROS2_on_Ubuntu_on_Raspberry_Pi_4
 
@@ -256,3 +256,11 @@ ___________ conversion urdf/sdf
 >> RAJOUTER LA BALISE <? xml version='1.0'> au début
 
 ___________urdf/xacro ; urdf/sdf
+
+
+
+################################## 10/06/2024
+
+__ environnement marin GitHub/srmainwaring
+>> colcon build… : supprimer merge install?
+>> installer gz-cmake 3 ?
