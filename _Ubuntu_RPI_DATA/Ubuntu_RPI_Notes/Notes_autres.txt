@@ -61,4 +61,24 @@ else :
 
 
 
+##################################### ros2 - ign gazebo - spawn entity
+
+launch_gazebo_arg = IncludeLaunchDescription(
+ PythonLaunchDescriptionSource([get_package_share_directory('ros_ign_gazebo'), '/launch', '/ign_gazebo.launch.py']),
+ launch_arguments={
+  'ign_args' : #Add path to World File if so desired
+ }.items(),
+)
+
+spawn_robot_arg = Node(
+ package='ros_ign_gazebo',
+ executable='create',
+ output='screen',
+ arguments=["-file", "<path_to_urdf>/robot.urdf"]
+)
+
+return LaunchDescription([
+ launch_gazebo_arg,
+ spawn_robot_arg
+])
 
