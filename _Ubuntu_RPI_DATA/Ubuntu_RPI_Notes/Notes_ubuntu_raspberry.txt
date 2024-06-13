@@ -21,6 +21,15 @@ https://www.youtube.com/watch?v=Wlmne44M6fQ
 
 
 ########################## GitHub :
+__
+sudo apt update
+sudo apt install git
+*
+git config --global user.name "Votre Nom"
+git config --global user.email "votre_email@example.com"
+
+
+__
 >> git clone https://github.com/BenguetAime/Hardware_rpi
 >> git add .
 >> git pull origin main : récupérer les modifs faite sur GitHub
