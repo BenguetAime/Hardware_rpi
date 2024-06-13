@@ -12,6 +12,11 @@ ssh nomUtilisateur@nomDeLordi
 
 ### AVEC La micro sd 1, contenant raspbian j'avais configuré 'ssh' depuis 'raspbi imager'
 ###########################
+>> ssh :
+https://www.youtube.com/watch?v=Wlmne44M6fQ
+>> IP ADRESS: >> hostname -I
+
+
 
 
 
@@ -168,11 +173,10 @@ _______!!!! attention aux plugins et TAG
 
 ###############################  ENVIRONNEMENT MARINS
 >> https://gazebosim.org/api/gazebo/6.1/underwater_vehicles.html  : IGITION
->> https://app.gazebosim.org/goztas/fuel/models/goztas_AUV
+>> https://gazebosim.org/docs/harmonic/migrating_gazebo_classic_ros2_packages
 ---
 ---
-
->> https://gazebosim.org/api/sim/8/underwater_vehicles.html
+>> >> https://app.gazebosim.org/goztas/fuel/models/goztas_AUV
 
 >> https://classic.gazebosim.org/tutorials?tut=hydrodynamics&cat=physics
 
@@ -264,3 +268,7 @@ ___________urdf/xacro ; urdf/sdf
 __ environnement marin GitHub/srmainwaring
 >> colcon build… : supprimer merge install?
 >> installer gz-cmake 3 ?
+
+################################### 12/06/2024
+>> ignition gazebo : launcj, create.launch /// comment remplacer 'spawn_entity.py' utilisé avec ros_gazebo
+https://github.com/gazebosim/ros_gz/blob/melodic/ros_ign_gazebo_demos/launch/create.launch#L14
