@@ -41,6 +41,7 @@ analogWrite(GREEN, greenValue);//PWM, greenValue (0<=greenValue<=255)
 --- SWITCH BUTTON
 pinMode(buttonBpin, INPUT_PULLUP);
 Quand rien n'est connecté à la pin: elle est "pulled up" to HIGH. Passe à LOW quand le bouton est appuyé!
+Du fait de la configuration du branchement du bouton avec la résistance et le fil qui passe par le 5v, et le fil qui passe par la pin Digital où on lit l'état.
 
 ---
 if (digitalRead(buttonApin) == LOW)
