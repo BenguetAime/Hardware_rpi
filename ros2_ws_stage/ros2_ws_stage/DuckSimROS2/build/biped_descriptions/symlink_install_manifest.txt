@@ -1,0 +1,2 @@
+/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/install/biped_descriptions/share/biped_descriptions//launch/spawn_simplified_duck.launch.py
+/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/install/biped_descriptions/share/biped_descriptions//launch/test_spawn_model.launch.py

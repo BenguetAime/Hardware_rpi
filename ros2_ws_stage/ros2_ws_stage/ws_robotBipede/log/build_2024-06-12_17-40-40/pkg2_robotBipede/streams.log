@@ -1,0 +1,152 @@
+[0.079s] Invoking command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede -- -j2 -l2
+[0.202s] Invoked command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede -- -j2 -l2
+[0.298s] Invoking command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede
+[0.327s] -- Install configuration: ""
+[0.328s] -- Execute custom install script
+[0.333s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/display.launch (copy).py
+[0.342s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/display.launch.py
+[0.343s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/gazebo.launch
+[0.347s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/gazebo.launch (copy).py
+[0.348s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/gazebo.launch.py
+[0.349s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/ign_gazebo.launch.py
+[0.349s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Ankle_D.STL
+[0.351s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Ankle_G.STL
+[0.352s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Foot_D.STL
+[0.353s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Foot_G.STL
+[0.353s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_HipPitch_D.STL
+[0.354s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_HipPitch_G.STL
+[0.354s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_HipYaw_D.STL
+[0.356s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_HipYaw_G.STL
+[0.358s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Knee_D.STL
+[0.359s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Knee_G.STL
+[0.362s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_PalmeD_d.STL
+[0.367s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_PalmeD_g.STL
+[0.372s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_PalmeG_d.STL
+[0.373s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_PalmeG_g.STL
+[0.374s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/abduction.stl
+[0.375s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/abduction_mirror.stl
+[0.375s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/achilles-rod.stl
+[0.377s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/base_link.STL
+[0.379s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/corps.STL
+[0.380s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/femur - femur-1.STL
+[0.380s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/femur - moteur-1.STL
+[0.380s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/femur - moteur_hanche-1.STL
+[0.380s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/femur - moteur_hanche-2.STL
+[0.381s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/hip.stl
+[0.382s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/hip_mirror.stl
+[0.383s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/knee-output.stl
+[0.383s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/knee-output_mirror.stl
+[0.385s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/palme_last_v - arret_rotation-1.STL
+[0.386s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/palme_last_v - part1_palme-1.STL
+[0.386s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/palme_last_v - part2_palme-1.STL
+[0.386s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/pelvis.stl
+[0.386s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/plantar-rod.stl
+[0.386s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/shin-bone.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/shin-bone_mirror.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tarsus.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tarsus_mirror.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tarto.STL
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tbi.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/thigh.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/thigh_mirror.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tibia.STL
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/toe-output-crank.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/toe.stl
+[0.387s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/toe_mirror.stl
+[0.388s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/torso.stl
+[0.388s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/torso_v2.stl
+[0.388s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/yaw.stl
+[0.388s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/yaw_mirror.stl
+[0.388s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/rviz/config.rviz
+[0.388s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/rviz/urdf.vcg
+[0.388s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/Ros2_RobotBipede.csv
+[0.388s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/Ros2_RobotBipede.sdf
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/Ros2_RobotBipede.urdf
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/Ros2_RobotBipede.xacro
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/model.config
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/my_gazebo_plugins (copy).gazebo
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/my_gazebo_plugins.gazebo
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ground_plane/model.config
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ground_plane/my_ground_plane.sdf
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/Ros2_RobotBipede.sdf
+[0.389s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Ankle_D.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Ankle_G.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Foot_D.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Foot_G.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_HipPitch_D.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_HipPitch_G.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_HipYaw_D.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_HipYaw_G.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Knee_D.STL
+[0.390s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Knee_G.STL
+[0.391s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_PalmeD_d.STL
+[0.391s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_PalmeD_g.STL
+[0.391s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_PalmeG_d.STL
+[0.391s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_PalmeG_g.STL
+[0.391s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/abduction.stl
+[0.403s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/abduction_mirror.stl
+[0.408s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/achilles-rod.stl
+[0.415s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/base_link.STL
+[0.415s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/corps.STL
+[0.415s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/femur - femur-1.STL
+[0.415s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/femur - moteur-1.STL
+[0.415s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/femur - moteur_hanche-1.STL
+[0.415s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/femur - moteur_hanche-2.STL
+[0.416s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/hip.stl
+[0.416s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/hip_mirror.stl
+[0.416s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/knee-output.stl
+[0.416s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/knee-output_mirror.stl
+[0.416s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/palme_last_v - arret_rotation-1.STL
+[0.416s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/palme_last_v - part1_palme-1.STL
+[0.417s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/palme_last_v - part2_palme-1.STL
+[0.417s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/pelvis.stl
+[0.417s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/plantar-rod.stl
+[0.417s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/shin-bone.stl
+[0.417s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/shin-bone_mirror.stl
+[0.417s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tarsus.stl
+[0.417s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tarsus_mirror.stl
+[0.417s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tarto.STL
+[0.418s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tbi.stl
+[0.418s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/thigh.stl
+[0.418s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/thigh_mirror.stl
+[0.418s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tibia.STL
+[0.418s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/toe-output-crank.stl
+[0.418s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/toe.stl
+[0.419s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/toe_mirror.stl
+[0.419s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/torso.stl
+[0.419s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/torso_v2.stl
+[0.419s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/yaw.stl
+[0.419s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/yaw_mirror.stl
+[0.419s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/model.config
+[0.419s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/flat_normal.png
+[0.420s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/mesh_L100m_N256.dae
+[0.420s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/mesh_L100m_N256_below.dae
+[0.420s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/mesh_L256m_N256.dae
+[0.420s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/mesh_L256m_N256_below.dae
+[0.420s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/skybox_lowres.dds
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/skybox_test.dds
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/wave_normals.dds
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/waves_fs.glsl
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/waves_fs.metal
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/waves_vs.glsl
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/waves_vs.metal
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/model.config
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/model.sdf
+[0.421s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/worlds/ocean_world.world
+[0.425s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/worlds/test_world.sdf
+[0.425s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/ament_index/resource_index/package_run_dependencies/pkg2_robotBipede
+[0.425s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/ament_index/resource_index/parent_prefix_path/pkg2_robotBipede
+[0.425s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/environment/ament_prefix_path.sh
+[0.425s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/environment/ament_prefix_path.dsv
+[0.425s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/environment/path.sh
+[0.425s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/environment/path.dsv
+[0.425s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/local_setup.bash
+[0.426s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/local_setup.sh
+[0.426s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/local_setup.zsh
+[0.426s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/local_setup.dsv
+[0.426s] -- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.dsv
+[0.431s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/ament_index/resource_index/packages/pkg2_robotBipede
+[0.431s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/cmake/pkg2_robotBipedeConfig.cmake
+[0.431s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/cmake/pkg2_robotBipedeConfig-version.cmake
+[0.431s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.xml
+[0.431s] Invoked command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede

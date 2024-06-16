@@ -1,0 +1,622 @@
+[0.000000] (-) TimerEvent: {}
+[0.001410] (biped_gazebo_worlds) JobQueued: {'identifier': 'biped_gazebo_worlds', 'dependencies': OrderedDict()}
+[0.001541] (pkg2_robotBipede) JobQueued: {'identifier': 'pkg2_robotBipede', 'dependencies': OrderedDict()}
+[0.001602] (biped_gazebo_worlds) JobStarted: {'identifier': 'biped_gazebo_worlds'}
+[0.045775] (pkg2_robotBipede) JobStarted: {'identifier': 'pkg2_robotBipede'}
+[0.083438] (biped_gazebo_worlds) JobProgress: {'identifier': 'biped_gazebo_worlds', 'progress': 'cmake'}
+[0.090678] (biped_gazebo_worlds) JobProgress: {'identifier': 'biped_gazebo_worlds', 'progress': 'build'}
+[0.090958] (biped_gazebo_worlds) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds', '--', '-j2', '-l2'], 'cwd': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1112'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cdb073f8501e43d24ca1dfc4666845b2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/princeB:@/tmp/.ICE-unix/1112,unix/princeB:/tmp/.ICE-unix/1112'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ee381764_02b2_4d92_944e_53736e44ebc1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZP91O2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede:/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cdb073f8501e43d24ca1dfc4666845b2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede:/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds:/opt/ros/humble')]), 'shell': False}
+[0.099006] (-) TimerEvent: {}
+[0.127747] (pkg2_robotBipede) JobProgress: {'identifier': 'pkg2_robotBipede', 'progress': 'cmake'}
+[0.133291] (pkg2_robotBipede) JobProgress: {'identifier': 'pkg2_robotBipede', 'progress': 'build'}
+[0.134159] (pkg2_robotBipede) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede', '--', '-j2', '-l2'], 'cwd': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1112'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cdb073f8501e43d24ca1dfc4666845b2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/princeB:@/tmp/.ICE-unix/1112,unix/princeB:/tmp/.ICE-unix/1112'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ee381764_02b2_4d92_944e_53736e44ebc1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZP91O2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede:/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cdb073f8501e43d24ca1dfc4666845b2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede:/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds:/opt/ros/humble')]), 'shell': False}
+[0.200343] (-) TimerEvent: {}
+[0.301836] (-) TimerEvent: {}
+[0.403113] (-) TimerEvent: {}
+[0.504540] (-) TimerEvent: {}
+[0.605444] (-) TimerEvent: {}
+[0.706789] (-) TimerEvent: {}
+[0.808237] (-) TimerEvent: {}
+[0.881001] (biped_gazebo_worlds) CommandEnded: {'returncode': 0}
+[0.908946] (-) TimerEvent: {}
+[1.009991] (biped_gazebo_worlds) JobProgress: {'identifier': 'biped_gazebo_worlds', 'progress': 'install'}
+[1.011701] (-) TimerEvent: {}
+[1.048883] (biped_gazebo_worlds) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds'], 'cwd': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1112'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cdb073f8501e43d24ca1dfc4666845b2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/princeB:@/tmp/.ICE-unix/1112,unix/princeB:/tmp/.ICE-unix/1112'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ee381764_02b2_4d92_944e_53736e44ebc1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZP91O2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede:/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cdb073f8501e43d24ca1dfc4666845b2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede:/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds:/opt/ros/humble')]), 'shell': False}
+[1.060655] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.094319] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.098198] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.103844] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//launch/empty_underwater_world.launch.py\n'}
+[1.105443] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//launch/empty_world.launch.py\n'}
+[1.110688] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/empty_underwater.world\n'}
+[1.111695] (-) TimerEvent: {}
+[1.113535] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/empty_world.world\n'}
+[1.116150] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/lake.world\n'}
+[1.118447] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/flat_normal.png\n'}
+[1.119893] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/mesh_L100m_N256.dae\n'}
+[1.123816] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/mesh_L100m_N256_below.dae\n'}
+[1.124631] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/mesh_L256m_N256.dae\n'}
+[1.125238] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/mesh_L256m_N256_below.dae\n'}
+[1.126147] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/skybox_lowres.dds\n'}
+[1.127290] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/skybox_test.dds\n'}
+[1.128603] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/wave_normals.dds\n'}
+[1.129823] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/waves_fs.glsl\n'}
+[1.131106] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/waves_fs.metal\n'}
+[1.132491] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/waves_vs.glsl\n'}
+[1.134103] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/waves_vs.metal\n'}
+[1.135300] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/model.config\n'}
+[1.162466] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/model.sdf\n'}
+[1.163119] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/flat_normal.png\n'}
+[1.163803] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/mesh_L100m_N256.dae\n'}
+[1.164404] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/mesh_L100m_N256_below.dae\n'}
+[1.164933] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/mesh_L256m_N256.dae\n'}
+[1.165333] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/mesh_L256m_N256_below.dae\n'}
+[1.165908] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/skybox_lowres.dds\n'}
+[1.166626] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/skybox_test.dds\n'}
+[1.167040] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/wave_normals.dds\n'}
+[1.167358] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/waves_fs.glsl\n'}
+[1.168168] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/waves_fs.metal\n'}
+[1.168912] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/waves_vs.glsl\n'}
+[1.170343] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/waves_vs.metal\n'}
+[1.171391] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/model.config\n'}
+[1.172666] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/model.sdf\n'}
+[1.174109] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/ament_index/resource_index/package_run_dependencies/biped_gazebo_worlds\n'}
+[1.176513] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/ament_index/resource_index/parent_prefix_path/biped_gazebo_worlds\n'}
+[1.179070] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/environment/ament_prefix_path.sh\n'}
+[1.181002] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/environment/ament_prefix_path.dsv\n'}
+[1.183172] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/environment/path.sh\n'}
+[1.185252] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/environment/path.dsv\n'}
+[1.187313] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/local_setup.bash\n'}
+[1.188976] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/local_setup.sh\n'}
+[1.190580] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/local_setup.zsh\n'}
+[1.192580] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/local_setup.dsv\n'}
+[1.194019] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.dsv\n'}
+[1.216904] (-) TimerEvent: {}
+[1.250348] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/ament_index/resource_index/packages/biped_gazebo_worlds\n'}
+[1.251076] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/cmake/biped_gazebo_worldsConfig.cmake\n'}
+[1.251752] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/cmake/biped_gazebo_worldsConfig-version.cmake\n'}
+[1.252643] (biped_gazebo_worlds) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.xml\n'}
+[1.269078] (biped_gazebo_worlds) CommandEnded: {'returncode': 0}
+[1.318827] (-) TimerEvent: {}
+[1.423992] (-) TimerEvent: {}
+[1.520780] (biped_gazebo_worlds) JobEnded: {'identifier': 'biped_gazebo_worlds', 'rc': 0}
+[1.524264] (-) TimerEvent: {}
+[1.624859] (-) TimerEvent: {}
+[1.726478] (-) TimerEvent: {}
+[1.827502] (-) TimerEvent: {}
+[1.928972] (-) TimerEvent: {}
+[2.013241] (pkg2_robotBipede) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.030021] (-) TimerEvent: {}
+[2.131117] (-) TimerEvent: {}
+[2.232261] (-) TimerEvent: {}
+[2.256209] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.305066] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.332803] (-) TimerEvent: {}
+[2.435186] (-) TimerEvent: {}
+[2.536286] (-) TimerEvent: {}
+[2.637757] (-) TimerEvent: {}
+[2.738728] (-) TimerEvent: {}
+[2.840134] (-) TimerEvent: {}
+[2.941582] (-) TimerEvent: {}
+[3.010138] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.043846] (-) TimerEvent: {}
+[3.079599] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.143558] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.144102] (-) TimerEvent: {}
+[3.245039] (-) TimerEvent: {}
+[3.259260] (pkg2_robotBipede) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.345462] (-) TimerEvent: {}
+[3.415324] (pkg2_robotBipede) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.446118] (-) TimerEvent: {}
+[3.547199] (-) TimerEvent: {}
+[3.648091] (-) TimerEvent: {}
+[3.749422] (-) TimerEvent: {}
+[3.850542] (-) TimerEvent: {}
+[3.951759] (-) TimerEvent: {}
+[4.053104] (-) TimerEvent: {}
+[4.062791] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.133092] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.153628] (-) TimerEvent: {}
+[4.254803] (-) TimerEvent: {}
+[4.356307] (-) TimerEvent: {}
+[4.457737] (-) TimerEvent: {}
+[4.559061] (-) TimerEvent: {}
+[4.660703] (-) TimerEvent: {}
+[4.761799] (-) TimerEvent: {}
+[4.862830] (-) TimerEvent: {}
+[4.963510] (-) TimerEvent: {}
+[5.065751] (-) TimerEvent: {}
+[5.169215] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.169882] (-) TimerEvent: {}
+[5.270789] (-) TimerEvent: {}
+[5.367575] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.371268] (-) TimerEvent: {}
+[5.473114] (-) TimerEvent: {}
+[5.582939] (-) TimerEvent: {}
+[5.684028] (-) TimerEvent: {}
+[5.785153] (-) TimerEvent: {}
+[5.853066] (pkg2_robotBipede) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.885727] (-) TimerEvent: {}
+[5.986739] (-) TimerEvent: {}
+[6.087438] (-) TimerEvent: {}
+[6.094731] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.187831] (-) TimerEvent: {}
+[6.288816] (-) TimerEvent: {}
+[6.389996] (-) TimerEvent: {}
+[6.491493] (-) TimerEvent: {}
+[6.593056] (-) TimerEvent: {}
+[6.693690] (-) TimerEvent: {}
+[6.794950] (-) TimerEvent: {}
+[6.895977] (-) TimerEvent: {}
+[6.997106] (-) TimerEvent: {}
+[7.098375] (-) TimerEvent: {}
+[7.198981] (-) TimerEvent: {}
+[7.380851] (-) TimerEvent: {}
+[7.481769] (-) TimerEvent: {}
+[7.601435] (-) TimerEvent: {}
+[7.712340] (-) TimerEvent: {}
+[7.813754] (-) TimerEvent: {}
+[7.914848] (-) TimerEvent: {}
+[8.015379] (-) TimerEvent: {}
+[8.116017] (-) TimerEvent: {}
+[8.217108] (-) TimerEvent: {}
+[8.318166] (-) TimerEvent: {}
+[8.443693] (-) TimerEvent: {}
+[8.544617] (-) TimerEvent: {}
+[8.645713] (-) TimerEvent: {}
+[8.746518] (-) TimerEvent: {}
+[8.847686] (-) TimerEvent: {}
+[8.948667] (-) TimerEvent: {}
+[9.049487] (-) TimerEvent: {}
+[9.150445] (-) TimerEvent: {}
+[9.251236] (-) TimerEvent: {}
+[9.352878] (-) TimerEvent: {}
+[9.454025] (-) TimerEvent: {}
+[9.555187] (-) TimerEvent: {}
+[9.656215] (-) TimerEvent: {}
+[9.757264] (-) TimerEvent: {}
+[9.858660] (-) TimerEvent: {}
+[9.959825] (-) TimerEvent: {}
+[10.062780] (-) TimerEvent: {}
+[10.081149] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.102777] (pkg2_robotBipede) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.163734] (-) TimerEvent: {}
+[10.287317] (-) TimerEvent: {}
+[10.397286] (-) TimerEvent: {}
+[10.506897] (-) TimerEvent: {}
+[10.613282] (-) TimerEvent: {}
+[10.716643] (-) TimerEvent: {}
+[10.820934] (-) TimerEvent: {}
+[10.829495] (pkg2_robotBipede) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[10.833108] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.921291] (-) TimerEvent: {}
+[11.022613] (-) TimerEvent: {}
+[11.123576] (-) TimerEvent: {}
+[11.224752] (-) TimerEvent: {}
+[11.325718] (-) TimerEvent: {}
+[11.426877] (-) TimerEvent: {}
+[11.527900] (-) TimerEvent: {}
+[11.629100] (-) TimerEvent: {}
+[11.730560] (-) TimerEvent: {}
+[11.832277] (-) TimerEvent: {}
+[11.932990] (-) TimerEvent: {}
+[12.033971] (-) TimerEvent: {}
+[12.134648] (-) TimerEvent: {}
+[12.235666] (-) TimerEvent: {}
+[12.306958] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found ros_ign_gazebo: 0.244.14 (/opt/ros/humble/share/ros_ign_gazebo/cmake)\n'}
+[12.335713] (-) TimerEvent: {}
+[12.436147] (-) TimerEvent: {}
+[12.537180] (-) TimerEvent: {}
+[12.638229] (-) TimerEvent: {}
+[12.739412] (-) TimerEvent: {}
+[12.840900] (-) TimerEvent: {}
+[12.942236] (-) TimerEvent: {}
+[13.043324] (-) TimerEvent: {}
+[13.144849] (-) TimerEvent: {}
+[13.246882] (-) TimerEvent: {}
+[13.349239] (-) TimerEvent: {}
+[13.449961] (-) TimerEvent: {}
+[13.551157] (-) TimerEvent: {}
+[13.652216] (-) TimerEvent: {}
+[13.753351] (-) TimerEvent: {}
+[13.854705] (-) TimerEvent: {}
+[13.955428] (-) TimerEvent: {}
+[13.958177] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[14.056562] (-) TimerEvent: {}
+[14.157636] (-) TimerEvent: {}
+[14.258411] (-) TimerEvent: {}
+[14.360091] (-) TimerEvent: {}
+[14.460987] (-) TimerEvent: {}
+[14.502271] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[14.561407] (-) TimerEvent: {}
+[14.663185] (-) TimerEvent: {}
+[14.764023] (-) TimerEvent: {}
+[14.864910] (-) TimerEvent: {}
+[14.965787] (-) TimerEvent: {}
+[15.066826] (-) TimerEvent: {}
+[15.167436] (-) TimerEvent: {}
+[15.268452] (-) TimerEvent: {}
+[15.369371] (-) TimerEvent: {}
+[15.470321] (-) TimerEvent: {}
+[15.571640] (-) TimerEvent: {}
+[15.673012] (-) TimerEvent: {}
+[15.774638] (-) TimerEvent: {}
+[15.876320] (-) TimerEvent: {}
+[15.981267] (-) TimerEvent: {}
+[16.082703] (-) TimerEvent: {}
+[16.186717] (-) TimerEvent: {}
+[16.287598] (-) TimerEvent: {}
+[16.389042] (-) TimerEvent: {}
+[16.490839] (-) TimerEvent: {}
+[16.592016] (-) TimerEvent: {}
+[16.692670] (-) TimerEvent: {}
+[16.793643] (-) TimerEvent: {}
+[16.895091] (-) TimerEvent: {}
+[17.001153] (-) TimerEvent: {}
+[17.105417] (-) TimerEvent: {}
+[17.206525] (-) TimerEvent: {}
+[17.314162] (-) TimerEvent: {}
+[17.415336] (-) TimerEvent: {}
+[17.516784] (-) TimerEvent: {}
+[17.617730] (-) TimerEvent: {}
+[17.718798] (-) TimerEvent: {}
+[17.821311] (-) TimerEvent: {}
+[17.922685] (-) TimerEvent: {}
+[18.024389] (-) TimerEvent: {}
+[18.128872] (-) TimerEvent: {}
+[18.230583] (-) TimerEvent: {}
+[18.331915] (-) TimerEvent: {}
+[18.435508] (-) TimerEvent: {}
+[18.541508] (-) TimerEvent: {}
+[18.644118] (-) TimerEvent: {}
+[18.745699] (-) TimerEvent: {}
+[18.853146] (-) TimerEvent: {}
+[18.955295] (-) TimerEvent: {}
+[19.056652] (-) TimerEvent: {}
+[19.158013] (-) TimerEvent: {}
+[19.259464] (-) TimerEvent: {}
+[19.364272] (-) TimerEvent: {}
+[19.465769] (-) TimerEvent: {}
+[19.567956] (-) TimerEvent: {}
+[19.669152] (-) TimerEvent: {}
+[19.730581] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[19.769979] (-) TimerEvent: {}
+[19.826619] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[19.843746] (pkg2_robotBipede) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[19.871670] (-) TimerEvent: {}
+[19.908048] (pkg2_robotBipede) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[19.972257] (-) TimerEvent: {}
+[20.074049] (-) TimerEvent: {}
+[20.174830] (-) TimerEvent: {}
+[20.289841] (-) TimerEvent: {}
+[20.391213] (-) TimerEvent: {}
+[20.492582] (-) TimerEvent: {}
+[20.541039] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[20.592976] (-) TimerEvent: {}
+[20.700913] (-) TimerEvent: {}
+[20.802336] (-) TimerEvent: {}
+[20.888540] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[20.902577] (-) TimerEvent: {}
+[21.005095] (-) TimerEvent: {}
+[21.106170] (-) TimerEvent: {}
+[21.121709] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[21.206695] (-) TimerEvent: {}
+[21.311047] (-) TimerEvent: {}
+[21.391124] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[21.411413] (-) TimerEvent: {}
+[21.498348] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[21.505371] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[21.507877] (pkg2_robotBipede) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[21.512789] (-) TimerEvent: {}
+[21.531963] (pkg2_robotBipede) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[21.602189] (pkg2_robotBipede) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[21.612720] (-) TimerEvent: {}
+[21.714540] (-) TimerEvent: {}
+[21.815570] (-) TimerEvent: {}
+[21.824246] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[21.851138] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[21.887375] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[21.903519] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[21.904475] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[21.915963] (-) TimerEvent: {}
+[21.920741] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[21.921114] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[21.940771] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[21.941344] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[21.968459] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[21.969117] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[21.986608] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[21.987356] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[22.003832] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[22.016360] (-) TimerEvent: {}
+[22.117465] (-) TimerEvent: {}
+[22.218467] (-) TimerEvent: {}
+[22.332098] (-) TimerEvent: {}
+[22.433143] (-) TimerEvent: {}
+[22.452419] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.472439] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[22.485299] (pkg2_robotBipede) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[22.535114] (-) TimerEvent: {}
+[22.611540] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[22.641130] (pkg2_robotBipede) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[22.641556] (-) TimerEvent: {}
+[22.660837] (pkg2_robotBipede) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[22.717795] (pkg2_robotBipede) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[22.750211] (-) TimerEvent: {}
+[22.851508] (-) TimerEvent: {}
+[22.870987] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[22.899422] (pkg2_robotBipede) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[22.953167] (-) TimerEvent: {}
+[22.961920] (pkg2_robotBipede) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[23.054060] (-) TimerEvent: {}
+[23.117009] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[23.125671] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[23.127700] (pkg2_robotBipede) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[23.168314] (-) TimerEvent: {}
+[23.195623] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[23.216225] (pkg2_robotBipede) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[23.268463] (pkg2_robotBipede) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[23.269069] (-) TimerEvent: {}
+[23.373078] (-) TimerEvent: {}
+[23.419762] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[23.431957] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[23.434010] (pkg2_robotBipede) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[23.463942] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[23.465841] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[23.470089] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[23.481316] (-) TimerEvent: {}
+[23.522179] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[23.528363] (pkg2_robotBipede) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[23.554256] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[23.555937] (pkg2_robotBipede) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[23.558050] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[23.572476] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[23.574116] (pkg2_robotBipede) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[23.582021] (-) TimerEvent: {}
+[23.690668] (-) TimerEvent: {}
+[23.804577] (-) TimerEvent: {}
+[23.910260] (-) TimerEvent: {}
+[24.011442] (-) TimerEvent: {}
+[24.066006] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[24.108501] (pkg2_robotBipede) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[24.112121] (-) TimerEvent: {}
+[24.166014] (pkg2_robotBipede) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[24.213543] (-) TimerEvent: {}
+[24.300166] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[24.319991] (-) TimerEvent: {}
+[24.321181] (pkg2_robotBipede) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[24.371795] (pkg2_robotBipede) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[24.426466] (-) TimerEvent: {}
+[24.508711] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[24.510559] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[24.512581] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[24.516648] (pkg2_robotBipede) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[24.529457] (-) TimerEvent: {}
+[24.536094] (pkg2_robotBipede) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[24.537231] (pkg2_robotBipede) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[24.589819] (pkg2_robotBipede) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[24.639941] (-) TimerEvent: {}
+[24.741570] (-) TimerEvent: {}
+[24.844504] (-) TimerEvent: {}
+[24.898209] (pkg2_robotBipede) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[24.946080] (-) TimerEvent: {}
+[25.050515] (-) TimerEvent: {}
+[25.153498] (-) TimerEvent: {}
+[25.156855] (pkg2_robotBipede) StderrLine: {'line': b'WARNING: Package name "pkg2_robotBipede" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[25.255023] (-) TimerEvent: {}
+[25.356075] (-) TimerEvent: {}
+[25.457130] (-) TimerEvent: {}
+[25.558244] (-) TimerEvent: {}
+[25.653680] (pkg2_robotBipede) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[25.658902] (-) TimerEvent: {}
+[25.661696] (pkg2_robotBipede) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[25.665299] (pkg2_robotBipede) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[25.688219] (pkg2_robotBipede) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[25.696745] (pkg2_robotBipede) StdoutLine: {'line': b'-- Configuring done\n'}
+[25.752221] (pkg2_robotBipede) StdoutLine: {'line': b'-- Generating done\n'}
+[25.759275] (-) TimerEvent: {}
+[25.766389] (pkg2_robotBipede) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede\n'}
+[25.859633] (-) TimerEvent: {}
+[25.870203] (pkg2_robotBipede) CommandEnded: {'returncode': 0}
+[25.962681] (-) TimerEvent: {}
+[25.963856] (pkg2_robotBipede) JobProgress: {'identifier': 'pkg2_robotBipede', 'progress': 'install'}
+[25.965784] (pkg2_robotBipede) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede'], 'cwd': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1112'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cdb073f8501e43d24ca1dfc4666845b2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/princeB:@/tmp/.ICE-unix/1112,unix/princeB:/tmp/.ICE-unix/1112'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ee381764_02b2_4d92_944e_53736e44ebc1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZP91O2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede:/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cdb073f8501e43d24ca1dfc4666845b2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede:/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds:/opt/ros/humble')]), 'shell': False}
+[25.991906] (pkg2_robotBipede) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.995762] (pkg2_robotBipede) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[25.998673] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/display.launch (copy).py\n'}
+[26.032314] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/display.launch.py\n'}
+[26.060748] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/gazebo.launch\n'}
+[26.062855] (-) TimerEvent: {}
+[26.092774] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/gazebo.launch (copy).py\n'}
+[26.128004] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/launch/gazebo.launch.py\n'}
+[26.156029] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Ankle_D.STL\n'}
+[26.163638] (-) TimerEvent: {}
+[26.189041] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Ankle_G.STL\n'}
+[26.225376] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Foot_D.STL\n'}
+[26.255440] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Foot_G.STL\n'}
+[26.263859] (-) TimerEvent: {}
+[26.284792] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_HipPitch_D.STL\n'}
+[26.323119] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_HipPitch_G.STL\n'}
+[26.354807] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_HipYaw_D.STL\n'}
+[26.366480] (-) TimerEvent: {}
+[26.388430] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_HipYaw_G.STL\n'}
+[26.420439] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Knee_D.STL\n'}
+[26.448938] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_Knee_G.STL\n'}
+[26.466731] (-) TimerEvent: {}
+[26.479872] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_PalmeD_d.STL\n'}
+[26.516552] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_PalmeD_g.STL\n'}
+[26.543802] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_PalmeG_d.STL\n'}
+[26.571616] (-) TimerEvent: {}
+[26.575670] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/Link_PalmeG_g.STL\n'}
+[26.609850] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/abduction.stl\n'}
+[26.643525] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/abduction_mirror.stl\n'}
+[26.673193] (-) TimerEvent: {}
+[26.675388] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/achilles-rod.stl\n'}
+[26.712796] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/base_link.STL\n'}
+[26.744655] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/corps.STL\n'}
+[26.774124] (-) TimerEvent: {}
+[26.775870] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/femur - femur-1.STL\n'}
+[26.807772] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/femur - moteur-1.STL\n'}
+[26.837938] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/femur - moteur_hanche-1.STL\n'}
+[26.867854] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/femur - moteur_hanche-2.STL\n'}
+[26.874524] (-) TimerEvent: {}
+[26.902911] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/hip.stl\n'}
+[26.936344] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/hip_mirror.stl\n'}
+[26.964334] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/knee-output.stl\n'}
+[26.976277] (-) TimerEvent: {}
+[26.994985] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/knee-output_mirror.stl\n'}
+[27.029287] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/palme_last_v - arret_rotation-1.STL\n'}
+[27.058370] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/palme_last_v - part1_palme-1.STL\n'}
+[27.076594] (-) TimerEvent: {}
+[27.086684] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/palme_last_v - part2_palme-1.STL\n'}
+[27.118338] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/pelvis.stl\n'}
+[27.151805] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/plantar-rod.stl\n'}
+[27.178540] (-) TimerEvent: {}
+[27.184349] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/shin-bone.stl\n'}
+[27.221234] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/shin-bone_mirror.stl\n'}
+[27.252727] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tarsus.stl\n'}
+[27.279180] (-) TimerEvent: {}
+[27.287623] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tarsus_mirror.stl\n'}
+[27.324162] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tarto.STL\n'}
+[27.352099] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tbi.stl\n'}
+[27.379519] (-) TimerEvent: {}
+[27.381614] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/thigh.stl\n'}
+[27.413098] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/thigh_mirror.stl\n'}
+[27.448641] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/tibia.STL\n'}
+[27.480678] (-) TimerEvent: {}
+[27.484367] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/toe-output-crank.stl\n'}
+[27.516298] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/toe.stl\n'}
+[27.548058] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/toe_mirror.stl\n'}
+[27.578638] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/torso.stl\n'}
+[27.581608] (-) TimerEvent: {}
+[27.616356] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/torso_v2.stl\n'}
+[27.648499] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/yaw.stl\n'}
+[27.682197] (-) TimerEvent: {}
+[27.685186] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/meshes/yaw_mirror.stl\n'}
+[27.720585] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/rviz/config.rviz\n'}
+[27.757228] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/rviz/urdf.vcg\n'}
+[27.782914] (-) TimerEvent: {}
+[27.795182] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/Ros2_RobotBipede.csv\n'}
+[27.827853] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/Ros2_RobotBipede.sdf\n'}
+[27.863505] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/Ros2_RobotBipede.urdf\n'}
+[27.886565] (-) TimerEvent: {}
+[27.900603] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/Ros2_RobotBipede.xacro\n'}
+[27.947127] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/model.config\n'}
+[27.986868] (-) TimerEvent: {}
+[27.990957] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/my_gazebo_plugins (copy).gazebo\n'}
+[28.034075] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/urdf/my_gazebo_plugins.gazebo\n'}
+[28.070032] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/bipede/bipede.sdf\n'}
+[28.092263] (-) TimerEvent: {}
+[28.107259] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/bipede/model.config\n'}
+[28.146096] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ground_plane/model.config\n'}
+[28.179224] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ground_plane/my_ground_plane.sdf\n'}
+[28.192983] (-) TimerEvent: {}
+[28.225335] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/Ros2_RobotBipede.sdf\n'}
+[28.269046] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Ankle_D.STL\n'}
+[28.293313] (-) TimerEvent: {}
+[28.302656] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Ankle_G.STL\n'}
+[28.341527] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Foot_D.STL\n'}
+[28.375990] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Foot_G.STL\n'}
+[28.393939] (-) TimerEvent: {}
+[28.409125] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_HipPitch_D.STL\n'}
+[28.445948] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_HipPitch_G.STL\n'}
+[28.477621] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_HipYaw_D.STL\n'}
+[28.494322] (-) TimerEvent: {}
+[28.517471] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_HipYaw_G.STL\n'}
+[28.558834] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Knee_D.STL\n'}
+[28.594887] (-) TimerEvent: {}
+[28.612879] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_Knee_G.STL\n'}
+[28.637455] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_PalmeD_d.STL\n'}
+[28.675661] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_PalmeD_g.STL\n'}
+[28.695299] (-) TimerEvent: {}
+[28.713747] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_PalmeG_d.STL\n'}
+[28.747739] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/Link_PalmeG_g.STL\n'}
+[28.774505] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/abduction.stl\n'}
+[28.796063] (-) TimerEvent: {}
+[28.814932] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/abduction_mirror.stl\n'}
+[28.850682] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/achilles-rod.stl\n'}
+[28.891626] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/base_link.STL\n'}
+[28.896425] (-) TimerEvent: {}
+[28.955173] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/corps.STL\n'}
+[29.002287] (-) TimerEvent: {}
+[29.005924] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/femur - femur-1.STL\n'}
+[29.060234] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/femur - moteur-1.STL\n'}
+[29.115700] (-) TimerEvent: {}
+[29.117609] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/femur - moteur_hanche-1.STL\n'}
+[29.179076] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/femur - moteur_hanche-2.STL\n'}
+[29.216991] (-) TimerEvent: {}
+[29.220490] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/hip.stl\n'}
+[29.261112] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/hip_mirror.stl\n'}
+[29.300951] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/knee-output.stl\n'}
+[29.319197] (-) TimerEvent: {}
+[29.352084] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/knee-output_mirror.stl\n'}
+[29.388147] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/palme_last_v - arret_rotation-1.STL\n'}
+[29.421861] (-) TimerEvent: {}
+[29.437865] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/palme_last_v - part1_palme-1.STL\n'}
+[29.477133] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/palme_last_v - part2_palme-1.STL\n'}
+[29.508403] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/pelvis.stl\n'}
+[29.532501] (-) TimerEvent: {}
+[29.556033] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/plantar-rod.stl\n'}
+[29.599127] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/shin-bone.stl\n'}
+[29.628270] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/shin-bone_mirror.stl\n'}
+[29.633101] (-) TimerEvent: {}
+[29.679178] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tarsus.stl\n'}
+[29.713961] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tarsus_mirror.stl\n'}
+[29.734194] (-) TimerEvent: {}
+[29.747977] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tarto.STL\n'}
+[29.792896] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tbi.stl\n'}
+[29.824923] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/thigh.stl\n'}
+[29.835495] (-) TimerEvent: {}
+[29.857745] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/thigh_mirror.stl\n'}
+[29.901158] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/tibia.STL\n'}
+[29.938955] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/toe-output-crank.stl\n'}
+[29.939487] (-) TimerEvent: {}
+[29.989259] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/toe.stl\n'}
+[30.026153] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/toe_mirror.stl\n'}
+[30.049469] (-) TimerEvent: {}
+[30.065958] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/torso.stl\n'}
+[30.108664] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/torso_v2.stl\n'}
+[30.140827] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/yaw.stl\n'}
+[30.149958] (-) TimerEvent: {}
+[30.178479] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/meshes/yaw_mirror.stl\n'}
+[30.223230] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/my_model/model.config\n'}
+[30.253921] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/flat_normal.png\n'}
+[30.254463] (-) TimerEvent: {}
+[30.303363] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/mesh_L100m_N256.dae\n'}
+[30.334161] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/mesh_L100m_N256_below.dae\n'}
+[30.355436] (-) TimerEvent: {}
+[30.365770] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/mesh_L256m_N256.dae\n'}
+[30.409957] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/mesh_L256m_N256_below.dae\n'}
+[30.437255] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/skybox_lowres.dds\n'}
+[30.463315] (-) TimerEvent: {}
+[30.465563] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/skybox_test.dds\n'}
+[30.495380] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/wave_normals.dds\n'}
+[30.533769] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/waves_fs.glsl\n'}
+[30.567460] (-) TimerEvent: {}
+[30.569803] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/waves_fs.metal\n'}
+[30.598428] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/waves_vs.glsl\n'}
+[30.640469] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/materials/waves_vs.metal\n'}
+[30.671560] (-) TimerEvent: {}
+[30.673885] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/model.config\n'}
+[30.714408] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/models/ocean_waves/model.sdf\n'}
+[30.754891] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/worlds/ocean_world.world\n'}
+[30.783811] (-) TimerEvent: {}
+[30.789062] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/ament_index/resource_index/package_run_dependencies/pkg2_robotBipede\n'}
+[30.790576] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/ament_index/resource_index/parent_prefix_path/pkg2_robotBipede\n'}
+[30.792816] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/environment/ament_prefix_path.sh\n'}
+[30.794442] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/environment/ament_prefix_path.dsv\n'}
+[30.796750] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/environment/path.sh\n'}
+[30.799460] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/environment/path.dsv\n'}
+[30.801338] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/local_setup.bash\n'}
+[30.803261] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/local_setup.sh\n'}
+[30.805863] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/local_setup.zsh\n'}
+[30.807730] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/local_setup.dsv\n'}
+[30.810455] (pkg2_robotBipede) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.dsv\n'}
+[30.856978] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/ament_index/resource_index/packages/pkg2_robotBipede\n'}
+[30.859573] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/cmake/pkg2_robotBipedeConfig.cmake\n'}
+[30.862706] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/cmake/pkg2_robotBipedeConfig-version.cmake\n'}
+[30.864938] (pkg2_robotBipede) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.xml\n'}
+[30.879052] (pkg2_robotBipede) CommandEnded: {'returncode': 0}
+[30.884116] (-) TimerEvent: {}
+[30.984877] (-) TimerEvent: {}
+[31.079449] (pkg2_robotBipede) JobEnded: {'identifier': 'pkg2_robotBipede', 'rc': 0}
+[31.084218] (-) EventReactorShutdown: {}

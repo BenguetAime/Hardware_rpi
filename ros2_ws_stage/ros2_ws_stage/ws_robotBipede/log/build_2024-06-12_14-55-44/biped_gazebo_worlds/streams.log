@@ -1,0 +1,54 @@
+[0.248s] Invoking command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds -- -j2 -l2
+[3.710s] Invoked command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds -- -j2 -l2
+[3.791s] Invoking command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds
+[3.829s] -- Install configuration: ""
+[3.963s] -- Execute custom install script
+[4.071s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//launch/empty_underwater_world.launch.py
+[4.073s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//launch/empty_world.launch.py
+[4.079s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/empty_underwater.world
+[4.080s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/empty_world.world
+[4.084s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/lake.world
+[4.091s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/flat_normal.png
+[4.095s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/mesh_L100m_N256.dae
+[4.096s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/mesh_L100m_N256_below.dae
+[4.098s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/mesh_L256m_N256.dae
+[4.100s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/mesh_L256m_N256_below.dae
+[4.103s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/skybox_lowres.dds
+[4.110s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/skybox_test.dds
+[4.111s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/wave_normals.dds
+[4.113s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/waves_fs.glsl
+[4.115s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/waves_fs.metal
+[4.118s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/waves_vs.glsl
+[4.120s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/materials/waves_vs.metal
+[4.122s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/model.config
+[4.124s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//worlds/model.sdf
+[4.134s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/flat_normal.png
+[4.136s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/mesh_L100m_N256.dae
+[4.138s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/mesh_L100m_N256_below.dae
+[4.141s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/mesh_L256m_N256.dae
+[4.143s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/mesh_L256m_N256_below.dae
+[4.145s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/skybox_lowres.dds
+[4.146s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/skybox_test.dds
+[4.182s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/wave_normals.dds
+[4.184s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/waves_fs.glsl
+[4.188s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/waves_fs.metal
+[4.189s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/waves_vs.glsl
+[4.191s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/materials/waves_vs.metal
+[4.193s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/model.config
+[4.195s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds//models/ocean_waves/model.sdf
+[4.199s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/ament_index/resource_index/package_run_dependencies/biped_gazebo_worlds
+[4.202s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/ament_index/resource_index/parent_prefix_path/biped_gazebo_worlds
+[4.206s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/environment/ament_prefix_path.sh
+[4.207s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/environment/ament_prefix_path.dsv
+[4.209s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/environment/path.sh
+[4.211s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/environment/path.dsv
+[4.212s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/local_setup.bash
+[4.214s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/local_setup.sh
+[4.216s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/local_setup.zsh
+[4.218s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/local_setup.dsv
+[4.218s] -- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.dsv
+[4.289s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/ament_index/resource_index/packages/biped_gazebo_worlds
+[4.292s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/cmake/biped_gazebo_worldsConfig.cmake
+[4.294s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/cmake/biped_gazebo_worldsConfig-version.cmake
+[4.297s] -- Up-to-date symlink: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.xml
+[4.304s] Invoked command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds

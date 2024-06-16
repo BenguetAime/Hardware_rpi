@@ -1,0 +1,9 @@
+{
+  "package_name": "pan_tilt_msgs",
+  "non_idl_tuples": [
+    "/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src/iqr_pan_tilt_controller_ros2/pan_tilt_msgs:msg/PanTiltCmdDeg.msg",
+    "/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src/iqr_pan_tilt_controller_ros2/pan_tilt_msgs:msg/PanTiltCmdRad.msg",
+    "/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src/iqr_pan_tilt_controller_ros2/pan_tilt_msgs:msg/PanTiltStatus.msg",
+    "/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src/iqr_pan_tilt_controller_ros2/pan_tilt_msgs:msg/PanJointState.msg"
+  ]
+}

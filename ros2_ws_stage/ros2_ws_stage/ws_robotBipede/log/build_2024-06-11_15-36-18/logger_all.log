@@ -1,0 +1,200 @@
+[0.519s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.519s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ec5a75039a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ec5a7503550>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ec5a7503550>>)
+[1.078s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.078s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.079s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede'
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extensions ['ignore', 'ignore_ament_install']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extension 'ignore'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extension 'ignore_ament_install'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extensions ['colcon_pkg']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extension 'colcon_pkg'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extensions ['colcon_meta']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extension 'colcon_meta'
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extensions ['ros']
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/biped_gazebo_worlds) by extension 'ros'
+[1.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/biped_gazebo_worlds' with type 'ros.ament_cmake' and name 'biped_gazebo_worlds'
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extensions ['ignore', 'ignore_ament_install']
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extension 'ignore'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extension 'ignore_ament_install'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extensions ['colcon_pkg']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extension 'colcon_pkg'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extensions ['colcon_meta']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extension 'colcon_meta'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extensions ['ros']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/pkg2_robotBipede) by extension 'ros'
+[1.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pkg2_robotBipede' with type 'ros.ament_cmake' and name 'pkg2_robotBipede'
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.308s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 299 installed packages in /opt/ros/humble
+[1.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.470s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'cmake_args' from command line to 'None'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'cmake_target' from command line to 'None'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'cmake_clean_cache' from command line to 'False'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'cmake_clean_first' from command line to 'False'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'cmake_force_configure' from command line to 'False'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'ament_cmake_args' from command line to 'None'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'catkin_cmake_args' from command line to 'None'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'biped_gazebo_worlds' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.471s] DEBUG:colcon.colcon_core.verb:Building package 'biped_gazebo_worlds' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds', 'merge_install': False, 'path': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/src/biped_gazebo_worlds', 'symlink_install': True, 'test_result_base': None}
+[1.472s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'cmake_args' from command line to 'None'
+[1.473s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'cmake_target' from command line to 'None'
+[1.473s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.473s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'cmake_clean_cache' from command line to 'False'
+[1.473s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'cmake_clean_first' from command line to 'False'
+[1.473s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'cmake_force_configure' from command line to 'False'
+[1.473s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'ament_cmake_args' from command line to 'None'
+[1.473s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'catkin_cmake_args' from command line to 'None'
+[1.473s] Level 5:colcon.colcon_core.verb:set package 'pkg2_robotBipede' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.473s] DEBUG:colcon.colcon_core.verb:Building package 'pkg2_robotBipede' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede', 'merge_install': False, 'path': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/src/pkg2_robotBipede', 'symlink_install': True, 'test_result_base': None}
+[1.474s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.477s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.478s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/src/biped_gazebo_worlds' with build type 'ament_cmake'
+[1.478s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/src/biped_gazebo_worlds'
+[1.487s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.488s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.488s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.507s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/src/pkg2_robotBipede' with build type 'ament_cmake'
+[1.510s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/src/pkg2_robotBipede'
+[1.511s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.518s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds -- -j2 -l2
+[1.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede -- -j2 -l2
+[1.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede -- -j2 -l2
+[1.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds -- -j2 -l2
+[1.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede
+[1.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds
+[2.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pkg2_robotBipede)
+[2.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/pkg2_robotBipede
+[2.100s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede' for CMake module files
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede' for CMake config files
+[2.102s] Level 1:colcon.colcon_core.shell:create_environment_hook('pkg2_robotBipede', 'cmake_prefix_path')
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/hook/cmake_prefix_path.ps1'
+[2.106s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/hook/cmake_prefix_path.dsv'
+[2.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/hook/cmake_prefix_path.sh'
+[2.111s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/bin'
+[2.112s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/lib/pkgconfig/pkg2_robotBipede.pc'
+[2.112s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/lib/python3.10/site-packages'
+[2.113s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/bin'
+[2.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.ps1'
+[2.117s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.dsv'
+[2.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.sh'
+[2.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.bash'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.zsh'
+[2.129s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/colcon-core/packages/pkg2_robotBipede)
+[2.134s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(biped_gazebo_worlds)
+[2.135s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds' for CMake module files
+[2.137s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds' for CMake config files
+[2.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('biped_gazebo_worlds', 'cmake_prefix_path')
+[2.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/hook/cmake_prefix_path.ps1'
+[2.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/build/biped_gazebo_worlds
+[2.142s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/hook/cmake_prefix_path.dsv'
+[2.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/hook/cmake_prefix_path.sh'
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/bin'
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/lib/pkgconfig/biped_gazebo_worlds.pc'
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/lib/python3.10/site-packages'
+[2.150s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/bin'
+[2.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.ps1'
+[2.155s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.dsv'
+[2.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.sh'
+[2.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.bash'
+[2.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.zsh'
+[2.165s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/colcon-core/packages/biped_gazebo_worlds)
+[2.241s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pkg2_robotBipede)
+[2.242s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede' for CMake module files
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede' for CMake config files
+[2.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('pkg2_robotBipede', 'cmake_prefix_path')
+[2.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/hook/cmake_prefix_path.ps1'
+[2.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/hook/cmake_prefix_path.dsv'
+[2.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/hook/cmake_prefix_path.sh'
+[2.255s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/bin'
+[2.255s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/lib/pkgconfig/pkg2_robotBipede.pc'
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/lib/python3.10/site-packages'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/bin'
+[2.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.ps1'
+[2.262s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.dsv'
+[2.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.sh'
+[2.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.bash'
+[2.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/pkg2_robotBipede/package.zsh'
+[2.273s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/pkg2_robotBipede/share/colcon-core/packages/pkg2_robotBipede)
+[2.282s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(biped_gazebo_worlds)
+[2.283s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds' for CMake module files
+[2.284s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds' for CMake config files
+[2.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('biped_gazebo_worlds', 'cmake_prefix_path')
+[2.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/hook/cmake_prefix_path.ps1'
+[2.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/hook/cmake_prefix_path.dsv'
+[2.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/hook/cmake_prefix_path.sh'
+[2.299s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/bin'
+[2.300s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/lib/pkgconfig/biped_gazebo_worlds.pc'
+[2.301s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/lib/python3.10/site-packages'
+[2.302s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/bin'
+[2.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.ps1'
+[2.310s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.dsv'
+[2.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.sh'
+[2.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.bash'
+[2.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/biped_gazebo_worlds/package.zsh'
+[2.325s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/biped_gazebo_worlds/share/colcon-core/packages/biped_gazebo_worlds)
+[2.327s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.328s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.329s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.329s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.350s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.403s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.405s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/local_setup.ps1'
+[2.412s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/_local_setup_util_ps1.py'
+[2.419s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/setup.ps1'
+[2.423s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/local_setup.sh'
+[2.426s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/_local_setup_util_sh.py'
+[2.428s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/setup.sh'
+[2.432s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/local_setup.bash'
+[2.436s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/setup.bash'
+[2.441s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/local_setup.zsh'
+[2.443s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/ws_robotBipede/install/setup.zsh'

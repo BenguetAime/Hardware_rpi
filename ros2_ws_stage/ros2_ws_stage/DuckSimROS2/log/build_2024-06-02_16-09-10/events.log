@@ -1,0 +1,215 @@
+[0.000000] (-) TimerEvent: {}
+[0.000896] (biped_descriptions) JobQueued: {'identifier': 'biped_descriptions', 'dependencies': OrderedDict()}
+[0.001122] (biped_gazebo_worlds) JobQueued: {'identifier': 'biped_gazebo_worlds', 'dependencies': OrderedDict()}
+[0.001375] (pan_tilt_bringup) JobQueued: {'identifier': 'pan_tilt_bringup', 'dependencies': OrderedDict()}
+[0.001560] (pan_tilt_description) JobQueued: {'identifier': 'pan_tilt_description', 'dependencies': OrderedDict()}
+[0.001733] (pan_tilt_msgs) JobQueued: {'identifier': 'pan_tilt_msgs', 'dependencies': OrderedDict()}
+[0.001908] (pan_tilt_controller) JobQueued: {'identifier': 'pan_tilt_controller', 'dependencies': OrderedDict([('pan_tilt_msgs', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/install/pan_tilt_msgs')])}
+[0.002124] (pan_tilt_driver) JobQueued: {'identifier': 'pan_tilt_driver', 'dependencies': OrderedDict([('pan_tilt_msgs', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/install/pan_tilt_msgs')])}
+[0.002208] (pan_tilt_msgs) JobStarted: {'identifier': 'pan_tilt_msgs'}
+[0.007496] (biped_descriptions) JobStarted: {'identifier': 'biped_descriptions'}
+[0.026354] (pan_tilt_msgs) JobProgress: {'identifier': 'pan_tilt_msgs', 'progress': 'cmake'}
+[0.027228] (pan_tilt_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src/iqr_pan_tilt_controller_ros2/pan_tilt_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/install/pan_tilt_msgs'], 'cwd': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/pan_tilt_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ef3d9539fab4ddf1a3e21e2c665c6470'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/princeB:@/tmp/.ICE-unix/1123,unix/princeB:/tmp/.ICE-unix/1123'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/28aa9998_2ef0_4d99_8c26_8249d4d8afac'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EADUO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.140'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/pan_tilt_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ef3d9539fab4ddf1a3e21e2c665c6470'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.052450] (biped_descriptions) JobProgress: {'identifier': 'biped_descriptions', 'progress': 'cmake'}
+[0.055394] (biped_descriptions) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src/biped_descriptions', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/install/biped_descriptions'], 'cwd': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ef3d9539fab4ddf1a3e21e2c665c6470'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/princeB:@/tmp/.ICE-unix/1123,unix/princeB:/tmp/.ICE-unix/1123'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/28aa9998_2ef0_4d99_8c26_8249d4d8afac'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EADUO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.140'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ef3d9539fab4ddf1a3e21e2c665c6470'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.062115] (-) TimerEvent: {}
+[0.163503] (-) TimerEvent: {}
+[0.266332] (-) TimerEvent: {}
+[0.370271] (-) TimerEvent: {}
+[0.471515] (-) TimerEvent: {}
+[0.573195] (-) TimerEvent: {}
+[0.675053] (-) TimerEvent: {}
+[0.777059] (-) TimerEvent: {}
+[0.877994] (-) TimerEvent: {}
+[0.979479] (-) TimerEvent: {}
+[1.081116] (-) TimerEvent: {}
+[1.182278] (-) TimerEvent: {}
+[1.283972] (-) TimerEvent: {}
+[1.385894] (-) TimerEvent: {}
+[1.487953] (-) TimerEvent: {}
+[1.590729] (-) TimerEvent: {}
+[1.631127] (pan_tilt_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.632783] (biped_descriptions) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.691169] (-) TimerEvent: {}
+[1.792758] (-) TimerEvent: {}
+[1.894758] (-) TimerEvent: {}
+[1.996398] (-) TimerEvent: {}
+[2.098011] (-) TimerEvent: {}
+[2.199695] (-) TimerEvent: {}
+[2.301505] (-) TimerEvent: {}
+[2.403453] (-) TimerEvent: {}
+[2.505956] (-) TimerEvent: {}
+[2.608035] (-) TimerEvent: {}
+[2.661661] (biped_descriptions) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.666813] (pan_tilt_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.708978] (-) TimerEvent: {}
+[2.721428] (pan_tilt_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.722349] (biped_descriptions) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.810731] (-) TimerEvent: {}
+[2.912391] (-) TimerEvent: {}
+[3.013777] (-) TimerEvent: {}
+[3.127614] (-) TimerEvent: {}
+[3.148972] (pan_tilt_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.151763] (biped_descriptions) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.192689] (pan_tilt_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.197443] (pan_tilt_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.198548] (biped_descriptions) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.199406] (biped_descriptions) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.227976] (-) TimerEvent: {}
+[3.234927] (pan_tilt_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.238011] (biped_descriptions) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.267663] (biped_descriptions) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.268665] (pan_tilt_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.329601] (-) TimerEvent: {}
+[3.431268] (-) TimerEvent: {}
+[3.532745] (-) TimerEvent: {}
+[3.627851] (biped_descriptions) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.634902] (pan_tilt_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.635466] (-) TimerEvent: {}
+[3.666793] (biped_descriptions) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.668893] (biped_descriptions) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.672019] (biped_descriptions) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.677649] (pan_tilt_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.678506] (pan_tilt_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.682234] (pan_tilt_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.736154] (-) TimerEvent: {}
+[3.769278] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.770240] (biped_descriptions) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.836379] (-) TimerEvent: {}
+[3.937637] (-) TimerEvent: {}
+[4.038906] (-) TimerEvent: {}
+[4.155752] (-) TimerEvent: {}
+[4.262915] (-) TimerEvent: {}
+[4.365518] (-) TimerEvent: {}
+[4.466597] (-) TimerEvent: {}
+[4.563696] (biped_descriptions) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.568172] (-) TimerEvent: {}
+[4.584191] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.673557] (-) TimerEvent: {}
+[4.784650] (-) TimerEvent: {}
+[4.885821] (-) TimerEvent: {}
+[4.969403] (biped_descriptions) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.970768] (pan_tilt_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.987199] (-) TimerEvent: {}
+[5.089805] (-) TimerEvent: {}
+[5.192224] (-) TimerEvent: {}
+[5.213459] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[5.224142] (biped_descriptions) StdoutLine: {'line': b'-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)\n'}
+[5.292542] (-) TimerEvent: {}
+[5.394023] (-) TimerEvent: {}
+[5.498737] (-) TimerEvent: {}
+[5.504453] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.552915] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.598183] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.598808] (-) TimerEvent: {}
+[5.622937] (biped_descriptions) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[5.641888] (biped_descriptions) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.699233] (-) TimerEvent: {}
+[5.730356] (pan_tilt_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.805821] (-) TimerEvent: {}
+[5.821427] (pan_tilt_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.908007] (-) TimerEvent: {}
+[6.010301] (-) TimerEvent: {}
+[6.058917] (biped_descriptions) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[6.110846] (-) TimerEvent: {}
+[6.117799] (biped_descriptions) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.118843] (biped_descriptions) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[6.118950] (biped_descriptions) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.143297] (biped_descriptions) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[6.143808] (biped_descriptions) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[6.152711] (biped_descriptions) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.153503] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[6.163850] (biped_descriptions) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.171206] (biped_descriptions) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.191314] (biped_descriptions) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.191711] (biped_descriptions) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.195842] (biped_descriptions) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.204857] (biped_descriptions) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.211371] (-) TimerEvent: {}
+[6.217488] (biped_descriptions) StdoutLine: {'line': b'-- Generating done\n'}
+[6.221780] (biped_descriptions) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions\n'}
+[6.257880] (biped_descriptions) CommandEnded: {'returncode': 0}
+[6.263009] (biped_descriptions) JobProgress: {'identifier': 'biped_descriptions', 'progress': 'build'}
+[6.263171] (biped_descriptions) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions', '--', '-j2', '-l2'], 'cwd': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ef3d9539fab4ddf1a3e21e2c665c6470'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/princeB:@/tmp/.ICE-unix/1123,unix/princeB:/tmp/.ICE-unix/1123'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/28aa9998_2ef0_4d99_8c26_8249d4d8afac'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EADUO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.140'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ef3d9539fab4ddf1a3e21e2c665c6470'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.311895] (-) TimerEvent: {}
+[6.402627] (biped_descriptions) CommandEnded: {'returncode': 0}
+[6.423964] (-) TimerEvent: {}
+[6.512953] (biped_descriptions) JobProgress: {'identifier': 'biped_descriptions', 'progress': 'install'}
+[6.525961] (-) TimerEvent: {}
+[6.552607] (biped_descriptions) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions'], 'cwd': '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ef3d9539fab4ddf1a3e21e2c665c6470'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/princeB:@/tmp/.ICE-unix/1123,unix/princeB:/tmp/.ICE-unix/1123'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/28aa9998_2ef0_4d99_8c26_8249d4d8afac'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EADUO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.140'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/biped_descriptions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=ef3d9539fab4ddf1a3e21e2c665c6470'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.589498] (biped_descriptions) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.591597] (biped_descriptions) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.595387] (biped_descriptions) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/install/biped_descriptions/share/biped_descriptions//launch/spawn_simplified_duck.launch.py\n'}
+[6.626652] (-) TimerEvent: {}
+[6.642389] (biped_descriptions) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/install/biped_descriptions/share/biped_descriptions//launch/test_spawn_model.launch.py\n'}
+[6.682028] (biped_descriptions) StderrLine: {'line': b'\x1b[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):\n'}
+[6.682641] (biped_descriptions) StderrLine: {'line': b"  ament_cmake_symlink_install_directory() can't find\n"}
+[6.683406] (biped_descriptions) StderrLine: {'line': b"  '/home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/src/biped_descriptions/robots'\n"}
+[6.683897] (biped_descriptions) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[6.688196] (biped_descriptions) StderrLine: {'line': b'  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)\n'}
+[6.688518] (biped_descriptions) StderrLine: {'line': b'  cmake_install.cmake:46 (include)\n'}
+[6.688692] (biped_descriptions) StderrLine: {'line': b'\n'}
+[6.688993] (biped_descriptions) StderrLine: {'line': b'\x1b[0m\n'}
+[6.689172] (biped_descriptions) CommandEnded: {'returncode': 1}
+[6.726950] (-) TimerEvent: {}
+[6.829684] (-) TimerEvent: {}
+[6.846846] (biped_descriptions) JobEnded: {'identifier': 'biped_descriptions', 'rc': 1}
+[6.930256] (-) TimerEvent: {}
+[7.032204] (-) TimerEvent: {}
+[7.133180] (-) TimerEvent: {}
+[7.234099] (-) TimerEvent: {}
+[7.335537] (-) TimerEvent: {}
+[7.436647] (-) TimerEvent: {}
+[7.515084] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[7.536921] (-) TimerEvent: {}
+[7.638887] (-) TimerEvent: {}
+[7.740226] (-) TimerEvent: {}
+[7.840840] (-) TimerEvent: {}
+[7.941840] (-) TimerEvent: {}
+[8.043198] (-) TimerEvent: {}
+[8.144563] (-) TimerEvent: {}
+[8.245722] (-) TimerEvent: {}
+[8.346938] (-) TimerEvent: {}
+[8.455892] (-) TimerEvent: {}
+[8.565026] (-) TimerEvent: {}
+[8.669708] (-) TimerEvent: {}
+[8.770773] (-) TimerEvent: {}
+[8.872320] (-) TimerEvent: {}
+[8.930774] (pan_tilt_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.973200] (-) TimerEvent: {}
+[9.075522] (-) TimerEvent: {}
+[9.177051] (-) TimerEvent: {}
+[9.278152] (-) TimerEvent: {}
+[9.379997] (-) TimerEvent: {}
+[9.444130] (pan_tilt_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.480461] (-) TimerEvent: {}
+[9.538050] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[9.548385] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[9.581597] (-) TimerEvent: {}
+[9.683106] (-) TimerEvent: {}
+[9.706878] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[9.707895] (pan_tilt_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.708335] (pan_tilt_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.708705] (pan_tilt_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[9.787942] (-) TimerEvent: {}
+[9.792159] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[9.888254] (-) TimerEvent: {}
+[9.989504] (-) TimerEvent: {}
+[10.066563] (pan_tilt_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.089747] (-) TimerEvent: {}
+[10.167653] (pan_tilt_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[10.173428] (pan_tilt_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.177455] (pan_tilt_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.189974] (pan_tilt_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.190402] (-) TimerEvent: {}
+[10.291388] (-) TimerEvent: {}
+[10.353325] (pan_tilt_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[10.363409] (pan_tilt_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ROS_BAP/WORKSPACES_PERSO/ros2_ws_stage/DuckSimROS2/build/pan_tilt_msgs\n'}
+[10.381330] (pan_tilt_msgs) JobEnded: {'identifier': 'pan_tilt_msgs', 'rc': 'SIGINT'}
+[10.392582] (-) TimerEvent: {}
+[10.397831] (biped_gazebo_worlds) JobSkipped: {'identifier': 'biped_gazebo_worlds'}
+[10.397958] (pan_tilt_bringup) JobSkipped: {'identifier': 'pan_tilt_bringup'}
+[10.398357] (pan_tilt_description) JobSkipped: {'identifier': 'pan_tilt_description'}
+[10.398443] (pan_tilt_controller) JobSkipped: {'identifier': 'pan_tilt_controller'}
+[10.398487] (pan_tilt_driver) JobSkipped: {'identifier': 'pan_tilt_driver'}
+[10.398597] (-) EventReactorShutdown: {}
