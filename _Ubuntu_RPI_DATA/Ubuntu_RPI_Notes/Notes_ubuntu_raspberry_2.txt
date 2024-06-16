@@ -1,0 +1,17 @@
+##### Sur ubuntu 22.04 : arduino 1.8.19 installé par:
+>>sudo snap install Arduino
+_ Thonny:
+>>sudo apt install thonny
+
+
+###### SERIAL COM - Arduino, rpi
+>> ls /dev/tty*
+
+__ sur notre rpi, il faut avoir les permissions d'accès à la com série :
+>> groups (vérifier  présence de dialout, qui donne accès à la com série)
+SINON, faire: >> sudo adduser pi dialout (>>sudo reboot s'il le faut)
+
+__2 : installer une librairie python (SUR ARDUINO ON A DEJA serial):
+>> sudo apt install python3-pip ;(si on a pip, sinon installer)
+>> pip3 install pyserial
+>> pip3 show pyserial
