@@ -1,3 +1,8 @@
+##### 	UBUNTU keyring popup message pb/ éviter également de voir le mot de passe vnc changé à chaque fois :
+>> https://askubuntu.com/questions/1403943/22-04-remote-desktop-sharing-authentication-password-changes-every-reboot
+>> https://linuxconfig.org/how-to-disable-keyring-popup-on-ubuntu
+
+
 ##### Sur ubuntu 22.04 : arduino 1.8.19 installé par:
 >>sudo snap install Arduino
 _ Thonny:
@@ -15,3 +20,9 @@ __2 : installer une librairie python (SUR ARDUINO ON A DEJA serial):
 >> sudo apt install python3-pip ;(si on a pip, sinon installer)
 >> pip3 install pyserial
 >> pip3 show pyserial
+
+
+
+
+
+#######################

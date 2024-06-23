@@ -38,6 +38,8 @@ __
 >> git push origin main : envoyer vers github
 
 
+
+
 Ubuntu 22.04 LTS Desktop 
 ############### OS
 -
@@ -51,6 +53,8 @@ De plus, comme nous allons installer ROS2 Humble, assurez-vous d'avoir la versio
 
 -
 https://docs.ros.org/en/humble/Installation.html
+
+
 
 
 ############################ OS - carte microsd 128GB
@@ -96,6 +100,7 @@ _ Arduino :
 
 #############" DEMARRER UN CODE ROS :
 >> En ouvrant le pc, commencer par "colcon build --symlink-install" puis "source install/setup.bash
+
 
 ###########################################  SIMULATIONS
 ____rviz2 :
@@ -276,6 +281,7 @@ ___________urdf/xacro ; urdf/sdf
 __ environnement marin GitHub/srmainwaring
 >> colcon build… : supprimer merge install?
 >> installer gz-cmake 3 ?
+
 
 ################################### 12/06/2024
 >> ignition gazebo : launcj, create.launch /// comment remplacer 'spawn_entity.py' utilisé avec ros_gazebo

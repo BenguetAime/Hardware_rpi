@@ -48,3 +48,8 @@ if (digitalRead(buttonApin) == LOW)
 
 --- PRINTF:
 Dans Arduino, la fonction printf n'est pas utilisée comme dans les langages de programmation comme le C ou le C++. Pour afficher du texte dans l'environnement Arduino, vous devez utiliser la fonction Serial.print ou Serial.println (si vous voulez ajouter un retour à la ligne).
+
+
+
+
+######################
