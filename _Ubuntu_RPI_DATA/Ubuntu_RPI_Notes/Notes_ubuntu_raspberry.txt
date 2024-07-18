@@ -6,7 +6,7 @@ MDP:*Aimemael2017
 ##
 VNC SERVER INSTALLATION:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04
-##
+## POUR PLUS DE DETAILS SUR SSH: voir mon fichier NOTES créé en stage 2A.
 SSH installé simplement depuis chatgpt:
 ssh nomUtilisateur@nomDeLordi
 
@@ -33,7 +33,7 @@ __
 >> git clone https://github.com/BenguetAime/Hardware_rpi
 >> git add .
 >> git pull origin main : récupérer les modifs faite sur GitHub
->>git pull --no-rebase origin main : j'y ai eu recours après avoir modifié un fichier sur github
+>> git pull --no-rebase origin main : j'y ai eu recours après avoir modifié un fichier sur github
 
 >> git push origin main : envoyer vers github
 
@@ -86,8 +86,6 @@ And because it won’t be that practical to do this for every new session you op
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 So, from now on, every time you open a terminal, your bashrc will be executed and your environment will be ready for
 ROS2.
-
-
 ###########################################
 
 
@@ -100,6 +98,9 @@ _ Arduino :
 
 #############" DEMARRER UN CODE ROS :
 >> En ouvrant le pc, commencer par "colcon build --symlink-install" puis "source install/setup.bash
+
+
+
 
 
 ###########################################  SIMULATIONS
@@ -144,7 +145,7 @@ ____ MODELES ET MONDE :
 
 
 _________ !!!!! VOIR AUSSI SIMULATION "ignition" dans la doc
->> __ign gazebo --render-engine ogre nomDeFichier.sdf  : si problème d'affichage
+>> ign gazebo --render-engine ogre nomDeFichier.sdf  : si problème d'affichage
 >> To be able to communicate our simulation with ROS 2 you need to use a package called ros_ign_bridge :
 source /opt/ros/foxy/setup.bash
 ros2 run ros_ign_bridge parameter_bridge /model/vehicle_blue/cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist
@@ -158,7 +159,7 @@ ros2 run ros_ign_bridge parameter_bridge /model/vehicle_blue/cmd_vel@geometry_ms
 
 _______ !!!!! DEPUIS IGNITION GAZEBO, ON PEUT "piloter" notre robot comme suit :
 1/ en utilisant ros_ign_bridge et les commandes qui vont avec Afin de publier depuis ROS2 des commandes pour le modèles se trouvant dans gazebo
-2/ en utisant "rqt" et en publiant sur un topic donnée la commande : OUVRIE QRT/ PLUGIN/ TOPIC/ Message Publisher - Puis "CLIQUER" sur le "+" en haut à droite "ADD A NEW PUBLISHER" et fixer des valeurs à publier.
+2/ en utisant "rqt" et en publiant sur un topic donnée la commande : OUVRIR QRT/ PLUGIN/ TOPIC/ Message Publisher - Puis "CLIQUER" sur le "+" en haut à droite "ADD A NEW PUBLISHER" et fixer des valeurs à publier.
 
 SINON le modèle reste figé!!
 
@@ -172,7 +173,7 @@ _______!!!! attention aux plugins et TAG
 
 
 
-############################# USING URDF
+############################# USING URDF #############################
 >>https://www.udemy.com/course/ros2-robotics-developer-course-using-ros2-in-python/learn/lecture/26054056#overview
 >>ros2/humble/...URDF
 >>https://aleksandarhaber.com
@@ -238,7 +239,7 @@ ROS2 robot URDF + Xacro creation, visualize in RVIZ2 and Gazebo + Teleoperation 
 -------- GAZEBO : 
 >> ajouter des lignes dans "package.xml" (depend … gazebo_ros  ET AUSSI ros_ign_gazebo; rclcpp; rclpy)
 >> ajouter des lignes dans cmakelist : find_package(les mêmes que ceux rajoutés dans package.xml)
->> dans le fichier .urdf : enlever encoding "utf-8" qui est sur la 1re ligne.
+>> dans le fichier .urdf : enlever encoding "utf-8" qui est sur la 1re ligne??? pas nécessairement
 
 
 ------------------- SPAWN URDF INTO GAZEBO ROS2 - THE CONSTRUCT :

@@ -20,9 +20,9 @@ __2 : installer une librairie python (SUR ARDUINO ON A DEJA serial):
 >> sudo apt install python3-pip ;(si on a pip, sinon installer)
 >> pip3 install pyserial
 >> pip3 show pyserial
-*
 
 
 
 
-#######################
+
+####################### 18/07/2024v
