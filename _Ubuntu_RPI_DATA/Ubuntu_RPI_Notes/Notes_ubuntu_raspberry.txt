@@ -1,7 +1,7 @@
 ############### CREDENTIALS : MON RPI-UBUNTU
 -
 Nom de l'ordi: princeB
-Nom utilisateur:ubuntu
+Nom utilisateur: ubuntu
 MDP:*Aimemael2017
 ##
 VNC SERVER INSTALLATION:
@@ -76,7 +76,7 @@ Name: NomDeLordi(princeB)
 Vnc server: 10.192.4.38
 
 
-###############
+########################################### !!!!!!!!!
 Great, ROS2 Humble is now installed on your Raspberry Pi 4 with Ubuntu Server 22.04!
 
 Now, in order to actually use ROS2, you’ll need to setup your environment every time you open a new session (terminal). To source your ROS2 installation in your environment, run source /opt/ros/humble/setup.bash.
@@ -150,26 +150,32 @@ _________ !!!!! VOIR AUSSI SIMULATION "ignition" dans la doc
 source /opt/ros/foxy/setup.bash
 ros2 run ros_ign_bridge parameter_bridge /model/vehicle_blue/cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist
 >> ros2 topic list
->>ros2 topic echo /laser_scan
->>ros2 topic pub etc... pour publier 
+>> ros2 topic echo /laser_scan
+>> ros2 topic pub etc... pour publier 
 
->>ros2 launch my_pkg nomDeFichier.launch.py
+>> ros2 launch my_pkg nomDeFichier.launch.py
 >> ign topic --info --topic /camera : affiche le type de données sur ce topic de ign gazebo, en cours?
 
 
 _______ !!!!! DEPUIS IGNITION GAZEBO, ON PEUT "piloter" notre robot comme suit :
 1/ en utilisant ros_ign_bridge et les commandes qui vont avec Afin de publier depuis ROS2 des commandes pour le modèles se trouvant dans gazebo
-2/ en utisant "rqt" et en publiant sur un topic donnée la commande : OUVRIR QRT/ PLUGIN/ TOPIC/ Message Publisher - Puis "CLIQUER" sur le "+" en haut à droite "ADD A NEW PUBLISHER" et fixer des valeurs à publier.
+2/ en utisant "rqt" et en publiant sur un topic donnée la commande : OUVRIR RQT/ PLUGIN/ TOPIC/ Message Publisher - Puis "CLIQUER" sur le "+" en haut à droite "ADD A NEW PUBLISHER" et fixer des valeurs à publier.
 
 SINON le modèle reste figé!!
 
->> SE SOUVENIR DES EXEMPLES DE REMPARRING DE TOPIC : exemple vidéos sur "PROJECT: ROS2 SMULATION ROBOT - minutes: 14.50"
+>> SE SOUVENIR DES EXEMPLES DE REMPARRING DE TOPIC : exemple vidéos sur "PROJECT: ROS2 SIMULATION ROBOT - minutes: 14.50"
 
 
 
 _______!!!! attention aux plugins et TAG
 - SENSOR TAG pour la caméra 
 - JOINT POSITION CONTROLLER.sdf (voir fin du fichier surtout; le dernier plugin ) plugin, dans ignition gazebo computer/usr/igntion…
+
+
+
+
+
+
 
 
 
