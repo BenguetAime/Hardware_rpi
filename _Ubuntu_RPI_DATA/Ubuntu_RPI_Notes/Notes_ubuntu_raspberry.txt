@@ -3,6 +3,10 @@
 Nom de l'ordi: princeB
 Nom utilisateur: ubuntu
 MDP:*Aimemael2017
+_____
+>> adresse ip - toulon : 192.168.1.179
+
+_____
 ##
 VNC SERVER INSTALLATION:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04
@@ -69,11 +73,13 @@ https://docs.ros.org/en/humble/Installation.html
 ssh ubuntu@ipaddress
 -
 ssh ubuntu@10.192.4.38
+>> adresse ip - toulon : 192.168.1.179
 
 
 ###############      VNC
 Name: NomDeLordi(princeB)
 Vnc server: 10.192.4.38
+>> adresse ip - toulon : 192.168.1.179
 
 
 ########################################### !!!!!!!!!
@@ -83,6 +89,7 @@ Now, in order to actually use ROS2, you’ll need to setup your environment ever
 
 And because it won’t be that practical to do this for every new session you open, add this line to your bashrc.
 
+_______
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 So, from now on, every time you open a terminal, your bashrc will be executed and your environment will be ready for
 ROS2.
@@ -291,5 +298,5 @@ __ environnement marin GitHub/srmainwaring
 
 
 ################################### 12/06/2024
->> ignition gazebo : launcj, create.launch /// comment remplacer 'spawn_entity.py' utilisé avec ros_gazebo
+>> ignition gazebo : launch, create.launch /// comment remplacer 'spawn_entity.py' utilisé avec ros_gazebo
 https://github.com/gazebosim/ros_gz/blob/melodic/ros_ign_gazebo_demos/launch/create.launch#L14
