@@ -1,5 +1,38 @@
-    <!-- Limites physiques du joint -->
-    <limit lower="-1.5708" upper="1.5708" effort="50" velocity="2.0"/>
+# Find catkin macros and libraries
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  geometry_msgs
+  sensor_msgs
+  nav_msgs
+  message_generation
+  gazebo_ros
+  rviz
+  trajectory_msgs
+  controller_manager
+  joint_state_controller
+  robot_state_publisher
+)
 
-    <!-- Optionnel: contrôle de sécurité -->
-    <safety_controller soft_lower_limit="-1.0" soft_upper_limit="1.0" k_position="10.0" k_velocity="1.0"/>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>actionlib_msgs</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>rviz</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+ <build_depend>controller_manager</build_depend>
+ <build_depend>joint_state_controller</build_depend>
+ <build_depend>robot_state_publisher</build_depend>
+
+  <build_export_depend>actionlib</build_export_depend>
+
+  <exec_depend>robot_state_publisher</exec_depend>
+

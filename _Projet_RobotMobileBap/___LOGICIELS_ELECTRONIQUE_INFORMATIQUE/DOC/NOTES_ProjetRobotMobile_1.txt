@@ -25,5 +25,14 @@ install(TARGETS my_library
 
 
 __________________ ROS 2 ROS 2  __________________
+>> INSTALLER "xacro"?
+	sudo apt install ros-humble-xacro
 >>
 colcon build --packages-select my_package
+
+>> ros2 run tf2_tools view_frames : visualiser les repères (un fichier est créé dans le WS)
+>>ros2 param get /robot_state_publisher robot_description
+
+
+__dans un fichier launch :
+Les nœuds robot_state_publisher; joint_state_publisher ??
