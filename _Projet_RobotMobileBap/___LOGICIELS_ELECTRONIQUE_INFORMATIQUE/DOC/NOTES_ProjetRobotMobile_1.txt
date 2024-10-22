@@ -21,3 +21,9 @@ install(TARGETS my_library
         ARCHIVE DESTINATION lib
         LIBRARY DESTINATION lib
         RUNTIME DESTINATION bin)
+
+
+
+__________________ ROS 2 ROS 2  __________________
+>>
+colcon build --packages-select my_package

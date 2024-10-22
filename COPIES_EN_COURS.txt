@@ -1,15 +1,5 @@
-Node(
-            package='joint_state_publisher',
-            executable='joint_state_publisher',
-            name='joint_state_publisher',
-            output='screen',
-            parameters=[{'robot_description': urdf_file}],
-        ),
+    <!-- Limites physiques du joint -->
+    <limit lower="-1.5708" upper="1.5708" effort="50" velocity="2.0"/>
 
-        # Optionnel : joint_state_publisher_gui pour contrôler manuellement les joints
-        Node(
-            package='joint_state_publisher_gui',
-            executable='joint_state_publisher_gui',
-            name='joint_state_publisher_gui',
-            output='screen',
-        ),
+    <!-- Optionnel: contrôle de sécurité -->
+    <safety_controller soft_lower_limit="-1.0" soft_upper_limit="1.0" k_position="10.0" k_velocity="1.0"/>
