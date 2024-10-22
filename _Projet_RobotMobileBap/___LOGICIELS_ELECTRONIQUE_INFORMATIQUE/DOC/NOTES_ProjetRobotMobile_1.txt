@@ -1,0 +1,23 @@
+
+##############  22/10/2024  ##############
+>> Installation des exécutables (binaries):
+install(TARGETS my_node
+        DESTINATION lib/${PROJECT_NAME}) 
+si vous avez des nœuds ROS écrits en C++ 
+
+>> Installation des scripts Python
+install(PROGRAMS
+  scripts/my_python_script.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+>> Installation des fichiers de configuration ou de ressources
+install(DIRECTORY launch config
+        DESTINATION share/${PROJECT_NAME})
+
+>> Installation des bibliothèques :
+Si vous avez développé une bibliothèque dans votre package, vous devez spécifier où cette bibliothèque doit être installée.
+install(TARGETS my_library
+        ARCHIVE DESTINATION lib
+        LIBRARY DESTINATION lib
+        RUNTIME DESTINATION bin)
