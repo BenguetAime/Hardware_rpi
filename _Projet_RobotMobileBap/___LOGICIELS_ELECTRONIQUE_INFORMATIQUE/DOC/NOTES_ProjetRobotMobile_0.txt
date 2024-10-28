@@ -31,10 +31,12 @@ nommés par exemple "Link_HipPitch_D": il s'agit du bloc qui effectue le mouveme
 5- Enregister/Exporter vers URDF & MESHES et ENREGISTRER LE DOC "SANS l'EXTENSION .SLDASM" / Puis aller ouvrir le DOC, le fichier URDF est dispo, on peut l'ouvrir avec notepad par EX.
 
 6- (Optional) : https://discourse.ros.org/t/web-based-urdf-visualization-tool-and-library-opensourced-from-nasa-jpl/14404 
-_
+
+
+____________
 POUR PREVISUALISER LE RENDU 3D urdf. et voir si tout est ok !
 -> Aller cliquer sur le paragraphe "Web Based URDF Viewer" / "here" ; Puis aller récupérer le dossier contenant le urdf et glisser sur l'interface WEB BASED URDF VISUALISATION.
-
+_____________
 
 
 
