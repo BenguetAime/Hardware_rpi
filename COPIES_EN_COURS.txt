@@ -31,16 +31,16 @@ find_package(hardware_interface REQUIRED)
 
 ##### délai spawn_entity
 __
-from launch.actions import TimerAction
+gazebo_params_file = os.path.join(project_description_dir,'config','gazebo_params.yaml')
 
-spawn_entity = TimerAction(
-    period=5.0,  # délai de 5 secondes
-    actions=[
-        Node(
-            package='gazebo_ros',
-            executable='spawn_entity.py',
-            arguments=['-entity', 'my_robot', '-topic', 'robot_description'],
-            output='screen'
-        )
-    ]
-)
+gazebo = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource([os.path.join(
+                gazebo_ros_dir, 'launch', 'gazebo.launch.py')]),
+                launch_arguments={'extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file}.items()
+         )
+
+# Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
+spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
+                    arguments=['-topic', 'robot_description',
+                               '-entity', 'my_bot'],
+                    output='screen')

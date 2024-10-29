@@ -30,3 +30,5 @@ __2 : installer une librairie python (SUR ARDUINO ON A DEJA serial):
 ####################### 20/10/2024
 >> __ ROS HUMBLE __
 https://docs.ros.org/en/humble/index.html
+
+>> sudo apt install ros-<distro>-gazebo-ros-pkgs
