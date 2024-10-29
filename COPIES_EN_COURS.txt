@@ -23,6 +23,6 @@ find_package(robot_state_publisher REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
 
-# Optional for ros2_control
+## Optional for ros2_control
 find_package(controller_manager REQUIRED)
 find_package(hardware_interface REQUIRED)
