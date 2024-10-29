@@ -27,3 +27,20 @@ find_package(xacro REQUIRED)
 find_package(controller_manager REQUIRED)
 find_package(hardware_interface REQUIRED)
 ###########
+
+
+##### délai spawn_entity
+__
+from launch.actions import TimerAction
+
+spawn_entity = TimerAction(
+    period=5.0,  # délai de 5 secondes
+    actions=[
+        Node(
+            package='gazebo_ros',
+            executable='spawn_entity.py',
+            arguments=['-entity', 'my_robot', '-topic', 'robot_description'],
+            output='screen'
+        )
+    ]
+)
