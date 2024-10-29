@@ -26,6 +26,8 @@ install(TARGETS my_library
 
 __________________ ROS 2 ROS 2  __________________
 >> ros2 launch my_pkg file.launch.py
+>> ros2 launch gazebo_ros gazebo.launch.py
+>> ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity myRobot
 
 >> INSTALLER "xacro"?
 	sudo apt install ros-humble-xacro
