@@ -44,3 +44,15 @@ spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
                     arguments=['-topic', 'robot_description',
                                '-entity', 'my_bot'],
                     output='screen')
+
+
+#########
+simulation_world_file_path = Path(udemy_ros2_pkg_path, "worlds/wheeled_model_world.sdf").as_posix()
+simulation_models_path = Path(udemy_ros2_pkg_path, "models").as_posix()
+
+
+    return LaunchDescription([
+        SetEnvironmentVariable(
+            name="IGN_GAZEBO_RESOURCE_PATH",
+            value=simulation_models_path
+        ),

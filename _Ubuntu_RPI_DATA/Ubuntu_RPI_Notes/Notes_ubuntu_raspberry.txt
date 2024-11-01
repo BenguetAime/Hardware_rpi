@@ -237,6 +237,8 @@ __
 sudo apt update
 sudo apt install ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-rviz2
 
+
+
 -------- URDF :
 >> ros2 humble doc : TUTO/INTERMEDIATE/LAUNCH -- voir ce qui est dit, notamment l'ajout de << <exec_depend… roslaunch etc >>
 

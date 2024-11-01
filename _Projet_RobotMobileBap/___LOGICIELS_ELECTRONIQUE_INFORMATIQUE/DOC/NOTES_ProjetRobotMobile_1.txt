@@ -28,6 +28,13 @@ __________________ ROS 2 ROS 2  __________________
 >> ros2 launch my_pkg file.launch.py
 >> ros2 launch gazebo_ros gazebo.launch.py
 >> ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity myRobot
+_____ Si problème avec gazebo OU spawn_entity : en lien avec plusieurs instances gazebo :
+>> ps aux | grep gzserver
+>> killall gzserver
+
+ps aux : liste tous les processus actifs sur le système, avec des détails comme l'utilisateur, le pourcentage de mémoire et de CPU utilisés, et d'autres informations sur chaque processus.
+grep gzserver : filtre la liste des processus pour ne montrer que ceux qui contiennent le terme "gzserver".
+_____
 
 >> INSTALLER "xacro"?
 	sudo apt install ros-humble-xacro
@@ -38,9 +45,25 @@ colcon build --packages-select my_package
 >>ros2 param get /robot_state_publisher robot_description
 
 _____CmakeLists/Package.xml :
->> pas besoin de "joint_state_publisher" (n'existe pas comme dépendance); juste
+>> pas besoin de "joint_state_publisher" (n'existe pas comme dépendance); besoin de rien pour gazebo, rviz aussi
 
 __dans un fichier launch :
 Les nœuds robot_state_publisher; joint_state_publisher ??
 
 !!!__ DANS RVIZ : en faisant "ADD/ ROBOT MODEL" : écrire dans l'interface "ROBOT ODEL/ Descriptio Topic": /robot_description;
+
+____ RVIZ : FIXED FRAME:
+if the global fixed frame in Rviz is base link frame, all the generated data are referred to the base of robot,
+if the global fixed frame in Rviz is map frame, all the generated data are referred to the center of environment
+
+
+############################ SOURCES INTERESSANTES
+__YouTube Video : Modeling, Simulation, control OF a 4 WHEEL Robot in ROS:
+>>https://www.youtube.com/watch?v=ad2jd8SCK-o&t=28s
+__Fichier launch.py bien structuré:
+>> https://www.reddit.com/r/ROS/comments/10hv6sa/robot_not_visible_in_gazebo_but_visible_in_rviz/?rdt=57927
+
+!!!!!____!!!!!___ATTENTION GAZEBO : 
+>> besoin de tag "inertial" pour chaque "link" dans gazebo
+>> Besoin des tag Concernant le "model_paht" : chemin absolu des modèles 3D
+- https://www.reddit.com/r/ROS/comments/10hv6sa/robot_not_visible_in_gazebo_but_visible_in_rviz/?rdt=57927
