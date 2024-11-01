@@ -56,3 +56,6 @@ simulation_models_path = Path(udemy_ros2_pkg_path, "models").as_posix()
             name="IGN_GAZEBO_RESOURCE_PATH",
             value=simulation_models_path
         ),
+
+############
+https://github.com/gazebosim/ros_gz/blob/melodic/ros_ign_gazebo_demos/launch/create.launch#L14

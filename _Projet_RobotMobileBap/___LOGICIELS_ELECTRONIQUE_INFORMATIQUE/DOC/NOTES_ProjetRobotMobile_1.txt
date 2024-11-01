@@ -57,6 +57,7 @@ if the global fixed frame in Rviz is base link frame, all the generated data are
 if the global fixed frame in Rviz is map frame, all the generated data are referred to the center of environment
 
 
+
 ############################ SOURCES INTERESSANTES
 __YouTube Video : Modeling, Simulation, control OF a 4 WHEEL Robot in ROS:
 >>https://www.youtube.com/watch?v=ad2jd8SCK-o&t=28s
@@ -65,5 +66,6 @@ __Fichier launch.py bien structuré:
 
 !!!!!____!!!!!___ATTENTION GAZEBO : 
 >> besoin de tag "inertial" pour chaque "link" dans gazebo
+>> SPAWN ENTITY IN GAZEBO : 3 moyens; via "file", via "topic": best, via a "database";
 >> Besoin des tag Concernant le "model_paht" : chemin absolu des modèles 3D
 - https://www.reddit.com/r/ROS/comments/10hv6sa/robot_not_visible_in_gazebo_but_visible_in_rviz/?rdt=57927
