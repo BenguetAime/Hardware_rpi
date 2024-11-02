@@ -1,61 +1,40 @@
-###########
- <depend>rclcpp</depend>
-  <depend>std_msgs</depend>
-  <depend>geometry_msgs</depend>
-  <depend>sensor_msgs</depend>
-  <depend>gazebo_ros</depend>
-  <depend>robot_state_publisher</depend>
-  <depend>urdf</depend>
-  <depend>xacro</depend>
+####### control
+gazebo_control.xacro
 
-  <!-- Optional: control dependencies if using ros2_control -->
-  <depend>controller_manager</depend>
-  <depend>hardware_interface</depend>
-###########
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-###########
-find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED)
-find_package(sensor_msgs REQUIRED)
-find_package(gazebo_ros REQUIRED)
-find_package(robot_state_publisher REQUIRED)
-find_package(urdf REQUIRED)
-find_package(xacro REQUIRED)
-## Optional for ros2_control
-find_package(controller_manager REQUIRED)
-find_package(hardware_interface REQUIRED)
-###########
+    <gazebo>
+        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+
+            <!-- Wheel Information -->
+            <left_joint>left_wheel_joint</left_joint>
+            <right_joint>right_wheel_joint</right_joint>
+            <wheel_separation>0.35</wheel_separation>
+            <wheel_diameter>0.1</wheel_diameter>
 
 
-##### délai spawn_entity
-__
-gazebo_params_file = os.path.join(project_description_dir,'config','gazebo_params.yaml')
+            <!-- Limits -->
+            <max_wheel_torque>200</max_wheel_torque>
+            <max_wheel_acceleration>10.0</max_wheel_acceleration>
 
-gazebo = IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([os.path.join(
-                gazebo_ros_dir, 'launch', 'gazebo.launch.py')]),
-                launch_arguments={'extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file}.items()
-         )
+            
+            <!-- Output -->
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
 
-# Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
-spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
-                    arguments=['-topic', 'robot_description',
-                               '-entity', 'my_bot'],
-                    output='screen')
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
 
-
-############
-simulation_world_file_path = Path(udemy_ros2_pkg_path, "worlds/wheeled_model_world.sdf").as_posix()
-simulation_models_path = Path(udemy_ros2_pkg_path, "models").as_posix()
+        </plugin>
+    </gazebo>
 
 
-    return LaunchDescription([
-        SetEnvironmentVariable(
-            name="IGN_GAZEBO_RESOURCE_PATH",
-            value=simulation_models_path
-        ),
+</robot>
 
-############
-https://github.com/gazebosim/ros_gz/blob/melodic/ros_ign_gazebo_demos/launch/create.launch#L14
+
+
+robot.urdf.xacro
+
+    <xacro:include filename="gazebo_control.xacro" />

@@ -45,7 +45,9 @@ colcon build --packages-select my_package
 >>ros2 param get /robot_state_publisher robot_description
 
 _____CmakeLists/Package.xml :
->> pas besoin de "joint_state_publisher" (n'existe pas comme dépendance); besoin de rien pour gazebo, rviz aussi
+>>Pour un lancement basique (sans plugin particulier) du robot:
+- pas besoin de "joint_state_publisher" (n'existe pas comme dépendance); besoin de rien pour SPAWN DANS gazebo, rviz aussi !
+---------
 
 __dans un fichier launch :
 Les nœuds robot_state_publisher; joint_state_publisher ??
@@ -58,6 +60,16 @@ if the global fixed frame in Rviz is map frame, all the generated data are refer
 
 
 
+
+
+#### CONTROL ####
+____Quand on veut faire communiquer ROS et GAZEBO, c'est par des PLUGINS
+
+
+
+
+
+
 ############################ SOURCES INTERESSANTES
 __YouTube Video : Modeling, Simulation, control OF a 4 WHEEL Robot in ROS:
 >>https://www.youtube.com/watch?v=ad2jd8SCK-o&t=28s
@@ -67,5 +79,11 @@ __Fichier launch.py bien structuré:
 !!!!!____!!!!!___ATTENTION GAZEBO : 
 >> besoin de tag "inertial" pour chaque "link" dans gazebo
 >> SPAWN ENTITY IN GAZEBO : 3 moyens; via "file", via "topic": best, via a "database";
->> Besoin des tag Concernant le "model_paht" : chemin absolu des modèles 3D
+>> !!__!! : ATTENTION à l'utilisation des mesh/urdf :
+- <mesh filename="package://my_pkg/meshes/base_link.stl"/> : le robot ne s'affichait pas dans gazebo, mais dans Rviz2 oui;
+- <mesh filename="file://$(find my_pkg)/meshes/base_link.stl"/> : marche ainsi;
+- lien:
+https://answers.ros.org/question/404423/whats-the-correct-way-to-load-mesh-files-in-gazebo-and-rviz/
+
+>> Besoin des tag Concernant le "model_paht" (PAS BESOIN POUR un lancement simple, sans monde partiulier, avec un XACRO uniquement) : chemin absolu des modèles 3D
 - https://www.reddit.com/r/ROS/comments/10hv6sa/robot_not_visible_in_gazebo_but_visible_in_rviz/?rdt=57927
