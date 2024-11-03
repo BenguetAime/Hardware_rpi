@@ -82,6 +82,8 @@ ros2 topic pub /cmd_vel geometry_msgs/Twist "{linear: {x: 0.5}, angular: {z: 0.0
 # Pour faire tourner le robot
 ros2 topic pub /cmd_vel geometry_msgs/Twist "{linear: {x: 0.0}, angular: {z: 0.5}}"
 
+
+
 ____!!!!!!____!!!! DIFF DRIVE : 2/4 WHEELS plugins :
 >> AI, Deep Learning and Robotics :
 >> 
@@ -90,11 +92,13 @@ https://robotics.snowcron.com/robotics_ros2/diff_drive_ros2_control_2_wheels.htm
 >> THE CONSTRUCT: diff_drive ros2
 https://www.theconstruct.ai/how-to-use-the-gazebo-differential-drive-plugin-in-ros-2/
 
+
+
 ########### TELEOP KEYBOARD
 >> ros2 run teleop_twist_keyboard teleop_twist_keyboard : les commandes marchent ssi ON garde le résultat dans LA FENETRE ACTIVE!
 
 ########### ODOM
->> Tenter de mettre "odom" comme FIXED FRAME, si on a ajouté le PLUGIN diff_drive dans le modèle urdf.xacro du robot;
+>> RVIZ: Tenter de mettre "odom" comme FIXED FRAME, si on a ajouté le PLUGIN diff_drive dans le modèle urdf.xacro du robot;
 
 >> ERREUR "no transform between "wheel_joint_left" etc:
 - https://robotics.stackexchange.com/questions/104632/no-transform-between-robot-wheels-and-odom-frame
