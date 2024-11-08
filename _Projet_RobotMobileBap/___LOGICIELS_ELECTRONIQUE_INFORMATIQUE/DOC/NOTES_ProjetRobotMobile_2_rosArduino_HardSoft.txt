@@ -1,0 +1,23 @@
+############ Start - Hardware-Software / Moteur et suite… ############
+>> GEAR MOTOR :
+- 
+https://stackoverflow.com/questions/74481393/arduino-mega-with-l298n-and-motors-with-encoders-not-registering-encoders
+
+-My GM25-370 :
+https://www.robot-maker.com/shop/kits-robots/51-kit-moteur-gm25-370ca-encodeur-roue-chromee-51.html
+- YouTube with GM25-370 motor :
+https://www.youtube.com/watch?v=n7HOUla5MOw
+- Arituclated robotics :
+https://www.youtube.com/watch?v=-PCuDnpgiew&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT&index=7
+- Arduino ANALOG/DIGITAL : 
+https://www.youtube.com/watch?v=BMMnOAzcqoE
+
+>> GIMP - modif photos :
+https://www.youtube.com/watch?v=t8LAXxqfqWk
+
+
+
+
+
+
+############ End - Hardware-Software / Moteur et suite… ############

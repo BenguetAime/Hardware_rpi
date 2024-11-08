@@ -1,68 +1,238 @@
-# Check if we're told to use sim time
-    use_sim_time = LaunchConfiguration('use_sim_time')
+########## compter le nombre d'impulsions par tour:
+>>
+const int encoderPinA = 2;  // Broche du signal A de l'encodeur
+const int encoderPinB = 3;  // Broche du signal B de l'encodeur
 
-    # Process the URDF file
-    pkg_path = os.path.join(get_package_share_directory('articubot_one'))
-    xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')
-    robot_description_config = xacro.process_file(xacro_file)
+volatile int pulseCount = 0;
+
+void setup() {
+  Serial.begin(9600);
+  
+  // Configurer les broches d'encodeur comme entrées
+  pinMode(encoderPinA, INPUT);
+  pinMode(encoderPinB, INPUT);
+  
+  // Attacher les interruptions sur les broches A et B
+  attachInterrupt(digitalPinToInterrupt(encoderPinA), countPulse, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(encoderPinB), countPulse, CHANGE);
+  
+  Serial.println("Tournez l'arbre moteur manuellement d'un tour complet.");
+}
+
+void loop() {
+  // Afficher le nombre d'impulsions comptées toutes les secondes
+  Serial.print("Impulsions comptées : ");
+  Serial.println(pulseCount);
+  delay(1000);
+}
+
+void countPulse() {
+  // Incrémente le compteur à chaque changement de signal
+  pulseCount++;
+}
+
+
+
+
+
+########## boucle ouverte
+
+// Indice 1: moteur Gauche ; Indice 1: moteur Droit
+// Déclaration des broches pour les moteurs et L298N
+const int motor1Pin1 = 9;   // Broche sens Moteur 1
+const int motor1Pin2 = 10;  // Broche sens Moteur 1
+const int motor1PWM = 8;    // Broche PWM Moteur 1
+
+const int motor2Pin1 = 11;  // Broche sens Moteur 2
+const int motor2Pin2 = 12;  // Broche sens Moteur 2
+const int motor2PWM = 13;   // Broche PWM Moteur 2
+
+void setup() {
+  // Configurer les broches du moteur en sortie
+  pinMode(motor1Pin1, OUTPUT);
+  pinMode(motor1Pin2, OUTPUT);
+  pinMode(motor1PWM, OUTPUT);
+
+  pinMode(motor2Pin1, OUTPUT);
+  pinMode(motor2Pin2, OUTPUT);
+  pinMode(motor2PWM, OUTPUT);
+}
+
+void loop() {
+  // Moteur 1 tourne dans un sens
+  digitalWrite(motor1Pin1, HIGH);
+  digitalWrite(motor1Pin2, LOW);
+  analogWrite(motor1PWM, 200);  // Vitesse de 0 à 255
+
+  // Moteur 2 tourne dans l'autre sens
+  digitalWrite(motor2Pin1, LOW);
+  digitalWrite(motor2Pin2, HIGH);
+  analogWrite(motor2PWM, 200);  // Vitesse de 0 à 255
+
+  delay(5000);  // Laisser tourner les moteurs pendant 5 secondes
+
+  // Inversion des deux moteurs
+  digitalWrite(motor1Pin1, LOW);
+  digitalWrite(motor1Pin2, HIGH);
+  analogWrite(motor1PWM, 200);  // Même vitesse
+
+  digitalWrite(motor2Pin1, HIGH);
+  digitalWrite(motor2Pin2, LOW);
+  analogWrite(motor2PWM, 200);  // Même vitesse
+
+  delay(5000);  // Laisser tourner les moteurs pendant 5 secondes
+}
+
+
+
+
+
+############################# boucle fermée
+
+// Déclaration des broches pour les moteurs et L298N
+const int motor1Pin1 = 9;
+const int motor1Pin2 = 10;
+const int motor1PWM = 8;
+
+const int motor2Pin1 = 11;
+const int motor2Pin2 = 12;
+const int motor2PWM = 13;
+
+// Déclaration des broches pour les encodeurs
+const int encoder1PinA = 2;  // Moteur 1, signal A
+const int encoder1PinB = 3;  // Moteur 1, signal B
+const int encoder2PinA = 18; // Moteur 2, signal A
+const int encoder2PinB = 19; // Moteur 2, signal B
+
+// Paramètres de l'encodeur et de la vitesse cible
+const int P = 11;  // Impulsions par tour de l'encodeur (à ajuster pour votre moteur)
+const float targetRPM = 220;   // Consigne de vitesse en tr/min
+const float targetSpeedPPS = (targetRPM / 60.0) * P;  // Vitesse cible en impulsions/seconde
+
+// Variables pour le contrôle des moteurs
+volatile int encoder1Count = 0;
+volatile int encoder2Count = 0;
+float currentSpeed1 = 0;
+float currentSpeed2 = 0;
+int pwm1 = 150;
+int pwm2 = 150;
+
+// PID - coefficients (ajustez pour un meilleur contrôle)
+float Kp = 1.0;
+float Ki = 0.1;
+float Kd = 0.05;
+float errorSum1 = 0, lastError1 = 0;
+float errorSum2 = 0, lastError2 = 0;
+
+// Temps pour la mesure de la vitesse
+unsigned long prevTime = 0;
+unsigned long interval = 100;  // Intervalle de mesure de 100 ms
+
+void setup() {
+  // Configurer les broches des moteurs
+  pinMode(motor1Pin1, OUTPUT);
+  pinMode(motor1Pin2, OUTPUT);
+  pinMode(motor1PWM, OUTPUT);
+
+  pinMode(motor2Pin1, OUTPUT);
+  pinMode(motor2Pin2, OUTPUT);
+  pinMode(motor2PWM, OUTPUT);
+
+  // Configurer les broches de l'encodeur
+  pinMode(encoder1PinA, INPUT);
+  pinMode(encoder1PinB, INPUT);
+  pinMode(encoder2PinA, INPUT);
+  pinMode(encoder2PinB, INPUT);
+
+  // Configurer les interruptions pour lire les encodeurs
+  attachInterrupt(digitalPinToInterrupt(encoder1PinA), encoder1ISR, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(encoder1PinB), encoder1ISR, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(encoder2PinA), encoder2ISR, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(encoder2PinB), encoder2ISR, CHANGE);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+  unsigned long currentTime = millis();
+  
+  // Mesure et contrôle de la vitesse toutes les 100 ms
+  if (currentTime - prevTime >= interval) {
+    prevTime = currentTime;
+
+    // Calculer la vitesse actuelle en impulsions par seconde
+    currentSpeed1 = (encoder1Count / (float)interval) * 1000.0;  // Impulsions/sec
+    currentSpeed2 = (encoder2Count / (float)interval) * 1000.0;
+
+    // Réinitialiser le compteur d'impulsions pour la prochaine mesure
+    encoder1Count = 0;
+    encoder2Count = 0;
+
+    // Contrôle PID pour le moteur 1
+    float error1 = targetSpeedPPS - currentSpeed1;
+    errorSum1 += error1;
+    float dError1 = error1 - lastError1;
+    pwm1 += Kp * error1 + Ki * errorSum1 * interval / 1000.0 + Kd * dError1 / (interval / 1000.0);
+    lastError1 = error1;
     
-    # Create a robot_state_publisher node
-    params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
-    node_robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        output='screen',
-        parameters=[params]
-    )
+    // Limiter la PWM entre 0 et 255
+    pwm1 = constrain(pwm1, 0, 255);
+    
+    // Contrôle PID pour le moteur 2
+    float error2 = targetSpeedPPS - currentSpeed2;
+    errorSum2 += error2;
+    float dError2 = error2 - lastError2;
+    pwm2 += Kp * error2 + Ki * errorSum2 * interval / 1000.0 + Kd * dError2 / (interval / 1000.0);
+    lastError2 = error2;
+    
+    // Limiter la PWM entre 0 et 255
+    pwm2 = constrain(pwm2, 0, 255);
+    
+    // Appliquer la commande aux moteurs
+    analogWrite(motor1PWM, pwm1);
+    digitalWrite(motor1Pin1, HIGH);
+    digitalWrite(motor1Pin2, LOW);
 
+    analogWrite(motor2PWM, pwm2);
+    digitalWrite(motor2Pin1, HIGH);
+    digitalWrite(motor2Pin2, LOW);
 
-    # Launch!
-    return LaunchDescription([
-        DeclareLaunchArgument(
-            'use_sim_time',
-            default_value='false',
-            description='Use sim time if true'),
+    // Afficher les vitesses pour le débogage
+    Serial.print("Moteur 1 - Vitesse actuelle (PPS): ");
+    Serial.print(currentSpeed1);
+    Serial.print(", PWM: ");
+    Serial.println(pwm1);
 
-        node_robot_state_publisher
-    ])
+    Serial.print("Moteur 2 - Vitesse actuelle (PPS): ");
+    Serial.print(currentSpeed2);
+    Serial.print(", PWM: ");
+    Serial.println(pwm2);
+  }
+}
 
+// Routines d'interruption pour les encodeurs
+void encoder1ISR() {
+  // Lire les signaux A et B du moteur 1
+  int stateA = digitalRead(encoder1PinA);
+  int stateB = digitalRead(encoder1PinB);
 
+  // Déterminer le sens de comptage pour le moteur 1
+  if (stateA == stateB) {
+    encoder1Count++;
+  } else {
+    encoder1Count--;
+  }
+}
 
+void encoder2ISR() {
+  // Lire les signaux A et B du moteur 2
+  int stateA = digitalRead(encoder2PinA);
+  int stateB = digitalRead(encoder2PinB);
 
-
-
-
-sim:
-
-
-    # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
-    # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
-
-    package_name='articubot_one' #<--- CHANGE ME
-
-    rsp = IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory(package_name),'launch','rsp.launch.py'
-                )]), launch_arguments={'use_sim_time': 'true'}.items()
-    )
-
-    # Include the Gazebo launch file, provided by the gazebo_ros package
-    gazebo = IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
-             )
-
-    # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
-    spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
-                        arguments=['-topic', 'robot_description',
-                                   '-entity', 'my_bot'],
-                        output='screen')
-
-
-
-    # Launch them all!
-    return LaunchDescription([
-        rsp,
-        gazebo,
-        spawn_entity,
-    ])
+  // Déterminer le sens de comptage pour le moteur 2
+  if (stateA == stateB) {
+    encoder2Count++;
+  } else {
+    encoder2Count--;
+  }
+}

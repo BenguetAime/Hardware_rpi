@@ -1,0 +1,304 @@
+############### CREDENTIALS : MON RPI-UBUNTU
+-
+Nom de l'ordi: princeB
+Nom utilisateur: ubuntu
+MDP:*Aimemael2017
+_____
+>> adresse ip - toulon : 192.168.1.179
+
+_____
+##
+VNC SERVER INSTALLATION:
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04
+## POUR PLUS DE DETAILS SUR SSH: voir mon fichier NOTES créé en stage 2A.
+SSH installé simplement depuis chatgpt:
+ssh nomUtilisateur@nomDeLordi
+
+### AVEC La micro sd 1, contenant raspbian j'avais configuré 'ssh' depuis 'raspbi imager'
+###########################
+>> ssh :
+https://www.youtube.com/watch?v=Wlmne44M6fQ
+>> IP ADRESS: >> hostname -I
+
+
+
+
+
+########################## GitHub :
+__
+sudo apt update
+sudo apt install git
+*
+git config --global user.name "Votre Nom"
+git config --global user.email "votre_email@example.com"
+
+
+__
+>> git clone https://github.com/BenguetAime/Hardware_rpi
+>> git add .
+>> git pull origin main : récupérer les modifs faite sur GitHub
+>> git pull --no-rebase origin main : j'y ai eu recours après avoir modifié un fichier sur github
+
+>> git push origin main : envoyer vers github
+
+
+
+
+Ubuntu 22.04 LTS Desktop 
+############### OS
+-
+(ubuntu 22.04 LTS Server ne donne pas l'interface graphique?)
+-
+LIEN TELECHARGEMENT: https://roboticsbackend.com/install-ros2-on-raspberry-pi/#Install_ROS2_on_Ubuntu_on_Raspberry_Pi_4
+
+
+-
+De plus, comme nous allons installer ROS2 Humble, assurez-vous d'avoir la version 22.04 pour Ubuntu, puisque chaque version de ROS2 n'est compatible qu'avec une seule version d'Ubuntu.
+
+-
+https://docs.ros.org/en/humble/Installation.html
+
+
+
+
+############################ OS - carte microsd 128GB
+-->> https://www.raspberrypi.com/software/ : rpi imger
+-->>https://releases.ubuntu.com/22.04/?_gl=1*yye7hm*_gcl_au*NDExMTczNzY2LjE3MTY5MTk2OTA.&_ga=2.23343167.449980557.1716919908-302634684.1716919908
+
+
+
+
+
+###############      SSH
+ssh ubuntu@ipaddress
+-
+ssh ubuntu@10.192.4.38
+>> adresse ip - toulon : 192.168.1.179
+
+
+###############      VNC
+Name: NomDeLordi(princeB)
+Vnc server: 10.192.4.38
+>> adresse ip - toulon : 192.168.1.179
+
+
+########################################### !!!!!!!!!
+Great, ROS2 Humble is now installed on your Raspberry Pi 4 with Ubuntu Server 22.04!
+
+Now, in order to actually use ROS2, you’ll need to setup your environment every time you open a new session (terminal). To source your ROS2 installation in your environment, run source /opt/ros/humble/setup.bash.
+
+And because it won’t be that practical to do this for every new session you open, add this line to your bashrc.
+
+_______
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+So, from now on, every time you open a terminal, your bashrc will be executed and your environment will be ready for
+ROS2.
+###########################################
+
+
+
+###########################################
+_ Arduino :
+>> Prendre la version (Arduino 1.8 truc du genre) marqué LINUX ARM 64 bits
+
+
+
+#############" DEMARRER UN CODE ROS :
+>> En ouvrant le pc, commencer par "colcon build --symlink-install" puis "source install/setup.bash
+
+
+
+
+
+###########################################  SIMULATIONS
+____rviz2 :
+>> télécharger sur le site :
+https://docs.ros.org/en/humble/Tutorials/Intermediate/RViz/RViz-User-Guide/RViz-User-Guide.html
+
+____ ignition gazebo : computer/usr/share/ignition ;; ROS : computer/opt/ros/humble
+>> ign gazebo : lancer gazebo
+>> ign topic -l : liste des topic
+>> SI "ros2" n'est pas reconnu, tester: 
+>>source /opt/ros/humble/setup.bash car ros se trouve dans le repertoire indiqué (accessible UBUNTU depuis "dossier/other location/opt/ros/humble ")
+
+>> https://docs.ros.org/en/humble/Tutorials/Advanced/Simulators/Gazebo/Gazebo.html
+>> https://www.udemy.com/course/ros2-robotics-developer-course-using-ros2-in-python/learn/lecture/24533376#overview
+>>
+__sudo apt install ros-$ROS_DISTRO-ros-ign 
+__ign gazebo -v 4 -r --render-engine ogre visualize_lidar.sdf
+__ign gazebo nomDuFichier.sdf (en général si on est dans le dossier de type "world", inclus dans notre package)
+__ign topic -l
+__sudo apt install ros-$ROS_DISTRO-ros-ign-bridge : nous permet de faire un pont entre les messages ros2 et gazebo.
+___ros2 run ros_gz_bridge parameter_bridge
+- Pour éviter de ...
+>> >> export IGN-GAZEBO-RESOURCE-PATH=home/ray/etc chemin où se trouve les fichiers qu'on souhaite ouvrir n'importe où!?? PUIS aller dans "le fichire "world.sdf" ET dans la balise <uri> appelant le doosier "models", garder uniquement le nom du dossier contenant le modèle qu'on import
+
+____ignition doesn't have a build-in monitore : so we use gazebo classic
+-
+https://classic.gazebosim.org/tutorials?tut=install_ubuntu&cat=install
+-
+
+>> gazebo : pour demarrer gazebo classic
+
+>>fILE/eDIT/mODEL EDITOR pour créer/modifier un modèle
+>>file exit modèle editor pour retourner en simulation
+>> SUR GAZBO CLASSIC : pour tester les joints, tirer sur le coté droit (rétrécir l'environnement de simulation) puis toucher le modèle 3D
+
+____ MODELES ET MONDE :
+>> Dans le package,
+- Créer un dossier "Models" et un dossier "Worlds". 
+- Dans "Models" créer un dossier "Ground_plane" (y ajouter un modèle de type groun_plane nommé "my_ground_plane.sdf" ET le fichier model.config qui "pointe" vers my_ground_plane.sdf). On peut ajouter plusieurs AUTRES DOSSIER dans le dossier "Models", lesquels autres fichiers représentant différents modèles (1 fichier de modèle = 1 fichiers model_i.sdf et 1 fichier modelConfigName_i.config).
+- Dans le dossier "Worlds" on créer un fichier "my_World.sdf" dans lequel on inclus via des balise "<uri>" le dossier "Models" dans lequel il y a nos différents modèles; ET c'est CE FICHIER "my_World.sdf" qui sera lancé;
+
+
+_________ !!!!! VOIR AUSSI SIMULATION "ignition" dans la doc
+>> ign gazebo --render-engine ogre nomDeFichier.sdf  : si problème d'affichage
+>> To be able to communicate our simulation with ROS 2 you need to use a package called ros_ign_bridge :
+source /opt/ros/foxy/setup.bash
+ros2 run ros_ign_bridge parameter_bridge /model/vehicle_blue/cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist
+>> ros2 topic list
+>> ros2 topic echo /laser_scan
+>> ros2 topic pub etc... pour publier 
+
+>> ros2 launch my_pkg nomDeFichier.launch.py
+>> ign topic --info --topic /camera : affiche le type de données sur ce topic de ign gazebo, en cours?
+
+
+_______ !!!!! DEPUIS IGNITION GAZEBO, ON PEUT "piloter" notre robot comme suit :
+1/ en utilisant ros_ign_bridge et les commandes qui vont avec Afin de publier depuis ROS2 des commandes pour le modèles se trouvant dans gazebo
+2/ en utisant "rqt" et en publiant sur un topic donnée la commande : OUVRIR RQT/ PLUGIN/ TOPIC/ Message Publisher - Puis "CLIQUER" sur le "+" en haut à droite "ADD A NEW PUBLISHER" et fixer des valeurs à publier.
+
+SINON le modèle reste figé!!
+
+>> SE SOUVENIR DES EXEMPLES DE REMPARRING DE TOPIC : exemple vidéos sur "PROJECT: ROS2 SIMULATION ROBOT - minutes: 14.50"
+
+
+
+_______!!!! attention aux plugins et TAG
+- SENSOR TAG pour la caméra 
+- JOINT POSITION CONTROLLER.sdf (voir fin du fichier surtout; le dernier plugin ) plugin, dans ignition gazebo computer/usr/igntion…
+
+
+
+
+
+
+
+
+
+############################# USING URDF #############################
+>>https://www.udemy.com/course/ros2-robotics-developer-course-using-ros2-in-python/learn/lecture/26054056#overview
+>>ros2/humble/...URDF
+>>https://aleksandarhaber.com
+
+
+
+
+
+
+
+
+###############################  ENVIRONNEMENT MARINS
+>> https://gazebosim.org/api/gazebo/6.1/underwater_vehicles.html  : IGITION
+>> https://gazebosim.org/docs/harmonic/migrating_gazebo_classic_ros2_packages
+---
+---
+>> >> https://app.gazebosim.org/goztas/fuel/models/goztas_AUV
+
+>> https://classic.gazebosim.org/tutorials?tut=hydrodynamics&cat=physics
+
+>> https://gazebosim.org/projects/maritime
+
+>> boat floating : code source a la fin...
+https://discuss.ardupilot.org/t/ship-landing-ignition-simulation/80663/25?page=2
+
+>> https://github.com/srmainwaring/asv_wave_sim?tab=readme-ov-file !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+>> rov2: https://github.com/clydemcqueen/bluerov2_ignition/blob/main/models/bluerov2/model.sdf
+
+
+
+
+
+################################## 01/06/2024   - URDF 		ROS2 	GAZEBO
+----- URDF-ROS2-GAZEBO : dans un pkg contenu le dossier DOSSIER créer des dossier URDF,LAUNCH,RVIZ (saved from a gazeo? rviz?)
+
+------- URDF : 
+- >> https://docs.ros.org/en/foxy/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html
+
+- !!!!!!!!! >> ros2 launch urdf_tutorial display.launch.py model:=urdf/01-myfirst.urdf
+### 1er.lien important(notamment le fichier display.launch.py et s'y inspirer aussi pour créer le fichier gazebo.launch.py (rajouter uniquement spaw_entity=… et dans return launch.LaunchDescription rajouter ce qui concerne gazebo); voir aussi le complément à mettre dans package.xml) - !!!! CE QUIL MET DANS LE "package.xml" pour lancer son fichier launch etc :
+
+!!!!!!!!!!!!   !!!!!!!!!!!!!!! https://aleksandarhaber.com/how-to-create-urdf-and-launch-files-in-ros2-and-display-them-in-rviz/
+
+
+------- URDF : DANS LEs FICHIERs LAUNCH on a besoin de joint state publisher etc, il faut les installer :
+__
+sudo apt update
+sudo apt install ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-rviz2
+
+
+
+-------- URDF :
+>> ros2 humble doc : TUTO/INTERMEDIATE/LAUNCH -- voir ce qui est dit, notamment l'ajout de << <exec_depend… roslaunch etc >>
+
+##2me lien.important(fichier gazebo.launch: on a une idée; )-------- GAZEBO.launch file : prendre le fichier de config du net "urdf:
+ROS2 robot URDF + Xacro creation, visualize in RVIZ2 and Gazebo + Teleoperation | Beginner Tutorial
+!!!!!!!!!!!!!!! !!!!!!!!!!!!! >> https://www.youtube.com/watch?v=Vbh3--etiwg&t=1782s (EN DESCRIPTION)
+
+
+-------- TF2 : installer tf2
+>> ros2 run tf2_tools view_frames : visualiser les repères (un fichier est créé dans le WS)
+
+
+-------- GAZEBO : 
+>> ajouter des lignes dans "package.xml" (depend … gazebo_ros  ET AUSSI ros_ign_gazebo; rclcpp; rclpy)
+>> ajouter des lignes dans cmakelist : find_package(les mêmes que ceux rajoutés dans package.xml)
+>> dans le fichier .urdf : enlever encoding "utf-8" qui est sur la 1re ligne??? pas nécessairement
+
+
+------------------- SPAWN URDF INTO GAZEBO ROS2 - THE CONSTRUCT :
+!!!!!!! (VOIR GESTION DES CHEMINS DE "models" qui seront lus par gazebo)
+>> https://www.google.com/search?q=Cannot+Spawn+URDF+into+gazebo+using+ros2+edit%0D%0A&sca_esv=bb932b014846ff27&sxsrf=ADLYWIJ3pFYUjmbdQ66xzaiKUnALo7CLSw%3A1717358563276&ei=489cZtPEEKqYkdUPmb-I8As&ved=0ahUKEwiTwvaY272GAxUqTKQEHZkfAr4Q4dUDCBA&uact=5&oq=Cannot+Spawn+URDF+into+gazebo+using+ros2+edit%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiLkNhbm5vdCBTcGF3biBVUkRGIGludG8gZ2F6ZWJvIHVzaW5nIHJvczIgZWRpdAoyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAuGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQEyFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQFIpmxQxmdYxmdwAngBkAEAmAEAoAEAqgEAuAEDyAEA-AEB-AECmAICoAIbqAIUwgIKEAAYsAMY1gQYR5gDFIgGAZAGAroGBggBEAEYC5IHATKgBwA&sclient=gws-wiz-serp#fpstate=ive&vld=cid:06b66cc4,vid:mDS_M95MQGA,st:3071
+
+
+--- ERRRRRRREUR
+>>https://answers.gazebosim.org//question/26073/cannot-spawn-urdf-into-gazebo-using-ros2/
+
+
+
+
+
+################################  07/06/2024
+*** SI IL Y A UN PB "plusieurs server running ou un truc du genre" :
+>> ps aux | grep gzserer (voir le 1r uméro à 5 chiffres ("PID") et faire : 
+>> kill -9 "numéro pid à 5chiffres"
+ou
+>> kill all
+
+__________ URDF IN GAZEBO :
+>> https://classic.gazebosim.org/tutorials/?tut=ros_urdf
+
+>> https://github.com/gazebosim/gazebo-classic/blob/master/media/materials/scripts/gazebo.material
+
+>> TURTLE BOT - URDF - LAUNCH :
+https://github.com/ROBOTIS-GIT/turtlebot3_simulations/blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/turtlebot3_gazebo/urdf/turtlebot3_burger.urdf
+
+___________ conversion urdf/sdf
+>> gz sdf -p path/vers/monFichiet_urdf > path/vers/le nouveau/monFichier.sdf
+>> RAJOUTER LA BALISE <? xml version='1.0'> au début
+
+___________urdf/xacro ; urdf/sdf
+
+
+
+################################## 10/06/2024
+
+__ environnement marin GitHub/srmainwaring
+>> colcon build… : supprimer merge install?
+>> installer gz-cmake 3 ?
+
+
+################################### 12/06/2024
+>> ignition gazebo : launch, create.launch /// comment remplacer 'spawn_entity.py' utilisé avec ros_gazebo
+https://github.com/gazebosim/ros_gz/blob/melodic/ros_ign_gazebo_demos/launch/create.launch#L14

@@ -1,0 +1,125 @@
+############ ARDUINO - NOTES ############
+___________________________
+>> Pins :
+https://smartpoker.jimdofree.com/l-arduino-mega/
+
+>>  __!!!__!!!__ OBSTACLE AVOIDANCE ROBOT CAR: __!!!__!!!__
+https://www.dropbox.com/scl/fo/qe2twwkrg52o11l1il5oy/APo8ixPNDqot4ISqGZYwjuE?rlkey=7bwtvl1vd0beo9q2ufuxq48te&e=1&dl=0
+
+>> UTILISER OBLIGATOIREMENT LE MOT CLE "volatile" pour les variables d'interruptions;
+___________________________
+
+
+___VIDEO GEAR ENCODER + L298 - câblage:
+*1/ https://www.youtube.com/watch?v=bl2k6eXDAGM
+2/ https://www.youtube.com/watch?v=bsB5shP3vls
+*3/ https://www.youtube.com/watch?v=-PCuDnpgiew&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT&index=7
+*4/ https://www.youtube.com/watch?v=D5r3qVpn-OA
+- Le codeur : technologie magnétique :
+https://www.youtube.com/watch?v=SCR5YJZVyKg&t=24s
+--- Cours codeurs incrémental/ optique:
+- https://www.youtube.com/watch?v=20Rzc8aC9IM
+-*** PINS:
+https://www.robot-maker.com/shop/kits-robots/51-kit-moteur-gm25-370ca-encodeur-roue-chromee-51.html
+
+____ULTRASON :
+>> https://www.youtube.com/watch?v=gpjB4qNfUkw
+
+____ULTRASON :
+>> 
+- https://www.youtube.com/watch?v=gpjB4qNfUkw
+*- https://www.youtube.com/watch?v=O7yoa-hwnkI
+- https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/
+
+
+____les interruptions matérielles (Externes: déclenchées par des évènement hors du programme) / Arduino méga :
+INT0 - Pin numérique 2
+INT1 - Pin numérique 3
+INT2 - Pin numérique 21
+INT3 - Pin numérique 20
+INT4 - Pin numérique 19
+INT5 - Pin numérique 18
+- EX: attachInterrupt(digitalPinToInterrupt(pin), fonction, mode);
+pin : le numéro de la pin (2, 3, 18, 19, 20, 21 pour l’Arduino Mega).
+fonction : la fonction à appeler lors de l'interruption.
+mode : le mode de déclenchement, qui peut être LOW, CHANGE, RISING, ou FALLING.
+** attachInterrupt :
+- attachInterrupt(digitalPinToInterrupt(interruptPin), handleInterrupt, FALLING)
+- Déclenchement des interruptions :
+'RAISING": front montant; 'FALLING':Front descendant; 'CHANGE': prend en compte les 2.
+
+____ Utilisation des pins : exemple:
+-Pin analogique (A0) : utilisée pour lire une valeur analogique via un potentiomètre, par exemple.
+-Pin numérique (13) : utilisée pour contrôler une LED (en sortie).
+-Pin d'interruption (2) : utilisée pour détecter un changement d'état (lorsqu’un bouton est pressé).
+
+___
+* Afin d'éviter le problème de la broche flottante, utiliser une résistance de rappel/de tirage: (De façon générale, une résistance de rappel a comme valeur 10K ohm)
+- http://wiki.t-o-f.info/Arduino/R%C3%A9sistanceDeRappel
+
+
+
+
+_____________________________ Les interruptions et les timers
+*
+Les interruptions et les timers sont deux mécanismes essentiels pour gérer des événements dans les microcontrôleurs, comme l’Arduino, mais ils fonctionnent de manière différente et sont utilisés pour des objectifs distincts.
+
+1. Interruption
+- Une interruption est un signal qui interrompt le programme principal pour exécuter une routine spéciale appelée routine de traitement des interruptions (ISR, pour Interrupt Service Routine). Lorsqu'un événement survient, l'interruption force le microcontrôleur à arrêter temporairement le code en cours pour exécuter l'ISR, puis reprend là où il s’était arrêté.
+- Déclenchement : Une interruption est déclenchée par un événement externe ou interne, comme un changement de niveau sur une broche spécifique, l'achèvement d'une conversion analogique-numérique, ou encore une réception de donnée série.
+
+2. Timer
+Un timer est un compteur interne du microcontrôleur qui compte des cycles d’horloge pour mesurer des intervalles de temps. Un timer peut être configuré pour déclencher une interruption à intervalles réguliers, mais il ne dépend pas d'un événement externe comme une interruption classique.
+
+Déclenchement : Le timer est configuré pour compter des cycles jusqu'à une certaine valeur, puis il déclenche une interruption à des intervalles fixes. Le timer continue de compter de façon indépendante, même lorsque le microcontrôleur exécute d’autres tâches.
+
+Utilisation : Les timers sont idéaux pour des tâches périodiques comme le contrôle de la fréquence d'un moteur, la génération de signaux PWM, ou la mesure précise de durées.
+- 
+// Exemple d'utilisation de Timer1 pour déclencher une interruption toutes les secondes
+Timer1.initialize(1000000);  // 1,000,000 µs = 1 seconde
+Timer1.attachInterrupt(myISR);  // Appelle myISR toutes les secondes
+
+
+
+
+_____________________________CODE : Interrupt
+-
+// Déclaration des pins
+const int analogPin = A0;       // Pin analogique
+const int ledPin = 13;          // Pin numérique pour la LED
+const int interruptPin = 2;     // Pin d'interruption
+volatile bool interruptFlag = false;  // Variable pour suivre l'interruption
+
+void setup() {
+  // Initialisation de la communication série
+  Serial.begin(9600);
+  
+  // Configuration des pins
+  pinMode(ledPin, OUTPUT);              // Pin numérique en sortie pour la LED
+  pinMode(interruptPin, INPUT_PULLUP);  // Pin d'interruption en entrée avec résistance de pull-up
+
+  // Attachement de l'interruption
+  attachInterrupt(digitalPinToInterrupt(interruptPin), handleInterrupt, FALLING);
+}
+
+void loop() {
+  // Lecture de la valeur analogique et affichage sur le moniteur série
+  int analogValue = analogRead(analogPin);
+  Serial.print("Valeur analogique : ");
+  Serial.println(analogValue);
+  delay(500);
+
+  // Clignotement de la LED en fonction de l'interruption
+  if (interruptFlag) {
+    digitalWrite(ledPin, HIGH); // Allume la LED
+    delay(100);                 // Maintient la LED allumée pendant 100 ms
+    digitalWrite(ledPin, LOW);  // Éteint la LED
+    interruptFlag = false;      // Réinitialise le drapeau d'interruption
+  }
+}
+
+// Fonction de gestion de l'interruption
+void handleInterrupt() {
+  interruptFlag = true; // Active le drapeau d'interruption pour le traitement dans loop()
+}
+____________________________________
