@@ -45,6 +45,8 @@ ___________________________________
 >> GITHUB PUSH:
 https://raspberrypi.stackexchange.com/questions/133163/how-do-i-configure-my-computer-to-push-to-github
 
+- *** video : Personal Access token 
+https://www.youtube.com/watch?v=iLrywUfs7yU
 _______
 >> access token :
 https://github.com/settings/personal-access-tokens/new
@@ -73,9 +75,9 @@ Option 1: Use a Personal Access Token (PAT)
 Alternatively, you can update your remote URL to include the token directly (use caution with this approach, as it saves the token in plain text).
 
 ------------->> KEY :
-- token name: my_token24_2
+- token name: my_token24
 - token :
-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
+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
 ------------->> KEY :
 
 
@@ -113,7 +115,7 @@ Your Raspberry Pi will use the PAT instead of a password, allowing you to push s
 
 __________________ Mon test:
 >> 1 :
-ubuntu@princeB:~/Documents/_FromGithub/Hardware_rpi$ git remote set-url origin https://BenguetAime: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@github.com/BenguetAime/Hardware_rpi.git 
+ubuntu@princeB:~/Documents/_FromGithub/Hardware_rpi$ git remote set-url origin https://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@github.com/BenguetAime/Hardware_rpi.git 
 
 >> 2 :
 git config --global credential.helper store
