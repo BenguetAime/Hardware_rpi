@@ -113,7 +113,7 @@ Your Raspberry Pi will use the PAT instead of a password, allowing you to push s
 
 __________________ Mon test:
 >> 1 :
-ubuntu@princeB:~/Documents/_FromGithub/Hardware_rpi$ git remote set-url origin https://BenguetAime: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@github.com/BenguetAime/Hardware_rpi.gitSUPPRIMERRRRRRRRRRRRRLESSSSSSSSSLIIIIIIGNESSSSSUIIIIIIIIIIIIIIIIVAANTEESSSSSSSSSSSS8_OU_LE_RESTE_DES_LETTRES
+
 
 >> 2 :
 git config --global credential.helper store
