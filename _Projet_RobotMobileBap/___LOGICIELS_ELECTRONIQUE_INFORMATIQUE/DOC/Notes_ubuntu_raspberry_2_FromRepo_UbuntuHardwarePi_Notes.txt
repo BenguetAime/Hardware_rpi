@@ -10,6 +10,7 @@ _ Thonny:
 ____
 >> adresse ip - toulon : 192.168.1.179
 
+
 ######
 >> Alternative à "sudo raspi-config", sous ubuntu:
 sudo nano /boot/firmware/config.txt

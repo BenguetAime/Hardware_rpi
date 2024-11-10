@@ -41,6 +41,93 @@ __
 
 >> git push origin main : envoyer vers github
 
+___________________________________
+>> GITHUB PUSH:
+https://raspberrypi.stackexchange.com/questions/133163/how-do-i-configure-my-computer-to-push-to-github
+
+_______
+>> access token :
+https://github.com/settings/personal-access-tokens/new
+
+https://github.com/settings/personal-access-tokens/4413540
+
+_______
+>>
+Since GitHub removed password-based authentication for Git operations over HTTPS in August 2021, you’ll need to use a personal access token (PAT) or SSH keys instead of your GitHub password.
+
+Here’s how to solve this issue:
+******************************
+Option 1: Use a Personal Access Token (PAT)
+-Generate a Personal Access Token:
+
+-Go to GitHub’s Personal Access Token settings.
+-Click on Generate new token.
+-Select the necessary scopes for your token (for most users, selecting repo should be sufficient for repository access).
+-Copy the token to a safe place (you won’t be able to see it again once you leave the page).
+
+*Use the Token Instead of Your Password:
+-When prompted for a password, enter your personal access token instead.
+Alternatively, you can update your remote URL to include the token directly (use caution with this approach, as it saves the token in plain text).
+
+------------->> KEY :
+- token name: my_token24
+- token :
+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
+
+------------->> KEY :
+
+
+_______________________________ EXEMPLE :
+>> 
+***Step 2: Update the Git Remote on Your Raspberry Pi
+-Open a terminal on your Raspberry Pi.
+-Navigate to your repository:
+cd /path/to/your/repository
+
+1---
+Update the Git remote URL to include your username and token:
+git remote set-url origin https://<your-username>:<your-token>@github.com/<your-username>/<your-repo>.git
+
+-For example:
+git remote set-url origin https://denguetAime:ghp_YourGeneratedToken@github.com/denguetAime/Hardware_rpi.git
+
+Note: Replace <your-username>, <your-token>, and <your-repo> with your GitHub username, the token you generated, and the repository name respectively.
+
+2---
+(Optional) Store the credentials using Git’s credential helper:
+git config --global credential.helper store
+
+Then, the next time you’re prompted for the token, Git will save it so you don’t have to enter it again.
+
+
+***Step 3: Push Changes
+Once your remote is updated, you can push as usual:
+
+git add .
+git commit -m "Your commit message"
+git push origin main
+
+Your Raspberry Pi will use the PAT instead of a password, allowing you to push successfully.
+
+__________________ Mon test:
+>> 1 :
+ubuntu@princeB:~/Documents/_FromGithub/Hardware_rpi$ git remote set-url origin https://BenguetAime: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@github.com/BenguetAime/Hardware_rpi.git
+
+>> 2 :
+git config --global credential.helper store
+
+>> 3 :
+git add .
+git commit -m "Your commit message"
+git push origin main
+
+__________________
+########################## GitHub :
+
+
+
+
+
 
 
 
