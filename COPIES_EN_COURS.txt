@@ -1,4 +1,4 @@
-### last : pc
+### last : pc;
 
 ########## compter le nombre d'impulsions par tour:
 >>
