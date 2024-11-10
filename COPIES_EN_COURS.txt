@@ -1,5 +1,6 @@
 ### last : pc
 
+
 ########## compter le nombre d'impulsions par tour:
 >>
 const int encoderPinA = 2;  // Broche du signal A de l'encodeur
