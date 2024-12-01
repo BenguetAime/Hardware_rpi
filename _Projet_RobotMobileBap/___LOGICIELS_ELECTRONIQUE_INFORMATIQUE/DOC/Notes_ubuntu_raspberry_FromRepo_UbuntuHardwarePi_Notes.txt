@@ -47,6 +47,9 @@ https://raspberrypi.stackexchange.com/questions/133163/how-do-i-configure-my-com
 
 - *** video : Personal Access token 
 https://www.youtube.com/watch?v=iLrywUfs7yU
+
+-*** error:
+https://stackoverflow.com/questions/24114676/git-error-failed-to-push-some-refs-to-remote
 _______
 >> access token :
 https://github.com/settings/personal-access-tokens/new

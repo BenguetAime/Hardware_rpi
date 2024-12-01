@@ -44,9 +44,10 @@ _____
 colcon build --packages-select my_package
 
 >> ros2 run tf2_tools view_frames : visualiser les repères (un fichier est créé dans le WS)
->>ros2 param get /robot_state_publisher robot_description
 
-_____CmakeLists/Package.xml :
+>> ros2 param get /robot_state_publisher robot_description
+
+_________CmakeLists/Package.xml__________ :
 >>Pour un lancement basique (sans plugin particulier) du robot:
 - pas besoin de "joint_state_publisher" (n'existe pas comme dépendance); besoin de rien pour SPAWN DANS gazebo, rviz aussi !
 ---------
@@ -54,7 +55,7 @@ _____CmakeLists/Package.xml :
 __dans un fichier launch :
 Les nœuds robot_state_publisher; joint_state_publisher ??
 
-!!!__ DANS RVIZ : en faisant "ADD/ ROBOT MODEL" : écrire dans l'interface "ROBOT ODEL/ Description Topic": /robot_description;
+!!!__ DANS RVIZ : en faisant "ADD/ ROBOT MODEL" : écrire dans l'interface "ROBOT MODEL/ Description Topic": /robot_description;
 
 ____ RVIZ : FIXED FRAME:
 if the global fixed frame in Rviz is base link frame, all the generated data are referred to the base of robot,
@@ -87,7 +88,7 @@ ros2 topic pub /cmd_vel geometry_msgs/Twist "{linear: {x: 0.5}, angular: {z: 0.0
 ros2 topic pub /cmd_vel geometry_msgs/Twist "{linear: {x: 0.0}, angular: {z: 0.5}}"
 
 
-____!!!!!!____!!!! DIFF DRIVE : 2/4 WHEELS plugins :
+____!!!!!!____!!!! DIFF DRIVE : 2/4 WHEELS plugins ____!!!!!!____!!!!:
 >> AI, Deep Learning and Robotics :
 >> 
 https://robotics.snowcron.com/robotics_ros2/diff_drive_ros2_control_2_wheels.htm
@@ -132,6 +133,8 @@ Pourquoi : La tension du fusible doit être égale ou supérieure à la tension 
 
 -- Switch ; Borniers; Raccord électrique;
 -- Borniers
+
+-- Connecteur JST; XH; XT90; DC jack;
 -- xt60 connector: vers la battérie
 -- Cosse(fém.) : extrémité métallique de [qch]);
 *Les spade connectors (ou connecteurs à cosses plates en français) sont des connecteurs électriques utilisés pour effectuer des connexions rapides et sécurisées dans les circuits électriques. Ils sont appelés "spade" (en forme de pelle) en raison de leur forme plate, qui permet un branchement et un débranchement rapide.
@@ -150,9 +153,11 @@ ____
 
 
 
-############################ SOURCES INTERESSANTES ############################
+
+############################ SOURCES INTERESSANTES - START ############################
 __YouTube Video : Modeling, Simulation, control OF a 4 WHEEL Robot in ROS:
 >> https://www.youtube.com/watch?v=ad2jd8SCK-o&t=28s
+
 __Fichier launch.py bien structuré:
 >> https://www.reddit.com/r/ROS/comments/10hv6sa/robot_not_visible_in_gazebo_but_visible_in_rviz/?rdt=57927
 
@@ -160,14 +165,18 @@ __Fichier launch.py bien structuré:
 >> besoin de tag "inertial" pour chaque "link" dans gazebo
 >> SPAWN ENTITY IN GAZEBO : 3 moyens; via "file", via "topic": best, via a "database";
 >> !!__!! : ATTENTION à l'utilisation des mesh/urdf :
-- <mesh filename="package://my_pkg/meshes/base_link.stl"/> : le robot ne s'affichait pas dans gazebo, mais dans Rviz2 oui;
+- <mesh filename="package://my_pkg/meshes/base_link.stl"/> : le robot ne s'affichait pas dans gazebo classic/ sous ROS2, mais dans Rviz2 oui;
 - <mesh filename="file://$(find my_pkg)/meshes/base_link.stl"/> : marche ainsi;
 - lien:
 https://answers.ros.org/question/404423/whats-the-correct-way-to-load-mesh-files-in-gazebo-and-rviz/
 
->> Besoin des tag Concernant le "model_paht" (PAS BESOIN POUR un lancement simple, sans monde partiulier, avec un XACRO uniquement) : chemin absolu des modèles 3D
+>> Besoin des tag Concernant le "model_path" (PAS BESOIN POUR un lancement simple, sans monde partiulier, avec un XACRO uniquement) : chemin absolu des modèles 3D
 - https://www.reddit.com/r/ROS/comments/10hv6sa/robot_not_visible_in_gazebo_but_visible_in_rviz/?rdt=57927
 
-________ Ros/Arduino : ROS 2 for microcontrollers
+________ Ros/Arduino : ROS 2 for microcontrollers________
 >> 
 https://github.com/micro-ROS
+
+
+
+############################ SOURCES INTERESSANTES - END ###########################

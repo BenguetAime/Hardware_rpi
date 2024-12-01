@@ -38,8 +38,9 @@ Le SG90 consomme environ 10 mA lorsqu'il est inactif, mais lors du mouvement, sa
 Condensateurs de déparasitage : Installez des condensateurs (par exemple, 100 µF) près des moteurs pour réduire les pics de courant et éviter d'éventuelles interférences électriques sur les autres composants.; 
 Surveiller les pics de courant :;
 
-____________________________
 
+
+____________________________
 
 ___VIDEO GEAR ENCODER + L298 - câblage:
 *1/ Espagnol:
@@ -56,7 +57,11 @@ https://www.youtube.com/watch?v=SCR5YJZVyKg&t=24s
 https://www.robot-maker.com/shop/kits-robots/51-kit-moteur-gm25-370ca-encodeur-roue-chromee-51.html
 
 --L298n :
+-
+https://ledisrupteurdimensionnel.com/arduino/fonctionnement-du-module-controleur-de-moteurs-l298n/
+-
 https://www.youtube.com/watch?v=I7IFsQ4tQU8
+
 
 ____ULTRASON :
 >> https://www.youtube.com/watch?v=gpjB4qNfUkw
@@ -79,6 +84,7 @@ INT5 - Pin numérique 18
 pin : le numéro de la pin (2, 3, 18, 19, 20, 21 pour l’Arduino Mega).
 fonction : la fonction à appeler lors de l'interruption.
 mode : le mode de déclenchement, qui peut être LOW, CHANGE, RISING, ou FALLING.
+
 ** attachInterrupt :
 - attachInterrupt(digitalPinToInterrupt(interruptPin), handleInterrupt, FALLING)
 - Déclenchement des interruptions :

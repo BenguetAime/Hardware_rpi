@@ -12,12 +12,18 @@ https://www.youtube.com/watch?v=-PCuDnpgiew&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-N
 - Arduino ANALOG/DIGITAL : 
 https://www.youtube.com/watch?v=BMMnOAzcqoE
 
->> GIMP - modif photos :
+________>> Logiciel GIMP - modif photos_________ :
 https://www.youtube.com/watch?v=t8LAXxqfqWk
 
 
-
-
-
-
 ############ End - Hardware-Software / Moteur et suite… ############
+
+
+
+
+
+
+############ START - NOTES ##########
+
+
+############ END - NOTES ############

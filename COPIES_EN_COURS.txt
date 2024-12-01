@@ -1,6 +1,38 @@
 ### last : pc
 
 
+
+################ Battérie management !
+
+const int batteryPin = A0; // Pin analogique pour la tension
+const float R1 = 330.0; // Résistance R1 en ohms
+const float R2 = 220.0;  // Résistance R2 en ohms
+const float vRef = 5.0;    // Référence de tension de l'Arduino
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int analogValue = analogRead(batteryPin); // Lire la valeur analogique
+  float voltage = (analogValue * vRef / 1023.0) * ((R1 + R2) / R2); // Calcul de la tension
+  Serial.print("Battery Voltage: ");
+  Serial.print(voltage);
+  Serial.println(" V");
+
+  if (voltage < 10.5) { // Seuil pour batterie presque vide
+    Serial.println("WARNING: Battery is low!");
+    // Ajoutez une action ici (allumer un LED, déclencher un buzzer, etc.)
+  }
+
+  delay(1000); // Pause d'une seconde
+}
+
+
+#################
+
+
+
 ########## compter le nombre d'impulsions par tour:
 >>
 const int encoderPinA = 2;  // Broche du signal A de l'encodeur
