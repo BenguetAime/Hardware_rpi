@@ -149,34 +149,4 @@ Les embouts de câblage sont de petits manchons en métal, souvent entourés de 
 --En électronique, un jack ou socket est une prise, et un plug est une fiche. 
 
 ____
-########### HARDWARE - end ###########
-
-
-
-
-############################ SOURCES INTERESSANTES - START ############################
-__YouTube Video : Modeling, Simulation, control OF a 4 WHEEL Robot in ROS:
->> https://www.youtube.com/watch?v=ad2jd8SCK-o&t=28s
-
-__Fichier launch.py bien structuré:
->> https://www.reddit.com/r/ROS/comments/10hv6sa/robot_not_visible_in_gazebo_but_visible_in_rviz/?rdt=57927
-
-!!!!!____!!!!!___ATTENTION GAZEBO : 
->> besoin de tag "inertial" pour chaque "link" dans gazebo
->> SPAWN ENTITY IN GAZEBO : 3 moyens; via "file", via "topic": best, via a "database";
->> !!__!! : ATTENTION à l'utilisation des mesh/urdf :
-- <mesh filename="package://my_pkg/meshes/base_link.stl"/> : le robot ne s'affichait pas dans gazebo classic/ sous ROS2, mais dans Rviz2 oui;
-- <mesh filename="file://$(find my_pkg)/meshes/base_link.stl"/> : marche ainsi;
-- lien:
-https://answers.ros.org/question/404423/whats-the-correct-way-to-load-mesh-files-in-gazebo-and-rviz/
-
->> Besoin des tag Concernant le "model_path" (PAS BESOIN POUR un lancement simple, sans monde partiulier, avec un XACRO uniquement) : chemin absolu des modèles 3D
-- https://www.reddit.com/r/ROS/comments/10hv6sa/robot_not_visible_in_gazebo_but_visible_in_rviz/?rdt=57927
-
-________ Ros/Arduino : ROS 2 for microcontrollers________
->> 
-https://github.com/micro-ROS
-
-
-
-############################ SOURCES INTERESSANTES - END ###########################
+########### HARDWARE - end ##########

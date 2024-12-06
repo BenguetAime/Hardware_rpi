@@ -7,6 +7,9 @@ https://articulatedrobotics.xyz/tutorials/mobile-robot/project-overview
 
 https://github.com/joshnewans/articubot_one
 
+___ power :
+https://www.youtube.com/watch?v=-PCuDnpgiew&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT&index=7
+
 ####################################  THE WHOLE PROJECT
 
 

@@ -24,6 +24,45 @@ https://www.youtube.com/watch?v=t8LAXxqfqWk
 
 
 ############ START - NOTES ##########
+____!! ROSSERIAL : - ROS 1!! ____
+>>
+https://wiki.ros.org/rosserial
+
+https://wiki.ros.org/rosserial_arduino/Tutorials
+>>
+
+_Installer rosserial pour ROS 2 sur le Raspberry Pi :
+sudo apt install ros-humble-rosserial
+sudo apt install ros-humble-rosserial-Arduino
+
+
+__Configurer et programmer l'Arduino Mega :
+Connectez l'Arduino Mega à votre Raspberry Pi via USB (port série).
+-Installez Arduino IDE sur le Raspberry Pi, si ce n'est pas déjà fait, et ouvrez-le.
+-Installez la bibliothèque rosserial_arduino :
+-Ouvrez Arduino IDE.
+-Allez dans Sketch > Include Library > Manage Libraries.
+-Recherchez rosserial_arduino et installez-la.
+---------------------------------------------
+
+
+---------------------------------------------
+____!!!! ros2-arduino : - ROS 2!!!! ____
+https://docs.arduino.cc/libraries/ros2arduino/
+
+https://github.com/ROBOTIS-GIT/ros2arduino
+
+--------------------------------------------
+
+_____ Raspberry Pi, Ros2/ARDUINO
+Conclusion
+Arduino et Raspberry Pi communiquent via ROS 2 sans utiliser le port série traditionnel en utilisant rosserial ou un pont ROS 2.
+Le Raspberry Pi exécute ROS 2 et sert de passerelle pour l'Arduino, tandis que l'Arduino envoie des messages via un nœud ROS 2.
+Vous pouvez créer des nœuds ROS 2 sur le Raspberry Pi pour interagir avec les capteurs et les actionneurs de l'Arduino.
+______
+
+
+
 
 
 ############ END - NOTES ############

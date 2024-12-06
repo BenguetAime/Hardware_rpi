@@ -11,14 +11,15 @@ ____
 >> adresse ip - toulon : 192.168.1.179
 
 
-######
+############
 >> Alternative à "sudo raspi-config", sous ubuntu:
 sudo nano /boot/firmware/config.txt
 
 
 
 
-###### SERIAL COM - Arduino, rpi
+
+############ SERIAL COM - Arduino, rpi ############
 >> ls /dev/tty*
 
 __1 sur notre rpi, il faut avoir les permissions d'accès à la com série :
@@ -30,6 +31,105 @@ __2 : installer une librairie python (SUR ARDUINO ON A DEJA serial):
 >> pip3 install pyserial
 >> pip3 show pyserial
 
+____ ROS 1
+>>
+https://wiki.ros.org/rosserial
+
+https://wiki.ros.org/rosserial_arduino/Tutorials
+____
+
+--------------------------------------------- ROS 2 - ARDUINO communication
+____!!!! ros2-arduino : - ROS 2!!!! ____
+https://docs.arduino.cc/libraries/ros2arduino/
+
+https://github.com/ROBOTIS-GIT/ros2arduino
+
+--------------------------------------------
+
+
+
+
+###### COM SERIE :
+___
+*******Miniterm****** 
+est un outil de terminal série inclus dans la bibliothèque Python pyserial. 
+Il permet de communiquer avec des périphériques connectés via un port série (USB, UART, etc.), 
+comme les cartes Arduino ou Raspberry Pi. C'est un outil essentiel pour le débogage et la 
+surveillance des données échangées entre un microcontrôleur et un ordinateur.
+
+___
+ou can open the serial console window from within the Arduino IDE to send command to the arduino. You can do this by clicking on the right hand side button on the toolbar:
+serial console
+There you can communicate with the code you've written using the Arduino IDE.
+To implement the serial communication, you shall examples in the Arduino IDE file menu.
+Use the commandline, you can use:
+*** 
+>> 
+screen /dev/ttyACM0 57600
+(and press Ctrl-A k to exit)
+***or miniterm:
+>>
+python3 -m serial.tools.miniterm /dev/ttyACM0 57600
+___
+>> python3 -m serial.tools.list_ports
+>>  python3 -m serial.tools.list_ports -v  ;(détails)
+
+
+___****
+Donnez les droits nécessaires :
+Si vous utilisez Linux et que vous obtenez une erreur d'accès au port (Permission denied), ajoutez votre utilisateur au groupe dialout :
+bash
+Copier le code
+>> sudo usermod -a -G dialout $USER
+>> Puis, déconnectez-vous et reconnectez-vous.
+___
+
+___*** MINITERM ***
+- Si la commande miniterm ne fonctionne pas :
+Cela peut arriver si le binaire n'est pas lié correctement. Dans ce cas, utilisez la commande Python explicite :
+
+>> python3 -m serial.tools.miniterm -e /dev/ttyACM0 9600
+
+>> miniterm (appel direct)
+Lorsque vous exécutez miniterm, vous utilisez un exécutable CLI (Command Line Interface) installé sur votre système lors de l'installation de pyserial avec pip3.
+Condition préalable : L'installation de pyserial doit avoir ajouté le chemin vers cet exécutable dans votre variable d'environnement PATH.
+
+>> python3 -m serial.tools.miniterm
+Cette méthode appelle directement le module serial.tools.miniterm depuis Python en utilisant le gestionnaire de modules de Python (-m).
+
+>> python3 -m serial.tools.miniterm --port /dev/ttyUSB0 --baudrate 9600
+
+>>Exemple d'utilisation de -e :
+python3 -m serial.tools.miniterm /dev/ttyUSB0 9600 -e
+Cela signifie que lorsque vous tapez quelque chose, le terminal affichera ce texte immédiatement, et vous pouvez interagir avec le périphérique série en voyant ce que vous tapez.
+
+
+>>
+2. Vérifier les processus qui utilisent le port série
+Utilise la commande lsof pour vérifier quel processus utilise actuellement /dev/ttyACM0 :
+
+bash
+Copier le code
+sudo lsof /dev/ttyACM0
+Cette commande te donnera une liste des processus qui utilisent ce port. Si tu vois un processus en particulier (comme arduino ou un autre logiciel de communication série), tu peux essayer de le fermer.
+
+Si tu veux forcer la fermeture d'un processus utilisant le port, tu peux utiliser la commande kill :
+
+bash
+Copier le code
+sudo kill <PID>
+Où <PID> est l'identifiant du processus que tu veux terminer (que tu peux obtenir à partir de lsof).
+
+
+___
+Si vous êtes sur un Raspberry Pi avec Ubuntu :
+/dev/ttyAMA0 : Port UART natif accessible via les broches GPIO.
+/dev/ttyACM0 : Dispositif USB connecté (comme un Arduino).
+
+
+
+
+######################
 
 
 
