@@ -47,21 +47,59 @@ Connectez l'Arduino Mega à votre Raspberry Pi via USB (port série).
 
 
 ---------------------------------------------
-____!!!! ros2-arduino : - ROS 2!!!! ____
+____!!!! ros2-arduino : - ROS 2!!!! ____ PB DE MEMOIRE SRAM ARDUINO MEGA??
 https://docs.arduino.cc/libraries/ros2arduino/
 
 https://github.com/ROBOTIS-GIT/ros2arduino
 
---------------------------------------------
-
-_____ Raspberry Pi, Ros2/ARDUINO
+---
+___Raspberry Pi, Ros2/ARDUINO
 Conclusion
 Arduino et Raspberry Pi communiquent via ROS 2 sans utiliser le port série traditionnel en utilisant rosserial ou un pont ROS 2.
 Le Raspberry Pi exécute ROS 2 et sert de passerelle pour l'Arduino, tandis que l'Arduino envoie des messages via un nœud ROS 2.
 Vous pouvez créer des nœuds ROS 2 sur le Raspberry Pi pour interagir avec les capteurs et les actionneurs de l'Arduino.
-______
+
+--------------------------------------------
 
 
+############
+>> Alternative à "sudo raspi-config", sous ubuntu:
+sudo nano /boot/firmware/config.txt
+
+
+
+
+############################# Suite projet - LIDAR
+>> ARTICULATED ROBOTICS :
+https://www.youtube.com/watch?v=eJZXRncGaGM&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT&index=8
+
+>> Autre source:
+https://automaticaddison.com/set-up-lidar-for-a-simulated-mobile-robot-in-ros-2/
+
+>> Autre source - ld19 lidar :
+https://www.waveshare.com/wiki/Tutorial_IX_Lidar_and_Publishing_Lidar_Topics_in_ROS2#:~:text=Connect%20LD19%20and%20the%20driver,LiDAR%20written%20next%20to%20it.
+
+-------
+>> ros2 topic echo /topic_name
+
+__ADD A lidar.xacro in robot_urdf.xacro :
+Tout comme gazebo_control.xacro gérant le diff_drive driver, a été inclus.
+
+__ Pour utiliser le vrai lidar - LD19:
+--- Se servir du driver fournit par le constructeur!
+- Un nœud ROS2 permet de préciser : 
+le port par lequel le lidar est connecté, le frame_id (nom du link lidar simulé), etc.
+Lancer ce nœud permet de gérer les données lidar;
+- Un autre nœud éventuellement, lance rviz2;
+
+
+- Mon cas :LIDAR LD19
+>> https://github.com/ldrobotSensorTeam
+>> https://github.com/ldrobotSensorTeam/ldlidar_stl_ros2
+
+-------
+
+############################# 
 
 
 

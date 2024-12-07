@@ -8,7 +8,8 @@
 _ Thonny:
 >>sudo apt install thonny
 ____
->> adresse ip - toulon : 192.168.1.179
+>> adresse ip RaspberyPi - toulon : 192.168.1.179
+>> adresse ip VMWARE (2024, my Acer) - toulon : 192.168.1.124
 
 
 ############
@@ -31,25 +32,79 @@ __2 : installer une librairie python (SUR ARDUINO ON A DEJA serial):
 >> pip3 install pyserial
 >> pip3 show pyserial
 
-____ ROS 1
+############ SERIAL COM - Arduino, rpi ############
+
+
+
+
+-------------- ROS2 CONNU PAR LE TERMINAL --------------:
+>> Étapes pour automatiser le source
+Identifier votre shell
+
+Vérifiez quel shell vous utilisez en tapant :
+- echo $SHELL
+Résultat typique : /bin/bash ou /bin/zsh.
+Modifier le fichier de configuration approprié
+Si vous utilisez Bash : modifiez le fichier ~/.bashrc.
+Si vous utilisez Zsh : modifiez le fichier ~/.zshrc.
+Si vous utilisez un autre shell, il faudra adapter l'étape en fonction de votre shell.
+--
+-Ouvrez le fichier de configuration dans un éditeur de texte (exemple avec nano) :
+nano ~/.bashrc
+-Ajoutez la ligne suivante à la fin du fichier ::
+source /opt/ros/humble/setup.bash
+-Si vous utilisez plusieurs workspaces ROS, ajoutez également les autres setup.bash dans le bon ordre (le workspace principal en dernier) :
+source /opt/ros/humble/setup.bash
+source ~/my_ros_workspace/install/setup.bash
+
+-Recharger le fichier de configuration
+Rechargez le fichier modifié pour appliquer les changements immédiatement :
+source ~/.bashrc
+
+-VERIFIER :
+printenv | grep ROS
+
+-----------
+Qu'est-ce que ~/.bashrc ?
+~/.bashrc est un fichier de script de configuration spécifique à l'utilisateur.
+Il est exécuté automatiquement à chaque fois que vous ouvrez un terminal interactif non connecté 
+(par exemple, un nouveau terminal dans une session utilisateur existante).
+Il configure l’environnement shell pour l’utilisateur, en ajoutant des alias, des chemins, ou d'autres 
+réglages nécessaires pour une session efficace.
+---
+Automatiser des commandes :
+
+Comme le sourcing de fichiers ROS (source /opt/ros/...) ou l’activation d’environnements virtuels Python.
+Charger des scripts ou des configurations tierces :
+
+Certains programmes (comme ROS) nécessitent un fichier de configuration pour fonctionner. Ajouter la commande source dans le ~/.bashrc permet de les charger automatiquement.
+-------------- ROS2 CONNU PAR LE TERMINAL --------------:
+
+
+
+
+
+------------ ROS 1 ------------
 >>
 https://wiki.ros.org/rosserial
 
 https://wiki.ros.org/rosserial_arduino/Tutorials
-____
+------------ ROS 1 ------------
 
---------------------------------------------- ROS 2 - ARDUINO communication
+
+---------- ROS 2 - ARDUINO communication  ----------
 ____!!!! ros2-arduino : - ROS 2!!!! ____
 https://docs.arduino.cc/libraries/ros2arduino/
 
 https://github.com/ROBOTIS-GIT/ros2arduino
 
---------------------------------------------
+----------------------------------------------------
 
 
 
 
-###### COM SERIE :
+
+###### COM SERIE : ######
 ___
 *******Miniterm****** 
 est un outil de terminal série inclus dans la bibliothèque Python pyserial. 
@@ -126,10 +181,8 @@ Si vous êtes sur un Raspberry Pi avec Ubuntu :
 /dev/ttyAMA0 : Port UART natif accessible via les broches GPIO.
 /dev/ttyACM0 : Dispositif USB connecté (comme un Arduino).
 
-
-
-
 ######################
+
 
 
 
