@@ -4,10 +4,13 @@ Tutorial:
 https://freenove.com/tutorial
 -
 https://freenove.com/fnk0056
+- achat caméra similaire :
+https://www.ebay.fr/itm/274570481949?mkevt=1&mkcid=1&mkrid=709-53476-19255-0&campid=5338954103&toolid=20006&customid=df3fcf5fe750e15ae45b50749942871f
 
 
 ___ LIENS INTERESSANTS
 https://sharad-rawat.medium.com/raspberry-pi-camera-module-calibration-using-opencv-f75ff9fc1441
+
 
 ___ OPEN CV
 https://how2electronics.com/how-to-install-setup-opencv-on-raspberry-pi-4/

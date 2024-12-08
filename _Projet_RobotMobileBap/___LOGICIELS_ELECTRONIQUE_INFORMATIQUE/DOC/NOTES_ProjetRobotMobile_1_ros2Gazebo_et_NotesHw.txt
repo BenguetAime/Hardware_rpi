@@ -29,6 +29,8 @@ ____
 >> adresse ip RaspberyPi - toulon : 192.168.1.179
 >> adresse ip VMWARE (2024, my Acer) - toulon : 192.168.1.124
 
+>> free -h : mémoire
+
 
 
 __________________ ROS 2 ROS 2  __________________

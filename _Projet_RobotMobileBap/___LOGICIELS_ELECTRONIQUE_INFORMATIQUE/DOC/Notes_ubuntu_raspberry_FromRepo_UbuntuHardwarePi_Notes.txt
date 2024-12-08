@@ -21,6 +21,48 @@ https://www.youtube.com/watch?v=Wlmne44M6fQ
 >> IP ADRESS: >> hostname -I
 
 
+########################## RPI, DEFAUT DETECTES, etc
+>> free -h : mémoire
+-
+>> Alternative à "sudo raspi-config", sous ubuntu:
+sudo nano /boot/firmware/config.txt
+
+---------
+>> vcgencmd get_throttled : voir si le RPI est sous tension!
+0x0 : est attendu pour que tout soit ok
+--
+Rôle de vcgencmd get_throttled
+Détection des conditions anormales :
+
+Vérifie si le Raspberry Pi a subi une limitation des performances (throttling) en raison de :
+Une température trop élevée.
+Une alimentation insuffisante.
+
+---
+La sortie est une valeur hexadécimale qui représente différents états. Exemple :
+>>throttled=0x50005
+
+---
+Bit position	État	Description
+Bit 0	Under-voltage	L'alimentation est insuffisante.
+Bit 1	Arm frequency capped	La fréquence du CPU a été réduite pour éviter la surchauffe.
+Bit 2	Currently throttled	Le CPU est actuellement limité à cause d'une surchauffe ou d'une sous-tension.
+Bit 3	Soft temperature limit	La température a dépassé une limite logicielle et le CPU fonctionne à une fréquence inférieure pour éviter les dommages.
+Bit 16	Under-voltage has occurred	Une condition de sous-tension s'est produite dans le passé.
+Bit 17	Arm frequency capped has occurred	Une limitation de fréquence CPU s'est produite dans le passé.
+Bit 18	Throttling has occurred	Le CPU a été limité dans le passé en raison de la température ou d'une sous-tension.
+Bit 19	Soft temperature limit occurred	Une condition de température logicielle a été atteinte dans le passé.
+
+
+***Exemple d'analyse
+***Sortie : throttled=0x50005
+--> 0x50005 signifie en binaire : 0101 0000 0000 0000 0101.
+Analyse :
+Bit 0 : Sous-tension actuelle.
+Bit 2 : Le CPU est actuellement limité.
+Bit 16 : Sous-tension détectée dans le passé.
+Bit 18 : Throttling détecté dans le passé.
+##########################
 
 
 

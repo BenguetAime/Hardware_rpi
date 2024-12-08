@@ -15,6 +15,8 @@ https://www.youtube.com/watch?v=BMMnOAzcqoE
 ________>> Logiciel GIMP - modif photos_________ :
 https://www.youtube.com/watch?v=t8LAXxqfqWk
 
+>> free -h : mémoire
+
 
 ############ End - Hardware-Software / Moteur et suite… ############
 
@@ -47,7 +49,7 @@ Connectez l'Arduino Mega à votre Raspberry Pi via USB (port série).
 
 
 ---------------------------------------------
-____!!!! ros2-arduino : - ROS 2!!!! ____ PB DE MEMOIRE SRAM ARDUINO MEGA??
+____!!!! ros2-arduino : - ROS 2!!!! ____ PB DE MEMOIRE SRAM avec ARDUINO MEGA??
 https://docs.arduino.cc/libraries/ros2arduino/
 
 https://github.com/ROBOTIS-GIT/ros2arduino
@@ -62,9 +64,20 @@ Vous pouvez créer des nœuds ROS 2 sur le Raspberry Pi pour interagir avec les 
 --------------------------------------------
 
 
-############
+
+
+########################
 >> Alternative à "sudo raspi-config", sous ubuntu:
 sudo nano /boot/firmware/config.txt
+
+>> ____! !!!!!  UTILISATION DE ~/.bashrc !!!!!!___
+Y AJOUTER DES LIGNES : 
+source /home/ubuntu/chemin_vers_mon_ws_ros/install/setup.bash
+
+Pour faire :
+>> source ~/.bashrc : au lieu de source install/setup.bash pour chaque workspace ros utilisé.
+########################
+
 
 
 
@@ -84,6 +97,7 @@ https://www.waveshare.com/wiki/Tutorial_IX_Lidar_and_Publishing_Lidar_Topics_in_
 
 __ADD A lidar.xacro in robot_urdf.xacro :
 Tout comme gazebo_control.xacro gérant le diff_drive driver, a été inclus.
+>> Dans le lidar.xacro, chercher le tag << visualize>> : le metttre à true pour voir les données lidar (faisceaux);
 
 __ Pour utiliser le vrai lidar - LD19:
 --- Se servir du driver fournit par le constructeur!
@@ -113,7 +127,7 @@ sudo chmod 777 /dev/ttyUSB0
 https://www.youtube.com/watch?v=A3nw2M47K50&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT&index=9
 
 ___ Simuler la caméra via camera.xacro, et inclure ce fichier dans le fichier .xacro global.
-- Ne pas oublier le plugin camera dans ce fichier camera.xacro (un peu comme avec le lidar, avec des adaptations);
+- Ne pas oublier d'avoir le plugin camera dans ce fichier camera.xacro (un peu comme avec le lidar, avec des adaptations);
 - Ne pas oublier de lier le plugin camera, au joint 'optical joint'(on l'appelle comme on veut), qui représente :+x  à droite horizontal,+y: en bas vertical,+z:sortant; Le repère pour les images.
 
 ___Ouvrir rviz2 :
@@ -121,7 +135,7 @@ ___Ouvrir rviz2 :
 >> ADD / Image display (une image apparaît): topic=/camera/Image_raw
 >> ADD/ Camera display (une grille apparaît: donne où l'image se trouve dans le monde): topic=/camera/Image_raw
 
-___Sur les 2 displays ajoutés, dans les topic, ON NE VOIT PAS LES TOPIC LIES AUX "images compressées (jpeg, png...)"; Ceci est dû au fait qu'il nous faut INSTALLER Le plugin utile à cela :
+_______Sur les 2 displays ajoutés, dans les topic, ON NE VOIT PAS LES TOPIC LIES AUX "images compressées (jpeg, png...)"; Ceci est dû au fait qu'il nous faut INSTALLER Le plugin utile à cela :
 
 --------
 >> sudo apt install ros-humble-image-transport-plugins
@@ -153,6 +167,7 @@ CECI NOUS DIT: tous les types de données images que notre système connaît à 
 
 ______ REAL CAMERA _____
 >> v4l : video for linux; 
+-
 >> sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera
 -
 >> groups : voir si l'utilisateur est dans le video groups
@@ -180,7 +195,13 @@ ______ REAL CAMERA _____
 >> ros2 run rqt_image_view rqt_image_view
 
 
-----------
+
+---------- ERROR ERROR ERROR : en incluant camera.xacro -----------
+>> le système crash: gazebo, rviz…
+
+>> https://stackoverflow.com/questions/47150110/error-context-mismatch-in-svga-sampler-view-destroy-running-gui-programs-on-ub
+---------- ERROR ERROR ERROR -----------
+
 
 ############################# Suite projet - CAMERA - ROS2
 
