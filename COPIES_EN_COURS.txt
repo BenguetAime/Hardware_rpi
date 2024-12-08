@@ -81,5 +81,3 @@ ______ REAL CAMERA _____
 
 
 ############################# Suite projet - CAMERA - ROS2
-
-
