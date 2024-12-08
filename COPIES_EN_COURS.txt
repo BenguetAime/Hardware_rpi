@@ -1,9 +1,85 @@
-############
 
-cd ~
+############################# Suite projet - CAMERA - ROS2
+>> ARTICULATED ROBOTICS :
+https://www.youtube.com/watch?v=A3nw2M47K50&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT&index=9
 
-mkdir -p ldlidar_ros2_ws/src
+___ Simuler la caméra via camera.xacro, et inclure ce fichier dans le fichier .xacro global.
+- Ne pas oublier d'avoir le plugin camera dans ce fichier camera.xacro (un peu comme avec le lidar, avec des adaptations);
+- Ne pas oublier de lier le plugin camera, au joint 'optical joint'(on l'appelle comme on veut), qui représente :+x  à droite horizontal,+y: en bas vertical,+z:sortant; Le repère pour les images.
 
-cd ldlidar_ros2_ws/src
+___Ouvrir rviz2 :
+>> fixed frame: odom
+>> ADD / Image display (une image apparaît): topic=/camera/Image_raw
+>> ADD/ Camera display (une grille apparaît: donne où l'image se trouve dans le monde): topic=/camera/Image_raw
 
-git clone  https://github.com/ldrobotSensorTeam/ldlidar_stl_ros2.git
+_______Sur les 2 displays ajoutés, dans les topic, ON NE VOIT PAS LES TOPIC LIES AUX "images compressées (jpeg, png...)"; Ceci est dû au fait qu'il nous faut INSTALLER Le plugin utile à cela :
+
+--------
+>> sudo apt install ros-humble-image-transport-plugins
+On a désormais les topic permettant de récupérer des images compressées.
+
+>> I on fait : IMAGE display, topic=/camera/image_raw/compressed
+---!! No image ---!!
+---CECI, du fait que Rviz2 ne gère pas les images compresses, il faut à nouveau INSTALLER quelque chose (qui nous permet de voir les TOPICS liés aux données compressées ou non):
+
+---------
+>> sudo apt install ros-humble-rqt-image-view
+>> ros2 run rqt_image_view rqt_image_view
+
+
+____!!! En travaillant avec une vraie caméra, si les constructeur/fournisseurs n'ont pas bien construit le driver, on peut ne recevoir que les données compressées OU les non compressées!
+___!!!
+- commment créer un topic compressed OU non, si on en manque:
+-
+>> ros2 run image_transport list_transports
+CECI NOUS DIT: tous les types de données images que notre système connaît à cet instant (image_transport/compressed; image_transport/compressedDepth; image_transport/raw, etc).
+
+- Pour prendre des données d'un topic propre à un type de données images vers un autre topic propre à un autre type:
+-
+>> ros2 run image_transport republish _input_format _output_format __then_remapping_of_the_topic__
+
+>> ros2 run image_transport republish compressed raw --ros-args -r in/compressed:=/camera/image_raw/compressed -r out:=/camera/image_raw/uncompressed
+
+
+
+______ REAL CAMERA _____
+>> v4l : video for linux; 
+-
+>> sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera
+-
+>> groups : voir si l'utilisateur est dans le video groups
+>> SINON: sudo usermod -aG video <username=ubuntu, dans mon cas> ; 
+>> sudo reboot éventuellement
+-
+>> VERIFIER SI LA CAMERA EST CONNECTEE :
+>> vcgencmd get get_camera
+- TO Récupérer les données de la caméra :
+>> raspistill -k
+
+- Vérifier si v4l2 peut VOIR  :
+>> v4l2-ctl --list-devices; (/dev/video : ce qu'il faut vérifier)
+
+---------- Si j'étais en simulation(VMWARE), et que je veux maintenant passer sur le pi (télécharger ces logiciels, téléchargés précédemment):
+>> sudo apt install ros-humble-image-transport-plugins ros-humble-rqt-image-view
+-
+>> Maintenant on peut lancer la vidéo à partir du NOEUD DRIVER LINUX 
+>> ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:="[800,600]" -p camera_frame_id:=camera_link_optical
+-
+>> IGNORER LES ERREURS... CALIBRATION FILE??
+>> ros2 run rqt_image_view rqt_image_view; topic= .../compressed
+----
+>> ros2 launch camera.launch.py
+>> ros2 run rqt_image_view rqt_image_view
+
+
+
+---------- ERROR ERROR ERROR : en incluant camera.xacro -----------
+>> le système crash: gazebo, rviz…
+
+>> https://stackoverflow.com/questions/47150110/error-context-mismatch-in-svga-sampler-view-destroy-running-gui-programs-on-ub
+---------- ERROR ERROR ERROR -----------
+
+
+############################# Suite projet - CAMERA - ROS2
+
+
