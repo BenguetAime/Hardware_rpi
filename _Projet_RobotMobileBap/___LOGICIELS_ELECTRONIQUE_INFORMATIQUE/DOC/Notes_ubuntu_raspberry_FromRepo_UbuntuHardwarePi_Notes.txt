@@ -28,7 +28,8 @@ https://www.youtube.com/watch?v=Wlmne44M6fQ
 sudo nano /boot/firmware/config.txt
 
 ---------
->> vcgencmd get_throttled : voir si le RPI est sous tension!
+>> vcgencmd get_throttled : 
+voir si le RPI est sous tension!
 0x0 : est attendu pour que tout soit ok
 --
 Rôle de vcgencmd get_throttled

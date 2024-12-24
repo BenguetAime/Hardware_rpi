@@ -24,7 +24,9 @@ ____
 sudo nano /boot/firmware/config.txt
 
 ---------
->> vcgencmd get_throttled : voir si le RPI est sous tension!
+>> vcgencmd get_throttled : 
+voir si le RPI est sous tension!
+-
 0x0 : est attendu pour que tout soit ok
 --
 Rôle de vcgencmd get_throttled
@@ -61,8 +63,9 @@ Bit 18 : Throttling détecté dans le passé.
 
 
 
----------
->> sudo journalctl -fe :
+--------- 1
+>> journalctl -fe : 
+comme il n'y a pas d'écran connecté à la RPI, il tente de lancer et relancer le DISPLAY MANAGER et ECHOUE!!!! c'est que l'on voit défiler sur le terminal après cette commande!
 
 --
 La commande journalctl -fe est utilisée pour afficher en temps réel les journaux du système sur un système Linux utilisant systemd. Voici une explication détaillée :
@@ -72,12 +75,26 @@ journalctl : Commande pour consulter les journaux enregistrés par le système.
 -f : Suit les journaux en temps réel, semblable à la commande tail -f.
 -e : Se positionne à la fin des journaux pour afficher les derniers messages.
 
---
->> systemctl get-default :
 
+----------- 1 suite: EVITER QUE LE SYSTEM LANCE LE DISPLAY MANAGER INUTILEMENT
+>> changer le systemd target:
+>> systemctl get-default : 
+current default level (graphical target); sans écran le niveau suivant est multy user": c'est le niveau standard pour les systèmes non-graphical (multy processeur exécutés par différets user par ex);
+-- FAIRE :
+>> sudo systemctl : 
+standard level for non graphical processor
+>> sudo systemctl set-default multi-user.target 
+(POUR RETOURNER AU CAS PAR DEFAUT, FAIRE: 
+>>sudo systemctl set-default graphical.target )
+>> sudo reboot
+
+-
+>> journalctl -fe : PLUS DE MESSAGE DU DISPLAY MANAGER QUI TENTE DE SE LANCER
 
 
 ##########################
+
+
 
 
 
@@ -87,7 +104,8 @@ journalctl : Commande pour consulter les journaux enregistrés par le système.
 
 __1 sur notre rpi, il faut avoir les permissions d'accès à la com série :
 >> groups (vérifier  présence de dialout, qui donne accès à la com série)
-SINON, faire: >> sudo adduser pi dialout (>>sudo reboot s'il le faut)
+SINON, faire: >> sudo adduser <mon_user_name> dialout : on donne accès à notre user, au grou "dialout"!
+(>>sudo reboot s'il le faut, ensuite)
 
 __2 : installer une librairie python (SUR ARDUINO ON A DEJA serial):
 >> sudo apt install python3-pip ;(si on a pip, sinon installer)

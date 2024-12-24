@@ -74,8 +74,8 @@ sudo nano /boot/firmware/config.txt
 Y AJOUTER DES LIGNES : 
 source /home/ubuntu/chemin_vers_mon_ws_ros/install/setup.bash
 
-Pour faire :
->> source ~/.bashrc : au lieu de source install/setup.bash pour chaque workspace ros utilisé.
+ON peut sourcer ensuite ce fichier caché :
+>> source ~/.bashrc : plus besoin de faire source install/setup.bash le workspace ros utilisé.
 ########################
 
 
@@ -109,13 +109,15 @@ Lancer ce nœud permet de gérer les données lidar : les envoyés sur /scan;
 
 - Mon cas :LIDAR LD19
 >>
-sudo chmod 777 /dev/ttyUSB0
+sud chmod 777 /dev/ttyUSB0
 >> https://github.com/ldrobotSensorTeam
 >> https://github.com/ldrobotSensorTeam/ldlidar_stl_ros2
 
 -------
 
 #############################  Suite projet - LIDAR - ROS2
+
+
 
 
 
@@ -165,24 +167,51 @@ CECI NOUS DIT: tous les types de données images que notre système connaît à 
 
 
 
+
+
+
 ______ REAL CAMERA _____
+
 >> v4l : video for linux; 
--
+
+--- IL Y A DE MULTIPLE MANIERE DE LE FAIRE, OU MIEUX, <<ceci marchait dans mon cas>>!
 >> sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera
 -
 >> groups : voir si l'utilisateur est dans le video groups
->> SINON: sudo usermod -aG video <username=ubuntu, dans mon cas> ; 
+>> SINON: sudo usermod -a -G video <username=ubuntu, dans mon cas> ; 
 >> sudo reboot éventuellement
 -
 >> VERIFIER SI LA CAMERA EST CONNECTEE :
->> vcgencmd get get_camera
-- TO Récupérer les données de la caméra :
+>> vcgencmd get_camera (LE RESTE EST SIMPLE SSI LA CAMERA EST DETECTEE )
+https://www.raspberrypi.org/documentation/computers/os.html#vcgencmd
+
+
+- POUR Récupérer les données de la caméra :
 >> raspistill -k
 
 - Vérifier si v4l2 peut VOIR  :
 >> v4l2-ctl --list-devices; (/dev/video : ce qu'il faut vérifier)
+>> v4l2-ctl --device=/dev/video0 --all
 
----------- Si j'étais en simulation(VMWARE), et que je veux maintenant passer sur le pi (télécharger ces logiciels, téléchargés précédemment):
+---- v4l topo :
+>> https://medium.com/@deepeshdeepakdd2/v4l-a-complete-practical-tutorial-c520f097b590
+
+----
+640x480??
+----
+
+(perso : >>dmesg | grep -i camera)
+
+------ EVENTUELLEMENT (PERSO !!!):
+>> 
+v4l2-ctl --device=/dev/video0 --set-fmt-video=width=1280,height=720,pixelformat=YUYV ; 
+-
+autres formats:'RGGB', etc (voir: v4l2-ctl --device=/dev/video0 --list-formats
+)
+
+
+
+----------!!!!!! Si j'étais en simulation(VMWARE), et que je veux maintenant passer sur le pi (télécharger ces logiciels, téléchargés précédemment):
 >> sudo apt install ros-humble-image-transport-plugins ros-humble-rqt-image-view
 -
 >> Maintenant on peut lancer la vidéo à partir du NOEUD DRIVER LINUX 
@@ -194,6 +223,86 @@ ______ REAL CAMERA _____
 >> ros2 launch camera.launch.py
 >> ros2 run rqt_image_view rqt_image_view
 
+--
+REAL CAMERA INTEGRATION - end : si tout est ok; sinon lignes d'après... 
+
+______ REAL CAMERA _____
+
+
+
+
+
+
+----------------------- cmd
+--
+sudo apt update
+sudo apt upgrade
+
+sudo apt install raspi-config
+sudo raspi-config
+
+
+--- périphériques vidéos connectés/détectés:
+Tester chaque périphérique
+Si vous savez quel périphérique correspond à votre caméra, vous pouvez tester son fonctionnement avec la commande suivante pour voir s'il fournit une sortie vidéo :
+-
+v4l2-ctl --device=/dev/video0 --list-formats
+
+-------
+Utilisation de v4l2-ctl pour vérifier les flux vidéo ::
+>> 
+v4l2-ctl --device=/dev/video0 --all
+-
+Cela affichera les caractéristiques de la caméra connectée au périphérique /dev/video0.
+
+Pour capturer une image à partir de votre caméra, vous pouvez utiliser la commande suivante :
+-
+>>
+v4l2-ctl --device=/dev/video0 --capture --file=test_image.jpg
+
+---
+Si vous souhaitez utiliser la caméra dans une simulation avec ROS2 :
+
+Vous pouvez utiliser un driver comme usb_cam ou v4l2_camera pour publier le flux vidéo de votre caméra dans ROS2. Vous devrez probablement ajuster la configuration pour utiliser le périphérique /dev/video0 ou un autre périphérique, en fonction de vos tests.
+
+------------------------- cmd
+
+
+
+
+__________________libcamera
+>>>>>>>>>>> !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! >>>>>>>>>>>>>
+
+- FORUM
+https://forums.raspberrypi.com/viewtopic.php?t=347172
+- rpi caméra : LIBCAMERA modifié en RPI CAM ??????
+https://www.raspberrypi.com/documentation/computers/camera_software.html#building-libcamera-and-libcamera-apps
+- Cliquer qlq part en haut, en suivant le lien précédent, 
+
+ensuite TELECHERAGER ICI: 
+https://www.raspberrypi.com/documentation/accessories/camera.html#install-a-raspberry-pi-camera
+- NE pas manquer de voir PICAMERA2, a libcamera library for Rpi cam:
+>> Page 6 : paragraphe "Installation using pip"
+https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf
+
+-----
+Picamera2 is built on top of the open source libcamera project, which provides support for complex camera systems in
+Linux. Picamera2 directly uses the Python bindings supplied by libcamera, although the Picamera2 API provides access
+at a higher level. Most users will find it significantly easier to use for Raspberry Pi applications than libcamera’s own
+bindings, and Picamera2 is tuned specifically to address the capabilities of the Raspberry Pi’s built-in camera and
+imaging hardware
+
+-----
+Picamera2 is designed for systems running either Raspberry Pi OS or Raspberry Pi OS Lite, using a Bullseye or later
+image. Picamera2 is pre-installed in current images obtained using the Raspberry Pi Imager tool. Alternatively the latest
+images can also be downloaded from the Raspberry Pi website
+-----
+
+>>>>>>>>>>> !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  >>>>>>>>>>>>>
+
+________________ libcamera
+
+
 
 
 ---------- ERROR ERROR ERROR : en incluant camera.xacro -----------
@@ -204,6 +313,9 @@ ______ REAL CAMERA _____
 
 
 ############################# Suite projet - CAMERA - ROS2
+
+
+
 
 
 
